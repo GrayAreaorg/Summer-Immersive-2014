@@ -83,7 +83,7 @@ theMetakids, Neal has worked with EDM artists such as Beautiful Bells
 
 >![](img/kg.jpg)
 ###[Kristina Garfinkel](http://kbrainwave.github.io) (TA)
-Bio Coming Soon.
+Kristina is a software engineer for Versal, an education startup. She has a strong affinity for puzzles, colors, and collaboration. Before her career in web development, she was a passionate neuroscientist conducting research at UC Berkeley and Stanford. She is excited to integrate her creative and computational sides to explore neuroscientific concepts such as time, pair bonding, and sexual differentiation.
 
 <br>
 <br>
