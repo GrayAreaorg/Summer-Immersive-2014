@@ -12,7 +12,7 @@ devoted to learning the art of creative coding held on June 16th – August 23rd
 ## Instructors
 > ![](img/sa.jpg)
 ###[Shawn Allen](http://stamen.com/studio/shawn)
-Shawn Allen is a Stamen partner and advisor. In his former role as Interaction
+Shawn Allen is a Stamen advisor. In his former role as Interaction
 Director, he facilitated communication between Stamen’s design and technology
 teams and directed the design and implementation of interactive projects. He
 teaches and consults journalists, policymakers, and the public sector on
