@@ -15,15 +15,6 @@ This class will teach you just enough about web technology to be dangerous, from
 * [Mozilla MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
 * [A List Apart: HTML](http://alistapart.com/topic/html)
 * [WebPlatform element reference](http://docs.webplatform.org/wiki/html/elements)
-* [Mozilla MDN CSS guide](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [WebPlatform CSS guide](http://docs.webplatform.org/wiki/css)
-* [Learn Layout](http://learnlayout.com)
-* [CSS Tricks Almanac](http://css-tricks.com/almanac/)
-* [A List Apart: CSS](http://alistapart.com/topic/css)
-* [Web Standards Sherpa](http://webstandardssherpa.com/)
-* [ALA: Understanding Progressive Enhancement](http://alistapart.com/article/understandingprogressiveenhancement)
-* [The Git Book](http://git-scm.com/book)
-
 
 ## June 17th (6pm - 9pm)
 
@@ -48,6 +39,7 @@ on your own time, and [get in touch](http://github.com/shawnbot) if you have any
 * [Shay Howe: Building Your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
 * [Mozilla MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
 * [A List Apart: HTML](http://alistapart.com/topic/html)
+
 
 ## June 19th (6pm - 9pm)
 
