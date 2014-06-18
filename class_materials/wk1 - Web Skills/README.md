@@ -27,7 +27,7 @@ Tonight we took a shotgun approach and covered a lot of stuff:
   - Document structure
   - Common HTML5 elements and their uses
 * An introduction to [GitHub](https://github.com)
-  - creating a personal page
+  - creating a personal page with [GitHub Pages](https://pages.github.com)
   - using the static site generator
   - syncing code with the native app for [Mac](http://mac.github.com) and [Windows](http://windows.github.com)
 * The [Atom](http://atom.io) text editor
