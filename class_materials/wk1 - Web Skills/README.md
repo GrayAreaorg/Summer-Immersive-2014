@@ -52,9 +52,9 @@ Tonight we dove deep into CSS and tricked out our personal GitHub pages. Here ar
   - Why CSS: separating substance (content) from style (presentation), and [the cascade](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Cascading_and_inheritance)
   - CSS syntax: [selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors), properties, [@media](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Media)
   - CSS properties for controlling [text](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Text_styles), [layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Layout) and [display](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Boxes)
-  - Units: `px`, `%`, `em`, `rem`, `vw` and `vh`
-  - CSS colors: named, hexadecimal, RGB, and HSL
-  - Positioning with `position` and `float`
+  - Units (AKA [&lt;length&gt;](https://developer.mozilla.org/en-US/docs/Web/CSS/length)): `px`, `%`, `em`, `rem`, `vw` and `vh`
+  - CSS [colors](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value): named, hexadecimal, RGB, and HSL
+  - [Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position) with `position` and `float`
   - [Descendant](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Information.3A_Selectors_based_on_relationships) and [pseudo-selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Pseudo-classes_selectors)
   - CSS [transitions](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions) and [animation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
 * Project setup, file structure, and naming conventions
