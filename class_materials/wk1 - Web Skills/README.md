@@ -12,9 +12,10 @@ This class will teach you just enough about web technology to be dangerous, from
 ### Resources Referenced
 
 * [Shay Howe: Building Your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
-* [Mozilla MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
+* [MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
+* [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS)
+* [Learn Layout](http://learnlayout.com/)
 * [A List Apart: HTML](http://alistapart.com/topic/html)
-* [WebPlatform element reference](http://docs.webplatform.org/wiki/html/elements)
 
 ## June 17th (6pm - 9pm)
 
@@ -37,11 +38,35 @@ on your own time, and [get in touch](http://github.com/shawnbot) if you have any
 
 ### Suggested Reading
 * [Shay Howe: Building Your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
-* [Mozilla MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
-* [A List Apart: HTML](http://alistapart.com/topic/html)
+* [MDN HTML5 element reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
+* [A List Apart: HTML articles](http://alistapart.com/topic/html)
 
 
 ## June 19th (6pm - 9pm)
 
+Tonight we dove deep into CSS and tricked out our personal GitHub pages. Here are some of the topics covered:
+
+* HTML images and SVG
+* Using [CSS Deck](http://cssdeck.com) to prototype HTML & CSS
+* Cascading Style Sheets
+  - Why CSS: separating substance (content) from style (presentation), and [the cascade](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Cascading_and_inheritance)
+  - CSS syntax: [selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors), properties, [@media](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Media)
+  - CSS properties for controlling [text](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Text_styles), [layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Layout) and [display](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Boxes)
+  - Units: `px`, `%`, `em`, `rem`, `vw` and `vh`
+  - CSS colors: named, hexadecimal, RGB, and HSL
+  - Positioning with `position` and `float`
+  - [Descendant](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Information.3A_Selectors_based_on_relationships) and [pseudo-selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Pseudo-classes_selectors)
+
+Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), and I'll see you in 2 weeks for the JavaScript course!
+  
+  
+### Further Reading
+* [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS)
+* [Learn Layout](http://learnlayout.com/)
+* [CSS Tricks Almanac](http://css-tricks.com/almanac/)
+* [* { box-sizing: border-box; } FTW](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+* [A Complete Guide to Flexbox](http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [A List Apart: Understanding Progressive Enhancement](http://alistapart.com/article/understandingprogressiveenhancement)
+* [More CSS articles on A List Apart](http://alistapart.com/topic/css)
 
 ## June 21st (12pm - 6pm)
