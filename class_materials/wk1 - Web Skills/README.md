@@ -56,6 +56,15 @@ Tonight we dove deep into CSS and tricked out our personal GitHub pages. Here ar
   - CSS colors: named, hexadecimal, RGB, and HSL
   - Positioning with `position` and `float`
   - [Descendant](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Information.3A_Selectors_based_on_relationships) and [pseudo-selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors#Pseudo-classes_selectors)
+  - CSS [transitions](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions) and [animation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
+* Project setup, file structure, and naming conventions
+* Creating files and folders using [Atom](http://atom.io)
+* Using the [Chrome Web Inspector](https://developer.chrome.com/devtools/docs/dom-and-styles)
+* Live coding tools:
+  - [CSS Deck](http://cssdeck.com)
+  - [CodePen](http://codepen.io)
+  - [Tributary](http://tributary.io)
+  - [JSFiddle](http://jsfiddle.net)
 
 Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), and I'll see you in 2 weeks for the JavaScript course!
   
