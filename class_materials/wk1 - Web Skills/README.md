@@ -79,3 +79,32 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [More CSS articles on A List Apart](http://alistapart.com/topic/css)
 
 ## June 21st (12pm - 6pm)
+
+
+### Review: HTML & CSS
+* [The Best Way to Learn HTML](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-html--webdesign-10144)
+* [The Best Way to Learn CSS](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-css--webdesign-11906)
+* [Faster HTML & CSS Workflow with Chrome](http://webdesign.tutsplus.com/articles/faster-htmlcss-workflow-with-chrome-developer-tools--webdesign-8314)
+* [Codepen.io](http://codepen.io/) - CSS and HTML examples
+* [W3 Schools](http://www.w3schools.com/)
+* [W3 Resource](http://www.w3resource.com/) 
+
+### Review: Github 
+* Cloning a site from github
+* Creating a page using github pages generator
+
+### Intro to [Bootstrap](http://getbootstrap.com/)
+* What is a framework?
+* Alternatives
+** [Styleguide & Boilerplate Patterns](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0) - googleDoc
+* Why Bootstrap
+** A fluid grid layout
+** Responsive design
+** Custom form elements
+** Typography
+** JavaScript interaction
+** Cross-browser compatibility
+** Glyph-icons: (http://glyphicons.bootstrapcheatsheets.com/)
+
+
+
