@@ -123,6 +123,10 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [Devdocs.io](http://devdocs.io/)
 * [HTML-Ipsum](http://html-ipsum.com/)
 
+## Online Editors
+* [JSFiddle](http://jsfiddle.net/)
+* [CSSDeck](http://cssdeck.com/)
+* [CodePen](http://codepen.io/)
 
 ## Learning Reasources
 * [Code School](https://www.codeschool.com/) 
@@ -140,10 +144,6 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [A List Apart](http://alistapart.com/)
 
 
-
-* [JSFiddle](http://jsfiddle.net/)
-* [CSSDeck](http://cssdeck.com/)
-* [CodePen](http://codepen.io/)
 
 
 
