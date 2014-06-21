@@ -78,8 +78,9 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [A List Apart: Understanding Progressive Enhancement](http://alistapart.com/article/understandingprogressiveenhancement)
 * [More CSS articles on A List Apart](http://alistapart.com/topic/css)
 
-## June 21st (12pm - 6pm)
 
+
+## June 21st (12pm - 6pm)
 
 ### Review: HTML & CSS
 * [The Best Way to Learn HTML](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-html--webdesign-10144)
@@ -96,7 +97,7 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 ### Intro to [Bootstrap](http://getbootstrap.com/)
 * What is a framework?
 * Alternatives
-* [Styleguide & Boilerplate Patterns](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0) - googleDoc
+* [Styleguide & Boilerplate Patterns (googleDoc)](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0) 
 * Why Bootstrap
 * A fluid grid layout
 * Responsive design
@@ -108,12 +109,10 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 
 ### Assignment 1 - create a simple landing page in bootstrap , locally
 
-* [Bootstrap CDN](http://www.bootstrapcdn.com/)
-* Bootstrap Example
-* [Fontawesome.io](http://fontawesome.io/) [cheatsheet](http://fontawesome.bootstrapcheatsheets.com/)
-* Bootswatch Example
 
 ### Bootstrap Resources:
+* [Bootstrap CDN](http://www.bootstrapcdn.com/)
+* [Fontawesome.io](http://fontawesome.io/) + [cheatsheet](http://fontawesome.bootstrapcheatsheets.com/)
 * [Bootstrap Zero](http://www.bootstrapzero.com/)
 * [Bootply](http://www.bootply.com/) - site for customizing bootstrap
 * [Bootsnipp](http://bootsnipp.com/) - snippets of elements made in Bootstrap
