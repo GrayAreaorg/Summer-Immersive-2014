@@ -96,15 +96,33 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 ### Intro to [Bootstrap](http://getbootstrap.com/)
 * What is a framework?
 * Alternatives
-** [Styleguide & Boilerplate Patterns](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0) - googleDoc
+* [Styleguide & Boilerplate Patterns](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0) - googleDoc
 * Why Bootstrap
-** A fluid grid layout
-** Responsive design
-** Custom form elements
-** Typography
-** JavaScript interaction
-** Cross-browser compatibility
-** Glyph-icons: (http://glyphicons.bootstrapcheatsheets.com/)
+* A fluid grid layout
+* Responsive design
+* Custom form elements
+* Typography
+* JavaScript interaction
+* Cross-browser compatibility
+* Glyph-icons: (http://glyphicons.bootstrapcheatsheets.com/)
+
+### Assignment 1 - create a simple landing page in bootstrap , locally
+
+* [Bootstrap CDN](http://www.bootstrapcdn.com/)
+* Bootstrap Example
+* [Fontawesome.io](http://fontawesome.io/) [cheatsheet](http://fontawesome.bootstrapcheatsheets.com/)
+* Bootswatch Example
+
+### Bootstrap Resources:
+* [Bootstrap Zero](http://www.bootstrapzero.com/)
+* [Bootply](http://www.bootply.com/) - site for customizing bootstrap
+* [Bootsnipp](http://bootsnipp.com/) - snippets of elements made in Bootstrap
+* [Scotch.io - Bootstrap 3 Tips & Tricks](http://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-might-not-know)
+* [Bootstrap Carousel Tutorial](http://webdesign.tutsplus.com/tutorials/twitter-bootstrap-101-the-carousel--webdesign-7442)
+* [Lavish Bootstrap](http://www.lavishbootstrap.com/) - Create custom color themes from an image
+* [Bootstrap Expo](http://expo.getbootstrap.com/)
+
+
 
 
 
