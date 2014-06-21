@@ -111,6 +111,42 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [Lavish Bootstrap](http://www.lavishbootstrap.com/) - Create custom color themes from an image
 * [Bootstrap Expo](http://expo.getbootstrap.com/)
 
+## Software to know about
+* [Divvy](https://mizage.com/divvy/) -  window splitting/real estate
+* [Espresso](http://macrabbit.com/espresso/) - HTML / CSS / JS editor
+* [Macaw](http://macaw.co/) - Image & CSS Editor
+* [Brackets](http://brackets.io)
+
+## Online Tools
+* [Best Web Fonts](http://www.bestwebfonts.com/)
+* [Web Colour Data](http://webcolourdata.com/)
+* [Devdocs.io](http://devdocs.io/)
+* [HTML-Ipsum](http://html-ipsum.com/)
+
+
+## Learning Reasources
+* [Code School](https://www.codeschool.com/) 
+* [Code Academy](http://www.codecademy.com/)    
+* [Web Design Tuts](http://webdesign.tutsplus.com/)
+* [MDN - Mozilla Developer Network](https://developer.mozilla.org/en-US/)   
+* [Stack Overflow](https://stackoverflow.com/) 
+* [Stack Exchange](https://stackexchange.com/sites#)
+
+## Blogs
+* [Creative Applications](http://www.creativeapplications.net/) - a great source of new creative code art works
+* [Smashing Magazine](http://www.smashingmagazine.com/)
+* [CSS Tricks](http://css-tricks.com/)
+* [Speckboy](http://speckyboy.com/)
+* [A List Apart](http://alistapart.com/)
+
+
+
+* [JSFiddle](http://jsfiddle.net/)
+* [CSSDeck](http://cssdeck.com/)
+* [CodePen](http://codepen.io/)
+
+
+
 
 
 
