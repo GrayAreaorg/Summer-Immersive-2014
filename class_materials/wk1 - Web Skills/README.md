@@ -128,7 +128,7 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [CSSDeck](http://cssdeck.com/)
 * [CodePen](http://codepen.io/)
 
-## Learning Reasources
+## Learning Resources
 * [Code School](https://www.codeschool.com/) 
 * [Code Academy](http://www.codecademy.com/)    
 * [Web Design Tuts](http://webdesign.tutsplus.com/)
