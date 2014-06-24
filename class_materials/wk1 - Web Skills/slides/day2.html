@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Skills: Day 2</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/ascetic.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h2>Welcome Back!</h2>
+          <p class="fragment">Here&rsquo;s a quick recap of yesterday:</p>
+          <ul>
+            <li class="fragment">The internet is awesome.</li>
+            <li class="fragment">HTML is weird.</li>
+            <li class="fragment">Shawn makes boring slides and talks too much.</li>
+          </ul>
+        </section>
+
+        <section id="follow-along">
+          <h2>Follow Along:</h2>
+          <h3><a href="http://sta.mn/32f"><code>http://sta.mn/32f</code></a></h3>
+        </section>
+
+        <section>
+          <section id="images">
+            <h2>Images!</h2>
+            <p>Images are embedded via the <code>&lt;img&gt;</code> element:</p>
+            <pre><code class="xml">
+&lt;img src="http://placekitten.com/400/250"&gt;
+            </code></pre>
+            <img src="http://placekitten.com/400/250">
+            <p>The <code>src</code> is an image URL, which can be either fully
+            qualified (with the <code>http://</code> prefix, domain, etc.) or a
+            relative path to an image file (<code>src="images/kitten.jpg"</code>).</p>
+          </section>
+
+          <section id="image-sizing">
+            <h2>Image Sizing</h2>
+            <p>By default, images have no width or height until the browser loads them. This can sometimes result in jarring layout changes.</p>
+            <p>The <code>width</code> and <code>height</code> attributes can be used to tell the browser how big the image is before it&rsquo;s loaded.</p>
+            <pre><code class="xml">
+&lt;img src="http://placekitten.com/300/200"
+  width="300" height="200"&gt;
+            </code></pre>
+            <img src="http://placekitten.com/300/200" width="300" height="200">
+          </section>
+
+          <section id="svg">
+            <h2>SVG</h2>
+            <p><u>S</u>calable <u>V</u>ector <u>G</u>raphics are the Internet&rsquo;s vector format.<br>
+            They encode shapes rather than pixels:</p>
+            <svg style="float: right; margin-left: 30px" width="250" height="250">
+              <g transform="translate(125,125)">
+                <circle fill="yellow" r="125"></circle>
+                <circle fill="cyan" r="100"></circle>
+                <circle fill="magenta" r="75"></circle>
+              </g>
+            </svg>
+            <pre><code class="xml">
+&lt;svg width="250" height="250"&gt;
+  &lt;g transform="translate(125,125)"&gt;
+    &lt;circle fill="yellow" r="125"&gt;&lt;/circle&gt;
+    &lt;circle fill="cyan" r="100"&gt;&lt;/circle&gt;
+    &lt;circle fill="magenta" r="75"&gt;&lt;/circle&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+            </code></pre>
+            <p style="clear: both">See also: <code>&lt;img src="image.svg"&gt;</code></p>
+          </section>
+
+        </section>
+
+        <section id="playtime">
+          <h2>Let&rsquo;s Play!</h2>
+          <h3><a href="http://cssdeck.com/labs"><code>http://cssdeck.com/labs</code></a></h3>
+        </section>
+
+        <section>
+          <section id="css">
+            <h1>CSS</h1>
+            <h2 class="f"><u>C</u>ascading <u>S</u>tyle <u>S</u>heets</h2>
+            <h3 class="f">They give HTML style.</h3>
+          </section>
+
+          <section id="why-css">
+            <h2>Why CSS?</h2>
+            <p>CSS was created to separate <i>substance</i><br>
+            (your content) from <i>style</i> (its appearance).<br>
+            Before CSS, HTML mostly looked like this:</p>
+            <pre><code class="xml wrap">
+&lt;p&gt;&lt;font size="10"&gt;This is a paragraph with &lt;font color="red"&gt;red text&lt;/font&gt;.&lt;/font&gt;&lt;/p&gt;
+            </code></pre>
+            <p>But with CSS you can make rules that define<br>
+            the style for different elements:</p>
+            <pre><code class="xml">
+&lt;style&gt;
+  p { font-size: 10px; }
+  b { color: red; }
+&lt;/style&gt;
+&lt;p&gt;This is a paragraph with &lt;b&gt;red text&lt;/b&gt;.&lt;/p&gt;
+            </code></pre>
+          </section>
+
+          <section id="css-syntax">
+            <h2>CSS Syntax</h2>
+            <pre><code class="css">
+selector(s) {
+  property: value;
+}
+            </code></pre>
+            <p>Multiple selectors are separated by a comma:</p>
+            <pre><code class="css">
+h1, h2 {
+  font-style: italic;
+}
+            </code></pre>
+            <p>You can have as many properties as you want in a rule. To make
+            all <code>&lt;h2&gt;</code> elements red and centered, for instance:</p>
+            <pre><code class="css">
+h2 {
+  color: red;
+  text-align: center;
+}
+            </code></pre>
+          </section>
+
+          <section id="css-properties">
+            <h2>CSS Properties</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>text color</td>
+                  <td><code style="color: red">color: red;</code></td>
+                </tr>
+                <tr>
+                  <td>background color</td>
+                  <td><code style="background-color: yellow">background-color: yellow;</code></td>
+                </tr>
+                <tr>
+                  <td>border</td>
+                  <td><code style="border: 4px dashed green">border: 4px dashed green</code></td>
+                </tr>
+                <tr>
+                  <td>text shadow</td>
+                  <td><code style="text-shadow: 0 0 5px blue">text-shadow: 0 0 5px blue</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="shorthand-properties">
+            <h2>Shorthand &amp; Compound Properties</h2>
+            <p>Some properties accept multiple values, for instance:</p>
+            <ul>
+              <li><code>font</code> is a shorthand that can set many font-related properties at once.</li>
+              <li><code>border</code> and <code>background</code> also serve as
+              shorthand for a collection of related properties.</li>
+              <li><code>margin</code> and <code>padding</code> take 1, 2, 3 or 4 values:<ul>
+                <li><code>top right bottom left</code></li>
+                <li><code>top right bottom</code> (left = right)</li>
+                <li><code>top right</code> (bottom = top, left = right)</li>
+                <li><code>top</code> (top = right = bottom = left)</li>
+              </ul></li>
+            </ul>
+          </section>
+
+          <section id="css-units">
+            <h2>CSS Units</h2>
+            <p>Most property values can be expressed in terms of<br>
+            different measurement units.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>unit</th>
+                  <th>description</th>
+                  <th>e.g.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>px</code></td>
+                  <td>absolute pixels</td>
+                  <td><code>20px</code></td>
+                </tr>
+                <tr>
+                  <td><code>%</code></td>
+                  <td>percentage of the <i>parent</i> value</td>
+                  <td><code>200%</code></td>
+                </tr>
+                <tr>
+                  <td><code>em</code></td>
+                  <td>relative to the <i>parent</i> font-size</td>
+                  <td><code>.5em</code></td>
+                </tr>
+                <tr>
+                  <td><code>rem</code></td>
+                  <td>relative to the <i>root</i> element&rsquo;s value</td>
+                  <td><code>2rem</code></td>
+                </tr>
+                <tr>
+                  <td><code>vw/vh</code></td>
+                  <td>percentage of the <i>viewport</i> width/height</td>
+                  <td><code>50vw</code></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>Note:</b> the value <code>0</code> can be specified without units.</p>
+          </section>
+
+          <section id="css-colors">
+            <h2>CSS Colors</h2>
+            <p>Colors can also be expressed in different formats:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>format</th>
+                  <th>description</th>
+                  <th>e.g.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>name</code></td>
+                  <td>W3C named colors</td>
+                  <td><code style="color: blue">blue</code>, <code style="color: salmon">salmon</code></td>
+                </tr>
+                <tr>
+                  <td><code>#rgb<br>#rrggbb</code></td>
+                  <td style="white-space: pre">hexadecimal<br>red, green, blue (RGB)</td>
+                  <td><code style="color: #f3c">#f3c</code>, <code style="color: #00dead">#00dead</code></td>
+                </tr>
+                <tr>
+                  <td><code>rgb(r,g,b)</code></td>
+                  <td>decimal RGB</td>
+                  <td><code style="color: rgb(64,128,255)">rgb(64,128,255)</code></td>
+                </tr>
+                <tr>
+                  <td><code>hsl(h,s,l)</code></td>
+                  <td>hue, saturation, value</td>
+                  <td><code style="color: hsl(180,50%,50%)">hsl(180,50%,50%)</code></td>
+                </tr>
+                <tr>
+                  <td><code>transparent</code></td>
+                  <td>..</td>
+                  <td><code style="color: transparent">transparent</code></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>There&rsquo;s also <code>rgb()</code> and <code>hsla()</code> to control <i>alpha</i>, or opacity.</p>
+          </section>
+
+          <section id="font-properties">
+            <h2>Font Properties</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>size</td>
+                  <td><code style="font-size: 50px">font-size: 50px</code></td>
+                </tr>
+                <tr>
+                  <td>family</td>
+                  <td><code style="font-family: 'Helvetica Neue'">font-family: "Helvetica Neue"</code></td>
+                </tr>
+                <tr>
+                  <td>weight</td>
+                  <td><code style="font-weight: bold">font-weight: bold</code></td>
+                </tr>
+                <tr>
+                  <td>style</td>
+                  <td><code style="font-style: italic">font-style: italic</code></td>
+                </tr>
+                <tr>
+                  <td>everything!</td>
+                  <td><code style="font: italic bold 60px 'Helvetica Neue'">font: italic bold 60px &ldquo;Helvetica Neue&rdquo;</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="layout-properties">
+            <h2>Layout Properties</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <style scoped>
+                  td:last-child {
+                    width: 75%;
+                  }
+                  td code {
+                    color: #fff;
+                    background: rgba(255,0,0,.5); 
+                  }
+                </style>
+                <tr>
+                  <td>text-align</td>
+                  <td><code style="display: block; text-align: center">text-align: center</code></td>
+                </tr>
+                <tr>
+                  <td>padding</td>
+                  <td><code style="display: block; padding: 20px">padding: 20px</code></td>
+                </tr>
+                <tr>
+                  <td>margin</td>
+                  <td><code style="display: block; margin: 40px">margin: 40px</code></td>
+                </tr>
+                <tr>
+                  <td>float</td>
+                  <td><code style="float: right">float: right</code></td>
+                </tr>
+                <tr>
+                  <td>display</td>
+                  <td>
+                    <code style="display: inline">display: inline</code><br>
+                    <code style="display: block">display: block</code><br>
+                    <span class="light">(also: <code>display: none</code>)</span>
+                  </td>
+                </tr>
+                <!-- FIXME add box-sizing note! -->
+              </tbody>
+            </table>
+          </section>
+
+          <section id="css-position">
+            <h2>Positioning</h2>
+            <p>The CSS <code>position</code> property, combined with<br>
+            <code>top</code>, <code>left</code>, <code>bottom</code> and <code>right</code>, allows you to<br>
+            arbitrarily position elements on the page:</p>
+            <style scoped>
+              table {
+                position: relative;
+              }
+              td {
+                border: 1px solid #000;
+              }
+              td:last-child {
+                width: 75%;
+              }
+              td code {
+                background: rgba(0,0,0,.1); 
+                display: block;
+              }
+            </style>
+            <table>
+              <tbody>
+                <tr style="color: red">
+                  <td><b>relative</b></td>
+                  <td><code style="position: relative; top: -20px;">
+                      position: relative;
+                      top: -20px;
+                  </code></td>
+                </tr>
+                <tr style="color: green">
+                  <td><b>absolute</b></td>
+                  <td><code style="position: absolute; left: 50px; top: 100%;">
+                      position: absolute;
+                      left: 50px;
+                      top: 100%;
+                  </code></td>
+                </tr>
+                <tr style="color: blue">
+                  <td><b>fixed</b></td>
+                  <td><code style="position: fixed; right: 0; bottom: 0;">
+                      position: fixed;
+                      right: 0;
+                      bottom: 0;
+                  </code></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="css-display">
+            <h2>Display Properties</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <style scoped>
+                  td:last-child {
+                    width: 75%;
+                  }
+                  td code {
+                    color: #fff;
+                    background: rgba(255,0,0,.5); 
+                  }
+                </style>
+                <tr>
+                  <td>opacity</td>
+                  <td>
+                    <code style="opacity: .5">opacity: .5</code><br>
+                    <code style="opacity: .2">opacity: .2</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td>transform</td>
+                  <td>
+                    <code style="display: inline-block; -webkit-transform: rotate(-15deg); white-space: pre">transform: rotate(-15deg)</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="the-flow">
+            <h2>The Flow</h2>
+            <p>As browsers render each element on the page,<br>
+            they keep track of their current position on the<br>
+            screen, or <i>the flow</i>.</p>
+
+            <div>
+              <style scoped>
+                p { text-align: left; }
+              </style>
+
+              <p><b style="float: left; padding: 10px 20px 5px; background: yellow; margin: 0 20px 0 0">Floating elements</b> change the
+              flow of text and other elements around them, and can break up long runs of text.</p>
+
+              <p>(<b style="position: relative; left: -50px; top: -10px; color: red">Relatively positioned</b>)
+              elements don&rsquo;t change the flow of other elements, whereas
+              (<b style="position: absolute; bottom: 0; right: 0; color: green">absolutely positioned</b>)
+              ones are <i>removed</i> from the flow and placed elsewhere.</p>
+            </div>
+          </section>
+
+          <section id="css-selectors">
+            <h2>CSS Selectors</h2>
+            <p>CSS <i>selectors</i> are expressions that match different types
+            of elements in your document. Here are some examples:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>selector</th>
+                  <th>description</th>
+                  <th>examples</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>element</code></td>
+                  <td>matches elements with this name</td>
+                  <td><code>h2<br>p</code></td>
+                </tr>
+                <tr>
+                  <td><code>.class</code></td>
+                  <td>matches elements with this <code>class</code> attribute</td>
+                  <td><code>.red<br>h2.red</code></td>
+                </tr>
+                <tr>
+                  <td><code>#id</code></td>
+                  <td>matches the element with this <code>id</code> attribute</td>
+                  <td><code>#chapter1<br>section#chapter1</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="css-descendant">
+            <h2>Descendant Selectors</h2>
+            <p>CSS selectors may be made more specific by separating<br>
+            multiple expressions with a space between them to<br>
+            indicate their <i>descendency</i>:</p>
+            <pre><code class="css">
+section h2 { /* &lt;h2&gt; within a &lt;section&gt; */ }
+.chapter p { /* &lt;p&gt; within a class="chapter" */ }
+ul ol li   { /* &lt;li&gt; in a &lt;ul&gt; in another &lt;ul&gt; */ }
+            </code></pre>
+            <p>You can target <i>direct</i> descendants<br>
+            by adding a <code>&gt;</code> between selectors:</p>
+            <pre><code class="css">
+section &gt; h2      { /* &lt;h2&gt; with a &lt;section&gt; parent */ }
+.cars &gt; li        { /* &lt;li&gt; with a class="cars" parent */ }
+.people &gt; .person { /* "person" with a "people" parent */ }
+            </code></pre>
+          </section>
+
+          <section id="pseudo-selectors">
+            <h2>Pseudo-Selectors</h2>
+            <p>A special class of selector suffixes can be used to<br>
+            style elements based on contextual criteria:</p>
+            <ul>
+              <li><code>:first-child</code> only matches the first child element</li>
+              <li><code>:last-child</code> only matches the last child</li>
+              <li><code>:nth-child(n)</code> only matches the <i>n</i>th child (starting at 1),
+              or <i>n</i> can be <code>odd</code> or <code>even</code></li>
+            </ul>
+          </section>
+
+          <section id="adding-css">
+            <h2>Adding CSS</h2>
+            <p>There are 3 ways to add CSS to your document:</p>
+            <ol>
+              <li>Link to an external stylesheet in the <code>&lt;head&gt;</code>:
+                <pre><code class="xml">
+&lt;link rel="stylesheet" href="style.css"&gt;
+                </code></pre>
+              </li>
+              <li>Add a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code>:
+                <pre><code class="xml">
+&lt;style&gt;
+/* your styles here */
+&lt;/style&gt;
+                </code></pre>
+              </li>
+              <li>Add a <code>style</code> attribute to any element:
+                <pre><code class="xml">
+&lt;h2 style="color: red;"&gt;Red!&lt;/h2&gt;
+                </code></pre>
+              </li>
+            </ol>
+          </section>
+
+        </section>
+
+        <section>
+          <section id="project-setup">
+            <h2>Setting up Your Project</h2>
+            <p>At some point you&rsquo;re going to need to get<br>
+            your work out of CSS Deck and into GitHub.</p>
+          </section>
+
+          <section id="file-structure">
+            <h2>Set up Your File Structure</h2>
+            <p>For simple sites, I recommend the following structure:</p>
+            <ul class="tree">
+              <li><code>/</code> <span class="light">(project root)</span><ul>
+                <li><code>index.html</code></li>
+                <li><i>other-page</i><code>.html</code></li>
+                <li><code>/css</code><ul>
+                  <li><i>stylesheet</i><code>.css</code></li>
+                </ul></li>
+                <li><code>/js</code><ul>
+                  <li><i>script</i><code>.js</code></li>
+                </ul></li>
+              </ul>
+            </ul>
+            <p><b>Note:</b> <code>index.html</code> is a common naming
+            convention for the file that should show up in a directory listing.</p>
+          </section>
+
+          <section id="html-template">
+            <h2>Set up Your HTML</h2>
+            <p>Crack open <a href="http://atom.io">Atom</a> and create a new<br>
+            HTML file with the following contents:</p>
+            <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Your Page Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- HTML here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <p>Save this as <code>index.html</code><br>
+            in your project directory.</p>
+          </section>
+
+          <section id="create-stylesheet">
+            <h2>Create your Stylesheet</h2>
+            <p>In Atom, right-click the file list in the left pane<br>
+            and select <b>Add File</b>.</p>
+            <img src="images/atom-create-file.png" height="350">
+            <p>Type <code>css/style.css</code> in the Atom prompt.</p>
+          </section>
+
+          <section id="open-edit-refresh">
+            <h2>Open, Edit, Refresh</h2>
+            <p>Your workflow looks like this from here on out:</p>
+            <ol>
+              <li>Open <code>index.html</code> in Chrome by either:<ul>
+                <li>dragging it from the filesystem onto Atom, or</li>
+                <li>right-click it in Atom&rsquo; file list and select<br>
+                <b>Copy Full Path</b>, then type <code>file://</code><br>
+                and <b>paste</b> in Chrome&rsquo;s URL bar</li>
+              </ul></li>
+              <li>Edit your HTML and CSS in Atom</li>
+              <li>Refresh in Chrome with <code>⌘R</code> (Mac) or <code>F5</code> (Windows)</li>
+              <li>Repeat 2 and 3 &infin;</li>
+            </ol>
+          </section>
+
+        </section>
+
+        <section>
+          <section id="refreshing-sucks">
+            <h2>Refreshing Sucks!</h2>
+            <p>Going back and forth between your text editor<br>
+            and a web browser can be tedious.</p>
+            <p>Thankfully, Apple and Google made us<br>
+            a very nice tool called the <b>Web Inspector</b>.</p>
+          </section>
+
+          <section id="web-inspector">
+            <h2>Using the Web Inspector</h2>
+            <p>In Chrome (and other modern web browsers)<br>
+            you can right-click on any part of <br>
+            web page to <i>inspect</i> its HTML element:</p>
+            <img src="images/web-inspector-open.png" width="700">
+          </section>
+
+          <section id="web-inspector-elements">
+            <h2>The Elements Inspector</h2>
+            <p>This opens Chrome&rsquo;s element inspector:</p>
+            <img src="images/web-inspector-elements.png" width="700">
+          </section>
+
+          <section id="web-inspector-elements-pane">
+            <h2>The Elements Inspector</h2>
+            <p>The left pane is your HTML.</p>
+            <img src="images/web-inspector-elements-pane.png" width="700">
+          </section>
+
+          <section id="web-inspector-elements-style">
+            <h2>The Elements Inspector</h2>
+            <p>And the right pane is your CSS.</p>
+            <img src="images/web-inspector-elements-style.png" width="700">
+          </section>
+
+          <section id="web-inspector-elements-live">
+            <h2>The Elements Inspector</h2>
+            <p>You can change stuff in the inspector and Chrome<br>
+            will update the page automatically!</p>
+            <p>In the top-right corner there&rsquo;s a section that looks like
+            this:</p>
+            <img src="images/web-inspector-inline-style.png">
+            <p>Right-click the image above and select <b>Inspect Element</b>.</p>
+            <p>Then, click inside the <code>element.style { }</code><br>
+            area to enter CSS editing mode. You can also<br>
+            edit any of the other styles defined below.</p>
+          </section>
+
+          <section id="web-inspector-notes">
+            <h2>NOTE!</h2>
+            <p>The changes you make here are <i>temporary</i>. If you<br>
+            refresh the page they will disappear.</p>
+            <p>If you want to save them, you will need to either:</p>
+            <ul>
+              <li><b>copy</b> the modified HTML or CSS and paste it<br>
+              into your editor, or</li>
+              <li>manually <b>re-apply</b> the changes in your editor.</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section id="live-coding">
+          <h2>Live-Coding Tools</h2>
+          <p>So-called &ldquo;live-coding&rdquo; tools are great for<br>
+          testing ideas quickly, with less back-and-forth:</p>
+          <ul>
+            <li><a href="http://cssdeck.com">CSS Deck</a> has a clean, simple UI</li>
+            <li><a href="http://codepen.io">CodePen</a> has lots of bells and whistles</li>
+            <li><a href="http://tributary.io">Tributary</a> is great for visualization</li>
+            <li><a href="http://jsfiddle.net">JSFiddle</a> is better suited for experts</li>
+          </ul>
+          <p>But once you get comfortable with the Web Inspector,<br>
+          you may never use one of these again!</p>
+        </section>
+
+        <section id="go-ye-forth">
+        <h2>Now, Go Ye Forth<br>and Write Some Code!</h2>
+        </section>
+
+        <!--
+        <section id="html-document-tree">
+          <h2>Document Tree</h2>
+          <p>Web browsers treat HTML as a <i>tree</i> of elements, or nodes:</p>
+          <ul class="tree">
+            <li><code>&lt;html&gt;</code><ul>
+              <li><code>&lt;head&gt;</code><ul>
+                <li><code>&lt;title&gt;</code><ul>
+                  <li>text: <code>My Site Name</code></li>
+                </ul></li>
+              </ul></li>
+              <li><code>&lt;body&gt;</code><ul>
+                <li><code>&lt;h1&gt;</code><ul>
+                  <li>text: <code>My Page Heading</code></li>
+                </ul></li>
+                <li><code>&lt;p&gt;</code><ul>
+                  <li>text: <code>This is a paragraph of text.</code></li>
+                </ul></li>
+                <li><code>&lt;img&gt;</code><ul>
+                  <li>attribute: <code>src="lion.jpg"</code></li>
+                  <li>attribute: <code>alt="This is..."</code></li>
+                </ul></li>
+              </ul></li>
+            </ul></li>
+          </ul>
+        </section>
+        -->
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>
