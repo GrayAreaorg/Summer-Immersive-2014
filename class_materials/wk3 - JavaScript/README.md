@@ -31,7 +31,6 @@ language fundamentals and use them in creative applications.
   - Control structures: `if`, `else`, `for`, et al
   - Objects and literals
   - Functions
-  - The mighty semicolon
 * Running code in the [Chrome Dev Tools console](https://developer.chrome.com/devtools/docs/console)
   - Console methods: `log()`, `dir()`, `table()`, `assert()`, et al
   - Debugging with breakpoints and `debugger;`
