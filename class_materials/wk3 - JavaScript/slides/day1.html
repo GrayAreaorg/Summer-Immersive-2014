@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript: Day 1</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/ascetic.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h1>JavaScript!</h1>
+        </section>
+
+        <section id="what-the-js">
+          <h2>What is JavaScript?</h2>
+        </section>
+
+        <section id="intro-console">
+          <h2>The JavaScript Console</h2>
+        </section>
+
+        <section>
+          <section id="data-types">
+            <h2>Data Types</h2>
+          </section>
+
+          <section id="variables">
+            <h2>Variables</h2>
+          </section>
+
+          <section id="operators">
+            <h2>Operators</h2>
+          </section>
+
+          <section id="expressions">
+            <h2>Expressions</h2>
+          </section>
+
+          <section id="expressions">
+            <h2>Objects</h2>
+          </section>
+
+          <section id="expressions">
+            <h2>Functions</h2>
+          </section>
+
+        </section>
+
+        <section id="adding-scripts">
+          <h2>Adding Scripts to HTML</h2>
+        </section>
+
+        <section>
+          <section id="the-dom">
+            <h2><i>The</i><br>Document Object Model</h2>
+            <p>The DOM is the interface that allows us to<br>manipulate HTML documents.</p>
+            <p>Most of the DOM is accessible via the<br>global variable <code>document</code>.</p>
+          </section>
+
+          <section id="nodes">
+            <h2>Nodes</h2>
+            <p>In the DOM, elements are referred to as <i>nodes</i>.</p>
+          </section>
+
+          <section id="finding-elements">
+            <h2>Finding Elements</h2>
+            <p>Here, <var>node</var> can be either <code>document</code> or a specific node.</p>
+            <ul>
+              <li><code>document.getElementById(<var>id</var>)</code></li>
+              <li><code><var>node</var>.getElementsByTagName(<var>name</var>)</code></li>
+              <li><code><var>node</var>.getElementsByClassName(<var>class</var>)</code></li>
+              <li><code><var>node</var>.querySelector(<var>selector</var>)</code></li>
+              <li><code><var>node</var>.querySelectorAll(<var>selector</var>)</code></li>
+            </ul>
+          </section>
+
+          <section id="element-properties">
+            <h2>DOM Element Properties</h2>
+            <ul>
+              <li><code>node.parentNode</code> is the node&rsquo;s parent</li>
+              <li><code>node.firstChild</code> is the node&rsquo;s first child</li>
+              <li><code>node.lastChild</code> is its last child</li>
+              <li><code>node.childNodes</code> is a list of the node&rsquo;s children:<ul>
+                <li><code>node.childNodes.length</code> tells you how many children it has</li>
+                <li><code>node.childNodes[<var>index</var>]</code> or <li><code>node.childNodes.get(<var>index</var>)</code> returns an indexed child node</li>
+              </ul></li>
+              <!--
+              <li><code>node.classList</code> is a <i>map</i> of its classes:<ul>
+                <li><code>node.classList.contains(<var>class</var>)</code></li>
+                <li><code>node.classList.add(<var>class</var>)</code></li>
+                <li><code>node.classList.remove(<var>class</var>)</code></li>
+              </ul></li>
+              -->
+            </ul>
+          </section>
+
+          <section id="modifying-elements">
+            <h2>Modifying Elements</h2>
+            <ul>
+              <li>assigning <code>node.innerText</code> modifies <i>text</i> (not HTML)</li>
+              <li>assigning <code>node.innerHTML</code> rewrites the node&rsquo;s children</li>
+              <li><code>node.setAttribute(<var>attr</var>, <var>value</var>)</code></li>
+              <li><code>node.removeAttribute(<var>attr</var>)</code></li>
+            </ul>
+          </section>
+
+        </section>
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>
