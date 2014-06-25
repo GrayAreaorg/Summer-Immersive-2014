@@ -3,7 +3,6 @@
 }
 
 .reveal var {
-  font-family: "Georgia", sans-serif !important;
   font-style: italic !important;
   color: #666;
 }
@@ -141,4 +140,11 @@ ul.tree ul li:last-child:before {
   height: auto;
   top: .5em; /* (line-height/2) */
   bottom: 0;
+}
+
+.warning {
+  color: #fff;
+  background-color: rgba(180,0,0,.8);
+  padding: .5em !important;
+  border-radius: 10px;
 }
