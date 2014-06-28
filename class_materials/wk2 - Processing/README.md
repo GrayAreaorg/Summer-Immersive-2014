@@ -1,4 +1,4 @@
-# Week 1: Processing
+# Week 2: Processing
 
 Taught by Matt Ganucheau
 
