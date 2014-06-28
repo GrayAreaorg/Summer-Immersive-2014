@@ -131,4 +131,4 @@ Online Learning
 
 Video
 * [Syphon](http://syphon.v002.info/)
-* [http://createdigitalmotion.com/2009/02/processing-tutorials-getting-started-with-video-processing-via-opencv/](OpenCV tutorial)
+* [OpenCV tutorail](http://createdigitalmotion.com/2009/02/processing-tutorials-getting-started-with-video-processing-via-opencv/)
