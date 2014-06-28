@@ -57,3 +57,42 @@ Functionality
 * Functions that return values - lp 7.4
 
 ## June 26th (6pm - 9pm)
+
+Objects
+* Class & Object - lp 8.1 _ http://processing.org/learning/objects/
+* Two Objects - lp 8.2
+
+Arrays
+* [2D Arrays](http://processing.org/learning/2darray/)
+* A variety of arrays ( lp: 9.1 - 9.8 )
+* Two Arrays and a for loop - lp 9.8
+* An array of objects - lp: 9.9
+* Resizing an Array - lp 9.11
+* Adding interaction  to a class- lp 9.10
+
+[Collision Detection](http://processing.org/learning/topics/circlecollision.html
+) lp 10-3
+
+Anatomy of a simple game
+* catching drops - lp  10.7 - 10.10
+
+Translating a Matrix
+  * Rotate - lp 14.5
+  * 3d Rotate - lp 14.10
+  * Translate - lp 14.12
+  * push pop matrix - lp 14.14
+  * solar system - lp 14.16
+  * geometric art - lp 14.17
+  * planets - lp 14.18
+
+Images -
+  * creating noise - lp 15.5
+  * adjust brightness - lp 15.8
+  * filters - 15.11
+  * pointillism - 15.14
+  * expanding - 15.15
+
+### Resources
+* [Controlp5 Library](http://www.sojamo.de/libraries/controlP5/) -  GUI and controller library
+
+## June 28th (12pm - 6pm)
