@@ -6,14 +6,7 @@
 
 > ![](img/ld.jpg)
 ###Laura	Daly
-Laura graduated from UC Berkeley in 2011 with a degree in International
-Political Economy and a minor in Geography. Since then she has spent her
-time working in GIS and cartography for a variety of organizations in the
-Bay Area and Ecuador. Laura is passionate about mapping for social and
-economic justice and enjoys working on projects that provide a mapped
-presence for underrepresented groups. Other than geography, Laura likes
-reading, going to shows and exploring Oakland.  
-
+Laura works as a GIS Specialist & Cartographer at GreenInfo Network in the Bay Area and is passionate about mapping for social and economic justice. She enjoys working on projects that provide a mapped presence for underrepresented groups and has worked in projects based CA and the US, in Ecuador, and in Kenya.   
 <br>
 
 > ![](img/vb.jpg)
