@@ -42,13 +42,7 @@ Originally from Tokyo, Kaori has been residing in California for the past 10 yea
 
 > ![](img/dg.jpg)
 ###[Diana Galvis](http://dianagalvis.com/index.html) - [@DeRousseur](https://twitter.com/DeRousseur)
-My name is Diana Galvis. I'm 25 years old. I'm a colombian UX / Visual and Interaction designer with a user-centered and design thinking approach. I just received my MFA Design+Tech from the San Francisco Art Institute.
->
-From a visual design and branding to interaction design and user experience,
-my work shows my commitment to create designs that are coherent with
-original concepts found by research of the topic and the audiences/users.
-Every detail is a careful decision obtained as the result of inquisitive
-observation, deep analysis and intuitive experimentation.  
+My name is Diana Galvis. I'm a colombian UX / Visual and Interaction designer with a user-centered and design thinking approach. I just received my MFA Design+Tech from the San Francisco Art Institute. I'm now here on OPT visa. Just in case you could help, I'm looking for a job :) I doesn't hurt to ask.
 >
 What I think about the most when I work is how my portfolio communicates my
 intentions to this world. I'm passionate about exploring the possibilities
@@ -59,9 +53,6 @@ tools to discover, interpret and interact with different perspectives of
 truth conveyed in meaningful, engaging experiences and intuitive interfaces
 that teach awareness of the consequences of our actions.  
 >
-As for my own tools, I discovered that controlling the technology available
-expanded my possibilities to construct the future. As a result I tend to
-rely on it to make things aesthetically and functionally.  
 
 <br>
 
