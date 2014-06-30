@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript: Day 1</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/ascetic.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h1>JavaScript!</h1>
+        </section>
+
+        <section id="what-the-js">
+          <h2>What is JavaScript?</h2>
+          <ol>
+            <li>A client-side scripting language that runs in<br>most web browsers</li>
+            <li>A command-line scripting language powered by<br>Chrome&rsquo;s V8 engine (Node.js)</li>
+            <li>An evolving standard based on the ECMAScript<br>reference language</li>
+          </ol>
+        </section>
+
+        <section>
+
+          <section id="intro-console">
+            <h2>The JavaScript Console</h2>
+            <p>Chrome&rsquo;s JavaScript console is where our journey starts.</p>
+            <img src="images/chrome-open-console.png" height="400">
+          </section>
+
+          <section id="repl">
+            <h2>The Read-Eval-Print-Loop</h2>
+            <p>The Chrome JavaScript console is a form of <abbr title="Read-Eval-Print-Loop">REPL</abbr>, or shell.</p>
+            <img src="images/chrome-repl.png" height="250">
+            <ol>
+              <li><b>Read</b> what you type</li>
+              <li><b>Evaluate</b> when you press <tt>enter</tt></li>
+              <li><b>Print</b> the result</li>
+              <li>Do it all over again (<b>Loop</b>)</li>
+            </ol>
+          </section>
+
+        </section>
+
+        <section id="terminology">
+          <h2>JavaScript Terminology</h2>
+          <ul>
+            <li class="fragment">A <b>literal</b> value is unnamed and <i>constant</i>.</li>
+            <li class="fragment">A <b>variable</b> is a named value that can be changed.</li>
+            <li class="fragment">An <b>operator</b> is a symbol that combines two values.</li>
+            <li class="fragment">An <b>expression</b> is any valid combination of variables, literals, or functions.</li>
+            <li class="fragment">A <b>statement</b> is one or more expressions, variable or function declarations, or <code>return</code>.</li>
+            <li class="fragment">A <b>function</b> is a series of statements that may take <i>arguments</i> and <code>return</code> a value.</li>
+          </ul>
+        </section>
+
+        <section id="data-types">
+          <h2>Data Types</h2>
+          <p class="fragment"><b>Numbers</b> are numeric values:<br> <code>42</code> <code>3.14</code> <code>6e10</code> <code>-20</code></p>
+          <p class="fragment"><b>Strings</b> are textual values, or <i>strings</i> of characters:<br> <code>"Hello, world!"</code> <code>'hi'</code></p>
+          <p class="fragment"><b>Boolean</b> values are binary, and can only be either<br> <code>true</code> or <code>false</code></p>
+          <p class="fragment"><b>Objects</b> are structures with named key/value pairs:<br> <code>{first: "Shawn", last: "Allen"}</code></p>
+          <p class="fragment"><b>Arrays</b> are ordered lists of other values:<br><code>[42, 'hi', {size: 20}]</code></p>
+        </section>
+
+        <section id="special-values">
+          <h2>Special Values</h2>
+          <p>JavaScript also reserves some keywords<br>to indicate special values:</p>
+          <ul>
+            <li class="fragment"><code>null</code> is the "empty" value</li>
+            <li class="fragment"><code>undefined</code> is the <i>uninitialized</i> value</li>
+            <li class="fragment"><code>Infinity</code> represents an infinte value, e.g. division by zero</code>
+            <li class="fragment"><code>NaN</code> means &ldquo;Not a Number&rdquo;, the result of invalid mathematical operations</li>
+          </ul>
+        </section>
+
+        <section id="variables">
+          <h2>Variables</h2>
+          <p>Variables are named placeholders for values.<br>
+          Use the <code>var</code> keyword to <i>declare</i> a variable,<br>
+          with or without the <code>=</code> assignment:</p>
+          <pre><code class="js">
+var heightInFeet = 5.8;
+
+var firstName;
+firstName = "Bob";
+
+var Bob = {
+  height: heightInFeet,
+  name: [firstName, "Nelson"]
+};
+
+var friends = [Bob, Sally];
+          </code></pre>
+        </section>
+
+        <section>
+
+          <section id="operators">
+            <h2>Operators</h2>
+            <p>Operators are symbols that, when placed between<br>two values, create (or <i>evaluate to</i>) a new value.</p>
+          </section>
+
+          <section id="math-operators">
+            <h2>Mathematical Operators</h2>
+            <p><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code></p>
+            <pre><code class="js">
+1 + 1     // 2
+4 - 3     // 1
+2 * 2     // 4
+6 / 3     // 2
+10 % 3    // 1
+            </code></pre>
+            <p><code>+</code> can also be used to join, or <i>concatenate</i> strings:</p>
+            <pre><code class="js">
+"a" + "b" // "ab"
+1 + "2"   // "12"
+            </code></pre>
+            <p><b>Note</b> how the presence of a non-numeric value<br>on either side changes the operator&rsquo;s behavior!</p>
+          </section>
+
+          <section id="equality-operators">
+            <h2>Equality Operators</h2>
+            <p><code>==</code> <code>!=</code> <code>===</code> <code>!==</code> <code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code></p>
+            <p>These logical operators evaluate to <code>true</code> or <code>false</code>.</p>
+            <pre><code class="js">
+5 == 5;       // true
+2 != 3;       // true
+10 == "10";   // true
+10 === "10";  // false
+10 !== "10";  // true
+10 &gt; 11;      // false
+4 &lt;= 5;       // true
+            </code></pre>
+            <p>The <code>!</code> operator <i>negates</i> the expression after it:</p>
+            <pre><code class="js">
+!true;  // false
+!!true; // true
+            </code></pre>
+          </section>
+
+          <section id="assignment-operators">
+            <h2>Assignment Operators</h2>
+            <p><code>=</code> <code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code> <code>%=</code></p>
+            <p>Assigment operators modify the left-hand value and return it:</p>
+            <pre><code class="js">
+var n = 10;
+n += 5;     // n == 15, evaluates to 15
+n -= 2;     // n == 13
+n *= .5;    // n == 6.5
+n /= .25;   // n == 26
+n %= 5;     // n == 1
+            </code></pre>
+          </section>
+
+          <section id="inc-dec-operators">
+            <h2>Increment &amp; Decrement</h2>
+            <p>The <code>++</code> (<b>increment</b>) and <code>--</code> (<b>decrement</b>) mathematical
+            operators change the variable&rsquo;s value, and can be placed<br>
+            on either side of the expression:</p>
+            <pre><code class="js">
+var a = 1;
+var b = 1;
+a++;        // a == 2, evaluates to 1
+++b;        // b == 2, evaluates to 2
+a--;        // a == 1, evaluates to 2
+--b;        // b == 1, evaluates to 1
+            </code></pre>
+            <p>Before an expression they are referred to as <i>pre</i>-increment<br>
+            and -decrement operators; after they are called <i>post-</i>.</p>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section id="objects">
+            <h2>Objects</h2>
+            <p>Objects are structures that have named<br>key/value pairs, or <i>properties</i>:</p>
+            <pre><code class="js">
+var office = {
+  sizeInSquareFeet: 1400,
+  streetAddress:    "1234 Market Street",
+  zipCode:          "94110"
+};
+            </code></pre>
+            <p>Object properties can be accessed via the <code>.</code> symbol:</p>
+            <pre><code class="js">
+office.sizeInSquareFeet       // 1400
+office.streetAddress.length   // 18
+office.zipCode                // "94110"
+            </code></pre>
+          </section>
+
+          <section id="dynamic-properties">
+            <h2>Dynamic Properties</h2>
+            <p>You can also access object properties <i>dynamically</i><br>
+            using the <code>object[]</code> (&ldquo;bracket&rdquo;) syntax:</p>
+            <pre><code class="js">
+var obj = {
+  foo: "a",
+  bar: 10
+};
+
+obj["foo"];       // "a"
+
+var prop = "bar";
+obj[prop];        // 10
+            </code></pre>
+          </section>
+
+        </section>
+
+        <section>
+
+          <!-- <p>As you will see, <i>all values in JavaScript are objects!</i></p> -->
+
+          <section id="expressions">
+            <h2>Expressions</h2>
+            <p>An expression is any combination of literal values,
+            variables, operators, and other constructs that
+            <i>evaluates</i> to another value.</p>
+            <p>Expressions can be grouped within parentheses<br>
+            to change the order in which they are evaluated:</p>
+            <pre><code class="js">
+var n = 5;
+n + 2 * 10;   // = 25
+(n + 2) * 10; // = 70
+            </code></pre>
+            <p>Mathematial operators have different <i>precedence</i> levels,<br>so they evaluated in different orders without parentheses.</p>
+            <p>For instance, <code>*</code> and <code>/</code> are evaluated before<br><code>+</code> and <code>-</code> unless you use parentheses.</p>
+          </section>
+
+          <section id="and-or">
+            <h2>And &amp; Or</h2>
+            <p>The logical <code>&amp;&amp;</code> (<b>and</b>) and <code>||</code> (<b>or</b>) operators are<br>
+            used to create more complex boolean expressions:</p>
+            <pre><code class="js">
+var a = 6;
+var b = 12;
+a &gt;= 5;                 // true
+b &lt;= 10;                // false
+(a &gt;= 5) &amp;&amp; (b &lt;= 10);  // false
+(a &gt;= 5) || (b &lt;= 10);  // true
+            </code></pre>
+            <p><b>Note</b> that precedence also applies to these operators.<br>
+            Use parentheses to avoid unexpected behavior.</p>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section id="control-structures">
+            <h2>Control Structures</h2>
+            <p>The <code>if</code>, <code>else</code>, <code>for</code>, <code>while</code> and <code>switch</code> keywords<br>
+            control which statements in your code are executed.</p>
+          </section>
+
+          <section id="truthiness">
+            <h2>Truthiness</h2>
+            <p>The term <i>truthiness</i> refers to the way in which JavaScript<br>
+            treats different types of (non-Boolean) values as <code>true</code><br>
+            or <code>false</code> within the context of a Boolean expression<br>
+            (such as a control structure):</p>
+            <ul>
+              <li class="fragment"><b>Numbers</b> are <i>truthy</i> if they are non-zero (+/-).</li>
+              <li class="fragment"><b>Strings</b> are truthy if their <code>length</code> is greater than 0.</li>
+              <li class="fragment"><b>Objects</b> (and Arrays) are always truthy.</li>
+              <li class="fragment"><code>null</code> and <code>undefined</code> values are always <i>falsy</i>.</li>
+            </ul>
+          </section>
+
+          <section id="if-else">
+            <h2>if/else</h2>
+            <p>The <code>if</code> and <code>else</code> statements conditionally execute code<br>
+            depending on a Boolean expression&rsquo; truthiness:</p>
+            <pre><code class="js">
+if (<var>condition</var>) {
+  /* <var>condition</var> is true */
+}
+            </code></pre>
+            <p>If statements may be followed by any number of<br>
+            <code>else if</code> statements and a single <code>else</code>:</p>
+            <pre><code>
+if (<var>condition</var>) {
+  /* <var>condition</var> is true */
+} else if (<var>other condition</var>) {
+  /* <var>condition</var> is false and <var>other condition</var> is true */
+} else {
+  /* <var>condition</var> is false */
+}
+            </code></pre>
+          </section>
+
+          <section id="for-loop">
+            <h2>for</h2>
+            <p><code>for</code> loops execute code <i>iteratively</i>, depending<br>
+            on a condition that is repeatedly evaluated<br>
+            (typically to execute a set number of times):</p>
+            <pre><code class="js">
+for ([<var>start</var>]; [<var>condition</var>]; [<var>next</var>]) {
+  /* code to be executed for each iteration */
+}
+
+for (var i = 0; i &lt; 10; i++) {
+  console.log("i = ", i);
+}
+            </code></pre>
+            <p>Note that any of the <var>start</var>, <var>condition</var> or <var>next</var><br>
+            statements may be omitted.</p>
+          </section>
+
+          <section id="for-in">
+            <h2>for..in</h2>
+            <p>The <code>for..in</code> construct is used to iterate over<br>
+            properties of objects:</p>
+            <pre><code>
+for (var <var>property</var> in <var>object</var>) {
+  /* <var>property</var> is a property of <var>object</var> */
+}
+
+var obj = {foo: 1, bar: 2};
+for (var key in obj) {
+  console.log(key, "=", obj[key]);
+}
+            </code></pre>
+          </section>
+
+          <section id="while">
+            <h2>while</h2>
+            <p>The <code>while</code> construct is like a for loop, but<br>
+            without the <var>start</var> and <var>next</var> statements:</p>
+            <pre><code>
+while (<var>condition</var>) {
+  /* <var>condition</var> is true */
+}
+
+var str = "well";
+while (str.length &lt; 10) {
+  str += ".";
+}
+            </code></pre>
+            <p class="warning"><b>Warning:</b> while loops are the easiest way to create<br>
+            an <i>infinite loop</i>, which may crash your browser.</p>
+          </section>
+
+          <section id="do-while">
+            <h2>do..while</h2>
+            <p>The <code>do..while</code> construct is like a while loop,<br>
+            except that the code is <i>always</i> executed once<br>
+            before the while condition is evaluated:</p>
+            <pre><code>
+do {
+  /* run once, then repeatedly while <var>condition</var> is true */
+} while (<var>condition</var>);
+
+var str = "well";
+do {
+  str += ".";
+} while (str.length &lt; 3);
+// str === "well.", even though <var>condition</var> was initially false
+            </code></pre>
+          </section>
+
+          <section id="switch-case">
+            <h2>switch/case</h2>
+            <p>The switch statement is an alternative to if/else:</p>
+            <pre><code>
+switch (<var>expression</var>) {
+  case <var>value1</var>:
+    /* <var>expression</var> === <var>value1</var> */
+    break;
+  case <var>value2</var>:
+    /* <var>expression</var> === <var>value2</var> */
+    break;
+  default:
+    /* <var>expression</var> !== <var>value1</var> or <var>value2</var> */
+}
+            </code></pre>
+            <p>You can leave out the <code>break;</code> statements to allow<br>
+            conditions to &ldquo;fall through&rdquo;, though this is rarely used<br>
+            in practice because the behavior is confusing.</p>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section id="functions">
+            <h2>Functions</h2>
+            <p>Functions are collections of statements that <br>take <i>arguments</i> and may <code>return</code> a value.</p>
+            <pre><code class="js">
+function addOne(n) {
+  return n + 1;
+}
+
+addOne(5); // returns 6
+
+var n = 1;
+function incrementBy(x) {
+  n += x;
+}
+
+incrementBy(1); // n == 2
+incrementBy(5); // n == 7
+            </code></pre>
+          </section>
+
+          <section id="methods">
+            <h2>Methods</h2>
+            <p>A <i>method</i> is really just a property of an object<br>that happens to be a function.</p>
+            <p>There are lots of these in JavaScript,<br>such as the built-in string methods:</p>
+            <pre><code class="js">
+var grayarea = "GAFFTA";  // grayarea is a String
+grayarea.toLowerCase();   // "gaffta"
+grayarea.getCharAt(1);    // "A"
+            </code></pre>
+            <p>Numbers have methods too:</p>
+            <pre><code class="js">
+var count = 10;   // count is a Number
+count.toString(); // "10"
+count.toFixed(2); // "10.00"
+            </code></pre>
+          </section>
+
+          <section id="anonymous-functions">
+            <h2>Anonymous Functions</h2>
+            <p>Functions can either be named or <i>anonymous</i>, in which case
+            they are usually assigned to variables or object properties:</p>
+            <pre><code class="js">
+var addOne = function(n) { return n + 1; }
+addOne(5); // as before, returns 6
+
+var car = {
+  make: "Honda",
+  model: "Accord",
+  drive: function() {
+    var distance = 0;
+    /* some fancy code */
+    return distance;
+  }
+};
+
+car.drive();
+            </code></pre>
+          </section>
+
+          <section id="static-methods">
+            <h2>Global Functions<br>&amp; Static Methods</h2>
+            <p>JavaScript defines many global functions that you can use:</p>
+            <pre><code class="js">
+escape("foo!");     // "foo%21"
+parseInt("24");     // 24
+            </code></pre>
+            <p>Some so-called <i>static methods</i> belong to global objects,<br>
+            and don&rsquo;t relate to a particular <i>instance</i> of their class:</p>
+            <pre><code class="js">
+Math.round(99.9);           // 100
+String.fromCharCode(255);   // "ÿ"
+var obj = {foo: 1, bar: 2};
+Object.keys(obj);           // ["foo", "bar"]
+            </code></pre>
+          </section>
+
+          <section id="function-scope">
+            <h2>Function Scope</h2>
+            <p>In JavaScript, every function has its own <i>scope</i>
+            in which variables can be declared.</p>
+            <p>So-called <i>local</i> variables are only available to
+            their own scope, whereas <i>global</i> variables are
+            available in all scopes.<br>
+            In this example, <code>x</code> is a global variable:</p>
+            <pre><code class="js">
+var x = 10;
+function incrementXBy(n) {
+  x += n;
+}
+            </code></pre>
+          </section>
+
+          <section id="inherited-scope">
+            <h3>Inherited Scope</h3>
+            <p>The local vs. global distinction has one catch, though:</p>
+            <p><b>Locally defined functions inherit variables from<br>
+              the scope in which they were defined.</b></p>
+            <p>This feature of JavaScript is often used to create
+            <i>private</i> variables that are only visible to the local scope.</p>
+            <pre><code class="js">
+var incrementor = function() {
+  var i = 1;
+  return function() {
+    return i++;
+  };
+};
+var nextId = incrementor();
+nextId(); // 1
+nextId(); // 2
+            </code></pre>
+          </section>
+
+          <section id="privatization">
+            <h3>Privatization</h3>
+            <p>This pattern uses an anonymous function to create<br>
+            a private scope, and returns an object literal with a<br>
+            method that accesses the <code>id</code> variable locally:</p>
+            <pre><code class="js">
+var module = (function() {
+  var id = 1;
+  return {
+    nextId: function() {
+      return id++;
+    }
+  };
+})();
+
+module.nextId(); // 1
+module.nextId(); // 2
+module.nextId(); // 3
+            </code></pre>
+          </section>
+
+        </section>
+
+        <section id="adding-scripts">
+          <h2>JavaScript in HTML</h2>
+          <p>You can add scripts to a page with the <code>&lt;script&gt;</code> element.</p>
+          <p><b>Inline scripts</b> are written right inside the element:</p>
+          <pre><code class="xml">
+&lt;script&gt;
+/* your script here */
+&lt;/script&gt;
+          </code></pre>
+          <p><b>External scripts</b> are written in a separate file and referenced via a <code>&lt;script&gt;</code> element with a <code>src</code> attribute:</p>
+          <pre><code class="xml">
+&lt;script src="path/to/script.js"&gt;&lt;/script&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <section id="the-dom">
+            <h2><i>The</i><br>Document Object Model</h2>
+            <p>The DOM is the interface that allows us to<br>manipulate HTML documents.</p>
+            <p>Most of the DOM is accessible via the<br>global variable <code>document</code>.</p>
+          </section>
+
+          <section id="nodes">
+            <h2>Nodes</h2>
+            <p>In the DOM, elements are referred to as <i>nodes</i>.</p>
+          </section>
+
+          <section id="finding-elements">
+            <h2>Finding Elements</h2>
+            <p>Here, <var>node</var> can be either <code>document</code> or a specific node.</p>
+            <ul>
+              <li><code>document.getElementById(<var>id</var>)</code></li>
+              <li><code><var>node</var>.getElementsByTagName(<var>name</var>)</code></li>
+              <li><code><var>node</var>.getElementsByClassName(<var>class</var>)</code></li>
+              <li><code><var>node</var>.querySelector(<var>selector</var>)</code></li>
+              <li><code><var>node</var>.querySelectorAll(<var>selector</var>)</code></li>
+            </ul>
+          </section>
+
+          <section id="element-properties">
+            <h2>DOM Element Properties</h2>
+            <ul>
+              <li><code>node.parentNode</code> is the node&rsquo;s parent</li>
+              <li><code>node.firstChild</code> is the node&rsquo;s first child</li>
+              <li><code>node.lastChild</code> is its last child</li>
+              <li><code>node.childNodes</code> is a list of the node&rsquo;s children:<ul>
+                <li><code>node.childNodes.length</code> tells you how many children it has</li>
+                <li><code>node.childNodes[<var>index</var>]</code> or <li><code>node.childNodes.get(<var>index</var>)</code> returns an indexed child node</li>
+              </ul></li>
+              <!--
+              <li><code>node.classList</code> is a <i>map</i> of its classes:<ul>
+                <li><code>node.classList.contains(<var>class</var>)</code></li>
+                <li><code>node.classList.add(<var>class</var>)</code></li>
+                <li><code>node.classList.remove(<var>class</var>)</code></li>
+              </ul></li>
+              -->
+            </ul>
+          </section>
+
+          <section id="modifying-elements">
+            <h2>Modifying Elements</h2>
+            <ul>
+              <li>assigning <code>node.innerText</code> modifies <i>text</i> (not HTML)</li>
+              <li>assigning <code>node.innerHTML</code> rewrites the node&rsquo;s children</li>
+              <li><code>node.setAttribute(<var>attr</var>, <var>value</var>)</code></li>
+              <li><code>node.removeAttribute(<var>attr</var>)</code></li>
+            </ul>
+          </section>
+
+        </section>
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>

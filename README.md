@@ -11,7 +11,7 @@ devoted to learning the art of creative coding held on June 16th – August 23rd
 
 ## Instructors
 > ![](img/sa.jpg)
-###[Shawn Allen](http://stamen.com/studio/shawn)
+###[Shawn Allen](http://stamen.com/studio/shawn) - [@shawnbot](https://twitter.com/shawnbot)
 Shawn Allen is a Stamen advisor. In his former role as Interaction
 Director, he facilitated communication between Stamen’s design and technology
 teams and directed the design and implementation of interactive projects. He
@@ -29,7 +29,7 @@ practice and the broader web design community.
 <br>
 
 >![](img/gd.png)
-###[Gabriel Dunne](http://www.gabrieldunne.com)
+###[Gabriel Dunne](http://www.gabrieldunne.com) - [@quilime](https://twitter.com/quilime)
 Gabriel Dunne’s work spans fine art to design and technology in the mediums of
 installation, architecture, industrial design, and audio/visual programming. His
 pursuits insight the exploration of life, music and sound, structure, and
@@ -43,7 +43,7 @@ BAVC’s NextGen department.
 <br>
 
 >![](img/mg.jpg)
-###[Matt Ganucheau](http://www.ganucheau.com)
+###[Matt Ganucheau](http://www.ganucheau.com) - [@mganucheau](https://twitter.com/mganucheau)
 Matt Ganucheau, Director of Education at Gray Area, is a San Francisco based
 artist, composer, designer, and educator. With a passion for exploring the
 boundaries of interactive digital culture, he creates physical and sonic
@@ -57,7 +57,7 @@ technology.
 <br>
 
 >![](img/bc.png)
-###[Ben McChesney](http://benmcchesney.com/)
+###[Ben McChesney](http://benmcchesney.com/) - [@benDesigning](https://twitter.com/benDesigning)
 Ben McChesney has an eccentric passion for making shiny and fun installations.
 With the Microsoft Kinect sensor his focus shifted from a flash web developer
 towards Open Frameworks and creating physical experiences. The result of this
@@ -71,7 +71,7 @@ use data visualization and open source to make the world a better place.
 <br>
 
 >![](img/nr.png)
-###[Neal Riley](http://www.neal.com)
+###Neal Riley
 Neal Riley is an ETL/Data Warehouse developer at Atlassian, with a background in
 Electronic Music that started in College, where he studied contemporary
 Electronic Music during Karlheinz Stockhausen’s residency at the Univeristy of
@@ -81,9 +81,19 @@ theMetakids, Neal has worked with EDM artists such as Beautiful Bells
 
 <br>
 
->![](img/kg.jpg)
-###[Kristina Garfinkel](http://kbrainwave.github.io) (TA)
+> ![](img/kg.jpg)
+###[Kristina Garfinkle](https://kbrainwave.github.io/) - [@kbrainwave](https://twitter.com/kbrainwave)
+** TA Scholarship Recipient **
+>
 Kristina is a software engineer for Versal, an education startup. She has a strong affinity for puzzles, colors, and collaboration. Before her career in web development, she was a passionate neuroscientist conducting research at UC Berkeley and Stanford. She is excited to integrate her creative and computational sides to explore neuroscientific concepts such as time, pair bonding, and sexual differentiation.
+
+<br>
+
+> ![](img/ksg.jpg)
+###Kiri Strack-Grose - [@KiriStackGrose](https://twitter.com/KiriStrackGrose)
+** Intern at Gray Area **
+>
+Kiri is a student at Bennington College, studying Theatrical Design and Production and Computer Science.  She plans to go into some field related to either of these interests after graduating in December, and in the meantime spends her free time programming, dancing, and drinking tea.
 
 <br>
 <br>
