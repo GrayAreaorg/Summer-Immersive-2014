@@ -57,7 +57,7 @@ that teach awareness of the consequences of our actions.
 <br>
 
 > ![](img/mh.jpg)
-###[Mark Hellar](http://mhellar.github.io/Creative-Code-Portfolio) -
+###[Mark Hellar](http://mhellar.github.io/Creative-Code-Portfolio) - [@mhellar](https://twitter.com/mhellar)
 Mark Hellar is a leading technology consultant for cultural institutions throughout the San Francisco Bay Area and beyond and owner of Hellar Studios LLC. Mark specializes in creative yet practical digital media and web-based solutions for multimedia artists and the institutions that support their work, with an emphasis on developing systems and best practices for archiving, documentation and exhibition.
 >
 Before opening Hellar Studios LLC in 2009, Mark worked as a systems architect at the Tides Foundation, the academic technology manager at the San Francisco Art Institute and a digital-media specialist at Bay Area Video Coalition. Mark is currently working on new media conservation initiatives at SFMoMA, including the conservation and care of their software-based artworks. He is also developing software for artist Lynn Hershman Leeson and will oversee the installation of her upcoming retrospective at the ZKM Center for Art and Media in Karlsruhe, Germany at the end of 2014.
