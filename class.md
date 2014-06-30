@@ -35,6 +35,8 @@ Colt is a web developer and musician and dog lover and lego builder.
 
 > ![](img/kf.jpg)
 ###Kaori Furusawa
+>
+Originally from Tokyo, Kaori has been residing in California for the past 10 years. Her main profession is manufacturing 3D printers, and design work at Type A Machines (based in San Francisco, CA),  while pursuing an  Industrial Design degree at California College of the Arts. Kaori has a background in digital fabrication, hand-making shoes, participation at various start-ups, and has a personal interest in integrating creative coding with 3D printing.
 
 <br>
 
