@@ -44,14 +44,7 @@ Originally from Tokyo, Kaori has been residing in California for the past 10 yea
 ###[Diana Galvis](http://dianagalvis.com/index.html) - [@DeRousseur](https://twitter.com/DeRousseur)
 My name is Diana Galvis. I'm a colombian UX / Visual and Interaction designer with a user-centered and design thinking approach. I just received my MFA Design+Tech from the San Francisco Art Institute. I'm now here on OPT visa. Just in case you could help, I'm looking for a job :) I doesn't hurt to ask.
 >
-What I think about the most when I work is how my portfolio communicates my
-intentions to this world. I'm passionate about exploring the possibilities
-offered by physical computing and telecommunications to influence cultural
-behavior and create empathic connections between each other and the world
-around us. I believe one way to foster empathy is providing people with the
-tools to discover, interpret and interact with different perspectives of
-truth conveyed in meaningful, engaging experiences and intuitive interfaces
-that teach awareness of the consequences of our actions.  
+What I think about the most when I work is how my portfolio communicates my intentions to this world. I'm passionate about exploring the possibilities offered by physical computing and telecommunications to influence cultural behavior and create empathic connections between each other and the world around us. I believe one way to foster empathy is providing people with the tools to discover, interpret and interact with different perspectives of truth conveyed in meaningful, engaging experiences and intuitive interfaces that teach awareness of the consequences of our actions.  
 >
 
 <br>
@@ -80,7 +73,11 @@ Educated as an urban designer and planner, I worked at Situ Studio in New York o
 
 > ![](img/ky.png)
 ###[Kaitlin Yap](http://kaitlinyap.com/) - [@kaitlinyap](https://twitter.com/kaitlinyap)
-Photographer, traveler, casual biker. Raised in RI / called NYC home / recently moved to SF. Big sweet tooth. Human Interface Executive Producer at Apple.
+Hi, I’m Kaitlin -- but everyone calls me Yap. I moved from from NYC to SF this year; the mild winter and excellent burritos have helped the transition. 
+>
+I’m currently an Executive Producer on a Human Interface design team. During the past decade, I’ve worked across the technology and marketing/media industries with brands such as Google, Vogue and Nike. 
+>
+I love art, design, photography, news, ice cream, and traveling abroad any chance I get. You can find me at [kaitlinyap.com]((http://kaitlinyap.com/) / [@kaitlinyap](https://twitter.com/kaitlinyap) on just about everything.
 
 <br>
 
