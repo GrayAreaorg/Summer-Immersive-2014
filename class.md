@@ -34,7 +34,7 @@ Colt is a web developer and musician and dog lover and lego builder.
 <br>
 
 > ![](img/kf.jpg)
-###Kaori Furusawa
+###Kaori Furusawa - [@KaoriKayote](https://twitter.com/@KaoriKayote)
 >
 Originally from Tokyo, Kaori has been residing in California for the past 10 years. Her main profession is manufacturing 3D printers, and design work at Type A Machines (based in San Francisco, CA),  while pursuing an  Industrial Design degree at California College of the Arts. Kaori has a background in digital fabrication, hand-making shoes, participation at various start-ups, and has a personal interest in integrating creative coding with 3D printing.
 
@@ -92,7 +92,9 @@ Taurin Barrera is an electronic musician and new media artist whose work explore
 
 > ![](img/kh.jpg)
 ###[Kristin Henry](http://kristinhenry.dunked.com/) - [@KristinHenry](https://twitter.com/KristinHenry)
-Geek extraordinaire. Computer Scientist. Generative Artist. Science and Data Visualization. Founder of GalaxyGoo
+Kristin Henry is a  generative artist and computer scientist, specializing in Science and Data Visualization. Early works include an animation of the molecular biology of HIV, and a neuromuscular junction simulation. Moving from animations of biological systems, to computationally generated visualizations, recent works have included exploring the frequencies of amino acids in various proteins  and developing color patterns from them.
+>
+Living in San Francisco during the AIDS epidemic had a profound impact on her, and led her to pursue studies in Biology and Physical Anthropology.  While working with an AIDS educator in New Mexico, she discovered the power of visual storytelling.
 
 <br>
 
