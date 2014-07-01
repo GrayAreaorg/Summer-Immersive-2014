@@ -279,6 +279,10 @@ b &lt;= 10;                // false
               <li class="fragment"><b>Objects</b> (and Arrays) are always truthy.</li>
               <li class="fragment"><code>null</code> and <code>undefined</code> values are always <i>falsy</i>.</li>
             </ul>
+            <div class="fragment">
+              <p>The <code>Boolean</code> function returns an expression&rsquo;s truthiness:</p>
+              <pre><code>var truthy = Boolean(<var>expression</var>);</code></pre>
+            </div>
           </section>
 
           <section id="if-else">
@@ -309,7 +313,7 @@ if (<var>condition</var>) {
             on a condition that is repeatedly evaluated<br>
             (typically to execute a set number of times):</p>
             <pre><code class="js">
-for ([<var>start</var>]; [<var>condition</var>]; [<var>next</var>]) {
+for (<var>initial</var>; <var>condition</var>; <var>next</var>) {
   /* code to be executed for each iteration */
 }
 
@@ -317,7 +321,7 @@ for (var i = 0; i &lt; 10; i++) {
   console.log("i = ", i);
 }
             </code></pre>
-            <p>Note that any of the <var>start</var>, <var>condition</var> or <var>next</var><br>
+            <p>Note that any of the <var>initial</var>, <var>condition</var> or <var>next</var><br>
             statements may be omitted.</p>
           </section>
 
@@ -475,7 +479,7 @@ Object.keys(obj);           // ["foo", "bar"]
 
           <section id="function-scope">
             <h2>Function Scope</h2>
-            <p>In JavaScript, every function has its own <i>scope</i>
+            <p>In JavaScript, every function has its own <i>scope</i><br>
             in which variables can be declared.</p>
             <p>So-called <i>local</i> variables are only available to
             their own scope, whereas <i>global</i> variables are
@@ -556,30 +560,33 @@ module.nextId(); // 3
 
           <section id="nodes">
             <h2>Nodes</h2>
-            <p>In the DOM, elements are referred to as <i>nodes</i>.</p>
+            <p>The term <b>node</b> refers to elements, their attributes,<br>
+            and text (&ldquo;text nodes&rdquo;).</p>
+            <p>In most cases, though, you will interact<br>only with <b>elements</b>.</p>
           </section>
 
           <section id="finding-elements">
             <h2>Finding Elements</h2>
-            <p>Here, <var>node</var> can be either <code>document</code> or a specific node.</p>
+            <p>Here, <var>el</var> can be either <code>document</code> or a specific element node.</p>
             <ul>
               <li><code>document.getElementById(<var>id</var>)</code></li>
-              <li><code><var>node</var>.getElementsByTagName(<var>name</var>)</code></li>
-              <li><code><var>node</var>.getElementsByClassName(<var>class</var>)</code></li>
-              <li><code><var>node</var>.querySelector(<var>selector</var>)</code></li>
-              <li><code><var>node</var>.querySelectorAll(<var>selector</var>)</code></li>
+              <li><code><var>el</var>.getElementsByTagName(<var>name</var>)</code></li>
+              <li><code><var>el</var>.getElementsByClassName(<var>class</var>)</code></li>
+              <li><code><var>el</var>.querySelector(<var>selector</var>)</code></li>
+              <li><code><var>el</var>.querySelectorAll(<var>selector</var>)</code></li>
             </ul>
           </section>
 
           <section id="element-properties">
-            <h2>DOM Element Properties</h2>
+            <h2>Element Properties</h2>
             <ul>
-              <li><code>node.parentNode</code> is the node&rsquo;s parent</li>
-              <li><code>node.firstChild</code> is the node&rsquo;s first child</li>
-              <li><code>node.lastChild</code> is its last child</li>
-              <li><code>node.childNodes</code> is a list of the node&rsquo;s children:<ul>
-                <li><code>node.childNodes.length</code> tells you how many children it has</li>
-                <li><code>node.childNodes[<var>index</var>]</code> or <li><code>node.childNodes.get(<var>index</var>)</code> returns an indexed child node</li>
+              <li><code><var>el</var>.parentNode</code> is the element&rsquo;s parent</li>
+              <li><code><var>el</var>.firstChild</code> is the element&rsquo;s first child</li>
+              <li><code><var>el</var>.lastChild</code> is its last child node</li>
+              <li><code><var>el</var>.childNodes</code> is a list of the element&rsquo;s children:<ul>
+                <li><code><var>el</var>.childNodes.length</code> tells you how many children it has</li>
+                <li><code><var>el</var>.childNodes[<var>index</var>]</code> or</li>
+                <li><code><var>el</var>.childNodes.get(<var>index</var>)</code> returns an indexed child node</li>
               </ul></li>
               <!--
               <li><code>node.classList</code> is a <i>map</i> of its classes:<ul>
@@ -594,11 +601,61 @@ module.nextId(); // 3
           <section id="modifying-elements">
             <h2>Modifying Elements</h2>
             <ul>
-              <li>assigning <code>node.innerText</code> modifies <i>text</i> (not HTML)</li>
-              <li>assigning <code>node.innerHTML</code> rewrites the node&rsquo;s children</li>
-              <li><code>node.setAttribute(<var>attr</var>, <var>value</var>)</code></li>
-              <li><code>node.removeAttribute(<var>attr</var>)</code></li>
+              <li>setting <code><var>el</var>.innerText</code> modifies its <i>text</i></li>
+              <li>setting <code><var>el</var>.innerHTML</code> rewrites the<br>element&rsquo;s children as HTML</li>
+              <li><code><var>el</var>.setAttribute(<var>attr</var>, <var>value</var>)</code></li>
+              <li><code><var>el</var>.removeAttribute(<var>attr</var>)</code></li>
             </ul>
+          </section>
+
+          <section id="creating-elements">
+            <h2>Creating Elements</h2>
+            <p><code>document.createElement(<var>name</var>)</code><br>
+            creates an element with the given <var>name</var>:</p>
+            <pre><code class="js">
+var div = document.createElement("div");
+            </code></pre>
+            <p class="fragment">This element won&rsquo;t be a part of the document<br>
+            until you append it to another element, though!</p>
+            <pre class="fragment"><code class="js">
+// just append it to the &lt;body&gt;
+document.body.appendChild(div);
+// or, e.g. &lt;section id="foo"&gt;
+var parent = document.getElementById("foo");
+parent.appendChild(div);
+            </code></pre>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section id="example-todo">
+            <h2>Example: Grocery List</h2>
+            <pre><code class="html">
+&lt;ul id="groceries"&gt;&lt;/ul&gt;
+&lt;script&gt;
+var list = document.getElementById("groceries");
+var groceries = ["cheese", "bread", "butter"];
+
+for (var i = 0; i &lt; items.length; i++) {
+  var item = document.createElement("li");
+  item.innerText = groceries[i];
+  list.appendChild(item);
+}
+&lt;/script&gt;
+            </code></pre>
+            <ul id="groceries" class="fragment"></ul>
+            <script>
+var list = document.getElementById("groceries");
+var groceries = ["cheese", "bread", "butter"];
+
+for (var i = 0; i < groceries.length; i++) {
+  var item = document.createElement("li");
+  item.innerText = groceries[i];
+  list.appendChild(item);
+}
+            </script>
           </section>
 
         </section>
