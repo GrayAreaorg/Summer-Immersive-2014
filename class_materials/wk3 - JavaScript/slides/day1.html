@@ -653,10 +653,10 @@ for (var i = 0; i &lt; groceries.length; i++) {
             <p>Whenever you (or, more specifically, the viewer of your page)
             interacts with the document, an <i>event</i> is dispatched.</p>
             <p>You can listen for these events with the DOM element method
-            <code><var>node</var>.addEventListener(<var>name</var>, <var>callback</var>)</code>:</p>
+            <code><var>element</var>.addEventListener(<var>name</var>, <var>callback</var>)</code>:</p>
             <pre><code class="js">
-document.addEventListener("click", function(e) {
-  console.log("click:", e);
+document.addEventListener("click", function(event) {
+  console.log("click:", event);
 });
             </code></pre>
             <p>DOM events <i>bubble</i>, which means that they flow <i>up</i>
