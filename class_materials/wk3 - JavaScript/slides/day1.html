@@ -638,24 +638,60 @@ parent.appendChild(div);
 var list = document.getElementById("groceries");
 var groceries = ["cheese", "bread", "butter"];
 
-for (var i = 0; i &lt; items.length; i++) {
+for (var i = 0; i &lt; groceries.length; i++) {
   var item = document.createElement("li");
   item.innerText = groceries[i];
   list.appendChild(item);
 }
 &lt;/script&gt;
             </code></pre>
-            <ul id="groceries" class="fragment"></ul>
-            <script>
-var list = document.getElementById("groceries");
-var groceries = ["cheese", "bread", "butter"];
+            <p><a href="http://jsfiddle.net/HNN4M/">Run it in JSFiddle</a></p>
+          </section>
 
-for (var i = 0; i < groceries.length; i++) {
-  var item = document.createElement("li");
-  item.innerText = groceries[i];
-  list.appendChild(item);
-}
-            </script>
+        </section>
+
+        <section>
+          <section id="helper-libraries">
+            <h2>Helper Libraries</h2>
+            <p>DOM JavaScript isn&rsquo;t exactly succinct.<br>
+            Here are some libraries that can<br>
+            help you write simpler code.</p>
+          </section>
+
+          <section id="jquery">
+            <h2>jQuery</h2>
+            <p><a href="http://jquery.com">jQuery</a> is a library that provides a simple wrapper<br>
+            around DOM elements, the <code>$</code> function:</p>
+            <pre><code class="js">
+var link = $("&lt;a&gt;")
+  .appendTo("body")
+  .attr("href", "http://grayarea.org")
+  .css("color", "gray")
+  .text("Gray Area");
+
+$("h1").append("&lt;span&gt;hi!&lt;/span&gt;");
+            </code></pre>
+            <p>jQuery popularized the concept of <i>chaining</i>,<br>
+            in which most methods return the object.</p>
+          </section>
+
+          <section id="d3">
+            <h2>D3</h2>
+            <p><a href="http://d3js.org">D3</a> stands for <i>Data Driven Documents</i>, and<br>
+            was designed primarily for data visualization.</p>
+            <pre><code class="js">
+var link = d3.select("body")
+  .append("a")
+    .attr("href", "http://grayarea.org")
+    .style("color", "gray")
+    .text("Gray Area");
+
+d3.selectAll("h1")
+  .append("span")
+    .text("hi!");
+            </code></pre>
+            <p>D3 also employs chaining, but has a<br>
+            slightly different API from jQuery.</p>
           </section>
 
         </section>
