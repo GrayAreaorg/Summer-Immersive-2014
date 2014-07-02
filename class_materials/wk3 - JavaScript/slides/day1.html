@@ -648,6 +648,22 @@ for (var i = 0; i &lt; groceries.length; i++) {
             <p><a href="http://jsfiddle.net/HNN4M/">Run it in JSFiddle</a></p>
           </section>
 
+          <section id="events">
+            <h2>Events</h2>
+            <p>Whenever you (or, more specifically, the viewer of your page)
+            interacts with the document, an <i>event</i> is dispatched.</p>
+            <p>You can listen for these events with the DOM element method
+            <code><var>node</var>.addEventListener(<var>name</var>, <var>callback</var>)</code>:</p>
+            <pre><code class="js">
+document.addEventListener("click", function(e) {
+  console.log("click:", e);
+});
+            </code></pre>
+            <p>DOM events <i>bubble</i>, which means that they flow <i>up</i>
+            the document tree to the <code>document</code> object... unless you<br>
+            provide <code>false</code> as the 3rd argument<br>
+            (often referred to as <var>useCapture</var>).</p>
+          </section>
         </section>
 
         <section>
@@ -670,6 +686,8 @@ var link = $("&lt;a&gt;")
   .text("Gray Area");
 
 $("h1").append("&lt;span&gt;hi!&lt;/span&gt;");
+
+$("div").on("click", function() { ... });
             </code></pre>
             <p>jQuery popularized the concept of <i>chaining</i>,<br>
             in which most methods return the object.</p>
@@ -689,6 +707,9 @@ var link = d3.select("body")
 d3.selectAll("h1")
   .append("span")
     .text("hi!");
+
+d3.selectAll("div")
+  .on("click", function() { ... });
             </code></pre>
             <p>D3 also employs chaining, but has a<br>
             slightly different API from jQuery.</p>
