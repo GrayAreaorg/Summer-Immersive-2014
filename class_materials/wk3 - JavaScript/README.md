@@ -18,30 +18,34 @@ language fundamentals and use them in creative applications.
 * [JavaScript: The Definitive Guide](http://www.amazon.com/gp/product/0596805527) is *the* JavaScript book you want on your bookshelf
 * Live-coding tools:
   - [JSFiddle](http://jsfiddle.net)
-  - [CodePen](http://codepen.io)
   - [JS Bin](http://jsbin.com/)
+  - [CodePen](http://codepen.io)
   - [jsconsole.com](http://jsconsole.com)
 
 ## Tuesday, July 1st (6pm - 9pm)
-**Draft outline:**
+On our first day we covered the basics of JavaScript syntax. The slides are in the [slides directory](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/master/class_materials/wk3%20-%20JavaScript/slides/day1.html), which you can view locally by cloning this repository. Here's the outline:
 
-* JavaScript basics:
-  - Variables and data types
-  - Expressions and operators
-  - Control structures: `if`, `else`, `for`, et al
+* [JavaScript](http://docs.webplatform.org/wiki/javascript) basics:
+  - Variables, [the var statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)) and [data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+  - [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_when_to_use_them) and [boolean expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+  - Control structures: [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else), [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for), [for..in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in), [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while), [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch), et al
   - Objects and literals
-  - Functions
+  - [Global objects and literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+  - [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
 * Running code in the [Chrome Dev Tools console](https://developer.chrome.com/devtools/docs/console)
-  - Console methods: `log()`, `dir()`, `table()`, `assert()`, et al
-  - Debugging with breakpoints and `debugger;`
 * Adding scripts to your HTML
-* The Document Object Model (DOM)
+* The [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM)
   - Modifying, adding and removing HTML and CSS
-  - `document.querySelector()` and `querySelectorAll()`
-  - Events and listeners
+  - [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Element.querySelector) and [querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Element.querySelectorAll)
+  - Events and listeners with [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener)
 * Helper libraries:
   - [jQuery](http://jquery.com)
-  - [d3](http://d3js.org)
+  - [D3](http://d3js.org)
+* An example JavaScript-driven [grocery list](http://jsfiddle.net/shawnbot/c9XXU/):
+  - using [jQuery](http://jsfiddle.net/shawnbot/9qNAs/)
+  - using [D3](http://jsfiddle.net/shawnbot/h6rB3/)
+  - with [D3 data binding](http://jsfiddle.net/shawnbot/Q67Ht/)
+* [SVG circles with D3](http://jsfiddle.net/shawnbot/x4PtT/)
 
 ## Thursday, July 3rd (6pm - 9pm)
 **Draft outline:**
@@ -55,13 +59,13 @@ language fundamentals and use them in creative applications.
   - Tools: [Processing.js](http://processingjs.org/) and [Paper.js](http://paperjs.org/)
 * Drawing vectors with SVG:
   - SVG elements and attributes
-  - Tools: [Raphaël](http://raphaeljs.com/) and [d3](http://d3js.org)
+  - Tools: [Raphaël](http://raphaeljs.com/) and [D3](http://d3js.org)
 
 ## Saturday, July 5th (12pm - 6pm)
 **Draft outline:**
 
 * Asynchronous programming:
-  - Callback patterns in jQuery and d3 (+Node)
+  - Callback patterns in jQuery and D3 (+Node)
   - Loading external files and the [JSON](http://en.wikipedia.org/wiki/JSON) format
   - Deferring functions with `setTimeout()`
 * Repetition and animation:
