@@ -148,3 +148,7 @@ ul.tree ul li:last-child:before {
   padding: .5em !important;
   border-radius: 10px;
 }
+
+.hljs-keyword { color: #369; }
+.hljs-literal { color: #963; }
+.hljs-built_in { color: #936; }
