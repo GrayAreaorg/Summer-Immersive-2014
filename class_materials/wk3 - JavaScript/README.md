@@ -55,11 +55,11 @@ On our first day we covered the basics of JavaScript syntax. The slides are in t
   - OOP and functional programming
   - `this` and that: scope and calling context
 * Drawing pixels with Canvas:
-  - The Canvas API
-  - Tools: [Processing.js](http://processingjs.org/) and [Paper.js](http://paperjs.org/)
+  - The [Canvas API](http://diveintohtml5.info/canvas.html)
 * Drawing vectors with SVG:
   - SVG elements and attributes
-  - Tools: [Raphaël](http://raphaeljs.com/) and [D3](http://d3js.org)
+  - Tools: [D3](http://d3js.org) and [Raphaël](http://raphaeljs.com/)?
+  - [Paper.js](http://paperjs.org/)?
 
 ## Saturday, July 5th (12pm - 6pm)
 **Draft outline:**
