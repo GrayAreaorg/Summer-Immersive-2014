@@ -1,4 +1,4 @@
-# Week 1: Web Skills
+# Week 3: JavaScript
 
 Taught by Shawn Allen
 
