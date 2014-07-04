@@ -48,18 +48,33 @@ On our first day we covered the basics of JavaScript syntax. The slides are in t
 * [SVG circles with D3](http://jsfiddle.net/shawnbot/x4PtT/)
 
 ## Thursday, July 3rd (6pm - 9pm)
-**Draft outline:**
+Tonight we went deeper into JavaScript:
 
-* Getting deeper with JavaScript:
-  - Object and Array data structures
-  - OOP and functional programming
-  - `this` and that: scope and calling context
-* Drawing pixels with Canvas:
-  - The [Canvas API](http://diveintohtml5.info/canvas.html)
-* Drawing vectors with SVG:
+* [Object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming) vs. [Functional](http://en.wikipedia.org/wiki/Functional_programming) programming
+- [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) and [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) data structures
+- Prototypal inheritance with [Object.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+- `this` and [function calling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) context via [call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+Then we dove into two very different graphics APIs:
+
+1. Drawing pixels with [Canvas](http://diveintohtml5.info/canvas.html):
+  - The [Canvas 2D Context API](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)
+  - Check out this [Canvas cheat sheet](http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/) or [this one](http://blog.nihilogic.dk/2009/02/html5-canvas-cheat-sheet.html) in [PDF](http://www.nihilogic.dk/labs/canvas_sheet/HTML5_Canvas_Cheat_Sheet.pdf) or [PNG](http://www.nihilogic.dk/labs/canvas_sheet/HTML5_Canvas_Cheat_Sheet.png)
+  - [This guide](http://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html) is comprehensive, but dense
+2. Drawing vectors with SVG:
   - SVG elements and attributes
-  - Tools: [D3](http://d3js.org) and [Raphaël](http://raphaeljs.com/)?
-  - [Paper.js](http://paperjs.org/)?
+  - Tools:
+    - [D3](http://d3js.org)
+    - [Raphaël](http://raphaeljs.com/)
+    - ~~[Paper.js](http://paperjs.org/)~~
+* Playtime:
+  - a rudimentary Canvas [drawing app](http://jsfiddle.net/shawnbot/BNHx5/1/)
+  - a [version that snaps to a grid](http://jsfiddle.net/shawnbot/BNHx5/2/)
+  - a simliar [drawing app in D3](http://jsfiddle.net/shawnbot/KF7P7/)
+  - a more [psychedelic version](http://jsfiddle.net/shawnbot/KF7P7/8/)
+
+Here are [the slides](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/master/class_materials/wk3%20-%20JavaScript/slides/day2.html), but you'll probably have more luck running them locally.
+  
 
 ## Saturday, July 5th (12pm - 6pm)
 **Draft outline:**
