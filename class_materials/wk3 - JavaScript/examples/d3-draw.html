@@ -24,17 +24,14 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
-  <svg>
-  </svg>
+  <svg></svg>
   <script>
 
 var svg = d3.select("svg"),
     path = svg.append("path"),
     lines = [],
-    maxLines = 100,
+    maxLines = 360,
     grid = 1,
-    mousedown = false,
-    interpolate = "step",
     draw = drawLines;
 
 var strokeScale = d3.scale.linear()
@@ -78,7 +75,6 @@ function drawLines() {
 }
 
 svg.on("mousedown", function(e) {
-  mousedown = true;
   var mouse = getPosition();
 
   svg.on("mousemove", function(e) {
@@ -112,14 +108,6 @@ function getPosition() {
   return {
     x: e.offsetX,
     y: e.offsetY,
-    time: Date.now()
-  };
-}
-
-function randomPosition() {
-  return {
-    x: window.innerWidth * Math.random(),
-    y: window.innerHeight * Math.random(),
     time: Date.now()
   };
 }

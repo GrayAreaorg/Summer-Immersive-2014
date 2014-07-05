@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Animated Sine Wave</title>
-    <style>
-      canvas {
-        border: 1px solid #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <canvas width="800" height="300"></canvas>
-    <script>
+<title>Animated Sine Wave</title>
+<style>
+
+  canvas {
+    border: 1px solid #ccc;
+  }
+
+</style>
+
+<canvas width="800" height="300"></canvas>
+<script>
 
 var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
@@ -53,6 +52,4 @@ function scale(n, d1, d2, r1, r2) {
 // call draw() every 20 milliseconds (50x per second)
 setInterval(draw, 20);
 
-    </script>
-  </body>
-</html>
+</script>

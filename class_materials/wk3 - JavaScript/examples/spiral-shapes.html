@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Spiral Shapes</title>
-    <style>
-      canvas {
-        border: 1px solid #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <canvas width="500" height="500"></canvas>
-    <script>
+<title>Spiral Shapes</title>
+<style>
+
+  canvas {
+    border: 1px solid #ccc;
+  }
+
+</style>
+
+<canvas width="500" height="500"></canvas>
+<script>
 
 var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
@@ -61,6 +60,5 @@ function draw() {
 function scale(n, inMin, inMax, outMin, outMax) {
   return outMin + (outMax - outMin) * (n - inMin) / (inMax - inMin);
 }
-    </script>
-  </body>
-</html>
+
+</script>

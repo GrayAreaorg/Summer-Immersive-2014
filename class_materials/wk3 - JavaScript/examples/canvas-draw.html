@@ -1,41 +1,21 @@
 <!DOCTYPE html>
-<head>
-  <title>Drawing with Canvas</title>
-  <style>
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
+<title>Drawing with Canvas</title>
+<style>
 
-    canvas {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  canvas {
+    border: 1px solid #ccc;
+  }
 
-  </style>
-</head>
-<body>
-  <canvas></canvas>
-  <script>
+</style>
+
+<canvas width="800" height="600"></canvas>
+<script>
 
 var canvas = document.querySelector("canvas")
     context = canvas.getContext("2d"),
     lines = [],
     mouse = null,
-    grid = 1,
-    draw = function() {
-      window.requestAnimationFrame(drawLines);
-    };
-
-window.requestAnimationFrame = window.requestAnimationFrame
-  || window.webkitRequestAnimationFrame
-  || window.mozRequestAnimationFrame
-  || window.msRequestAnimationFrame;
-
-window.addEventListener("resize", resize);
-resize();
+    grid = 1;
 
 canvas.addEventListener("mousedown", function(e) {
   mouse = getPosition(e);
@@ -48,7 +28,7 @@ window.addEventListener("mouseup", function() {
 
 canvas.addEventListener("dblclick", clear);
 
-function drawLines() {
+function draw() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.save();
   lines.forEach(drawLine);
@@ -59,7 +39,7 @@ function drawLine(line, i) {
   context.save();
   context.beginPath();
 
-  context.fillStyle = "hsl(" + [i, "85%", "50%"] + ")"; 
+  context.fillStyle = "hsl(" + [i, "85%", "50%"] + ")";
 
   // move to (x, y)
   context.translate(line.start.x, line.start.y);
@@ -97,23 +77,10 @@ function clear() {
   draw();
 }
 
-function resize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-
 function getPosition(e) {
   return {
     x: e.offsetX,
     y: e.offsetY,
-    time: Date.now()
-  };
-}
-
-function randomPosition() {
-  return {
-    x: window.innerWidth * Math.random(),
-    y: window.innerHeight * Math.random(),
     time: Date.now()
   };
 }
@@ -136,5 +103,4 @@ function degrees(radians) {
   return radians / Math.PI * 180;
 }
 
-  </script>
-</body>
+</script>
