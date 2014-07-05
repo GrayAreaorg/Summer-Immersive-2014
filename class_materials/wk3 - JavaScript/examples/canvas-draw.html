@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+  <title>Drawing with Canvas</title>
+  <style>
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+  <script>
+
+var canvas = document.querySelector("canvas")
+    context = canvas.getContext("2d"),
+    lines = [],
+    mouse = null,
+    grid = 1,
+    draw = function() {
+      window.requestAnimationFrame(drawLines);
+    };
+
+window.requestAnimationFrame = window.requestAnimationFrame
+  || window.webkitRequestAnimationFrame
+  || window.mozRequestAnimationFrame
+  || window.msRequestAnimationFrame;
+
+window.addEventListener("resize", resize);
+resize();
+
+canvas.addEventListener("mousedown", function(e) {
+  mouse = getPosition(e);
+  canvas.addEventListener("mousemove", move);
+});
+
+window.addEventListener("mouseup", function() {
+  canvas.removeEventListener("mousemove", move);
+});
+
+canvas.addEventListener("dblclick", clear);
+
+function drawLines() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.save();
+  lines.forEach(drawLine);
+  context.restore();
+}
+
+function drawLine(line, i) {
+  context.save();
+  context.beginPath();
+
+  context.fillStyle = "hsl(" + [i, "85%", "50%"] + ")"; 
+
+  // move to (x, y)
+  context.translate(line.start.x, line.start.y);
+  // rotate by the line's angle
+  context.rotate(angle(line.start, line.end));
+  // draw a rectangle
+  var w = distance(line.start, line.end),
+      h = 1 + w / 200 * 20;
+  context.rect(0, -h / 2, w, h);
+
+  context.arc(0, 0, h / 2, 0, Math.PI * 2);
+  context.fill();
+  context.arc(w, 0, h / 2, 0, Math.PI * 2);
+  context.fill();
+
+  context.closePath();
+  context.fill();
+  // context.stroke();
+  context.restore();
+}
+
+function move(e) {
+  var pos = getPosition(e),
+      line = {
+        start: mouse,
+        end: pos
+      };
+  mouse = pos;
+  lines.push(line);
+  drawLine(line, lines.length);
+}
+
+function clear() {
+  lines = [];
+  draw();
+}
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+function getPosition(e) {
+  return {
+    x: e.offsetX,
+    y: e.offsetY,
+    time: Date.now()
+  };
+}
+
+function randomPosition() {
+  return {
+    x: window.innerWidth * Math.random(),
+    y: window.innerHeight * Math.random(),
+    time: Date.now()
+  };
+}
+
+function round(n) {
+  return grid * Math.round(n / grid);
+}
+
+function distance(a, b) {
+  var dx = b.x - a.x,
+      dy = b.y - a.y;
+  return Math.sqrt(dx * dx + dy * dy);
+}
+
+function angle(a, b) {
+  return Math.atan2(b.y - a.y, b.x - a.x);
+}
+
+function degrees(radians) {
+  return radians / Math.PI * 180;
+}
+
+  </script>
+</body>
