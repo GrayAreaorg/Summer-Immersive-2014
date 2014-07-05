@@ -33,16 +33,20 @@ function draw() {
   context.clearRect(0, 0, width, height);
   for (var i = 0; i < count; i++) {
     context.save();
+
     var radius = scale(i, 0, count - 1, sizeMin, sizeMax),
         theta = scale(i, 0, count - 1, thetaMin, thetaMax),
         x = scale(i, 0, count - 1, xMin, xMax);
     context.beginPath();
+
     context.translate(width / 2, height / 2);
     context.rotate(angle + theta);
     context.translate(x, 0);
     context.arc(0, 0, radius, 0, Math.PI * 2);
+
     context.closePath();
     context.stroke();
+
     context.restore();
   }
   if (sizeMax > 1000) {
