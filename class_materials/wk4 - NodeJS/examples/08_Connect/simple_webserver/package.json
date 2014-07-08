@@ -1,0 +1,10 @@
+{
+  "name": "simple_webserver",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "*",
+    "serve-static": "*"
+  },
+  "author": "Neal Riley"
+}

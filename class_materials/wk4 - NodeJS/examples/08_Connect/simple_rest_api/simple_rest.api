@@ -1,0 +1,31 @@
+/*
+ * Simple JSON REST API
+ * This code shows a simple REST api using connect and setting
+ * application/json as the Content-Type
+ */
+
+//Require connect
+var connect = require('connect');
+
+//Set up some data
+var data = {
+  "first": "Value 1",
+  "second": "Value 2",
+  "third": "Value 3"
+};
+
+//Set up connect
+var app = connect();
+
+//For every request coming in to connect...
+app.use(function(req,res) {
+  //Respond with content type application/json
+  res.setHeader("Content-Type", "application/json");
+
+  //Use JSON.stringify to create string version of json object
+  //and reply with this string
+  res.end(JSON.stringify(data));
+})
+
+//Listen on port 3000
+app.listen(3000);

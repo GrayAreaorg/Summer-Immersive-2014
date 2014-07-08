@@ -1,0 +1,11 @@
+{
+  "name": "TODO_App",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "body-parser": "*"
+  },
+  "author": "Neal Riley"
+}
