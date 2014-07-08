@@ -1,0 +1,8 @@
+<h1>TODO</h1>
+<h3>Todo Queue<h3>
+<ul>
+<% todoList.forEach(function (item) { %>
+  <li><a href="view/<%= item.name %>"><%= item.description%></a></li>
+<% }); %>
+</ul>
+<a href="/add"> Add a new ToDo</a>
