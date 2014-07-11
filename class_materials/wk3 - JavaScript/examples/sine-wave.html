@@ -19,27 +19,9 @@ var canvas = document.querySelector("canvas"),
     speed = .05,
     waveHeight = canvas.height / 2 - 1,
     TWO_PI = Math.PI * 2;
-    i = 1;
-
-canvas.addEventListener("mousemove", function(e){
-  var x = e.offsetX /canvas.width,
-  y = e.offsetY / canvas.height;
-  //waveHeight = 10 + y * canvas.height / 2;
-  waveHeight = scale(y, 0, canvas.height, 20, canvas.height / 2-1);
-
-});
-
-
-
-canvas.addEventListener("mousemove", function(e) {
-  var x = e.offset / canvas.width
-  var y = e.oofsetY / canvas.height
-  waveHeight = 10 + y * canvas.height / 2
-});
 
 function draw() {
   // clear the canvas
-
   context.clearRect(0, 0, canvas.width, canvas.height);
 
   context.beginPath();
@@ -68,11 +50,6 @@ function scale(n, d1, d2, r1, r2) {
 }
 
 // call draw() every 20 milliseconds (50x per second)
-setInterval(draw, 1000);
-
-for(i = 1; i<500;i++)
-{
-  TWO_PI = Math.PI * i;
-  }
+setInterval(draw, 20);
 
 </script>
