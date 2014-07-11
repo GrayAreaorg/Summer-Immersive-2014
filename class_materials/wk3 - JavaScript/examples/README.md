@@ -8,5 +8,4 @@ They're also available in JSFiddle to fork as you see fit:
 1. An [SVG-based drawing tool](d3-draw.html) (D3, events, data binding)
 1. A [spiral of animating shapes](spiral-shapes.html) (animation, iteration, transforms)
 1. A [mesh of points with force layout](mesh.html) (particle systems)
-1. An artistic rendering of dynamic text (loading data, data binding)
-<!-- 1. A [laser beam that bounces off walls](laser.html) (math, animation) -->
+1. ~~An artistic rendering of dynamic text (loading data, data binding)~~
