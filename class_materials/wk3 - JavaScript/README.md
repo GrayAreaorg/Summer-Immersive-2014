@@ -77,7 +77,7 @@ Here are [the slides](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/
   
 
 ## Saturday, July 5th (12pm - 6pm)
-**Draft outline:**
+On Saturday we covered the basics of loading external files, the JSON standard, and hacked on some [animated sketches](examples/) and SVG.
 
 * Asynchronous programming:
   - Loading external files:
@@ -92,3 +92,5 @@ Here are [the slides](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/
 * Repetition with [setInterval()](https://developer.mozilla.org/en/docs/Web/API/window.setInterval)
   - See also: [requestAnimationFrame()](https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame)
 * ~~WebGL and Three.js?~~
+* See the [examples directory](examples/) for the sketches.
+  
