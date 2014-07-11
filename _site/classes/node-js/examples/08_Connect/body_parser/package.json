@@ -1,0 +1,11 @@
+{
+  "name": "body_parser",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "*",
+    "serve-static": "*",
+    "body-parser": "*"
+  },
+  "author": "Neal Riley"
+}

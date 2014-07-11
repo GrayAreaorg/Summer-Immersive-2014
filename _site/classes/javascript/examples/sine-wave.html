@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<title>Animated Sine Wave</title>
+<style>
+
+  canvas {
+    border: 1px solid #ccc;
+  }
+
+</style>
+
+<canvas width="800" height="300"></canvas>
+<script>
+
+var canvas = document.querySelector("canvas"),
+    context = canvas.getContext("2d"),
+    step = 1,
+    waves = 2,
+    phase = 0,
+    speed = .05,
+    waveHeight = canvas.height / 2 - 1,
+    TWO_PI = Math.PI * 2;
+
+function draw() {
+  // clear the canvas
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  context.beginPath();
+  for (var x = 0; x <= canvas.width; x += step) {
+    var y = canvas.height / 2;
+    y += getWaveHeight(x);
+    y = Math.max(0, Math.min(y, canvas.height));
+    if (x === 0) {
+      context.moveTo(x, y);
+    } else {
+      context.lineTo(x, y);
+    }
+  }
+  context.stroke();
+  context.closePath();
+
+  phase += speed;
+}
+
+function getWaveHeight(x) {
+  return waveHeight * Math.sin(phase + x / canvas.width * TWO_PI * waves);
+}
+
+function scale(n, d1, d2, r1, r2) {
+  return r1 + (r2 - r1) * (n - d1) / (d2 - d1);
+}
+
+// call draw() every 20 milliseconds (50x per second)
+setInterval(draw, 20);
+
+</script>

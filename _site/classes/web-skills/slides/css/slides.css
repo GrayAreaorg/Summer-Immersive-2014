@@ -1,0 +1,138 @@
+.light {
+  opacity: .5;
+}
+
+.reveal a,
+.reveal a:hover {
+  text-decoration: underline;
+}
+
+.reveal section > * {
+  margin-bottom: 30px;
+}
+
+.reveal section > *:last-child {
+  margin-bottom: 0;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  line-height: 1.1em;
+}
+
+.reveal pre {
+  width: auto;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal code {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.reveal table code,
+.reveal a code,
+.reveal ul.tree code,
+.reveal h2 code {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.reveal p > code,
+.reveal li > code {
+  padding: 0 8px 2px;
+}
+
+.reveal pre code {
+  padding: .25em .5em;
+  max-height: none;
+}
+
+.reveal .wrap {
+  white-space: pre-wrap;
+}
+
+.reveal table {
+  margin: .5em auto;
+  border-collapse: collapse;
+}
+
+.reveal table.small * {
+  font-size: 90%;
+  line-height: 1.4em;
+}
+
+  .reveal table tr > * {
+    padding: .2em .5em;
+    border-bottom: 1px solid black;
+  }
+
+.reveal pre {
+  font-size: .7em;
+}
+
+
+.reveal ul.tree,
+.reveal ul.tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reveal section > ul.tree {
+  margin-bottom: 30px;
+}
+
+.reveal blockquote {
+  background: #ffe;
+}
+
+ul.tree ul {
+  margin-left: 10px; /* indentation */
+  position: relative;
+}
+
+ul.tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 3px solid #999;
+}
+
+ul.tree li {
+  margin: 0;
+  padding: 0 0 0 1em; /* indentation + 2 */
+  line-height: 1em;
+  position: relative;
+}
+
+ul.tree ul li:before {
+  content: "";
+  display: block;
+  width: .7em; /* same with indentation */
+  height: 0;
+  border-top: 3px solid #999;
+  position: absolute;
+  top: .5em;
+  left: 0;
+}
+
+ul.tree ul li:last-child:before {
+  background: rgb(240, 241, 235); /* same with body background */
+  height: auto;
+  top: .5em; /* (line-height/2) */
+  bottom: 0;
+}

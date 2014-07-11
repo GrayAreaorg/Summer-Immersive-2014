@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Skills: Day 1</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/ascetic.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h1>Welcome!</h1>
+          <h2 class="fragment">I&rsquo;m Shawn Allen</h2>
+          <h4 class="fragment">Former Interaction Director at Stamen<br>
+          Web design &amp; data visualization geek</h4>
+        </section>
+
+        <section id="web">
+          <h2>What is The Web?</h2>
+          <h3 class="f">&ldquo;a series of tubes&rdquo; <span class="f">...kinda</span></h3>
+          <!--
+          <p class="f"><a href="http://en.wikipedia.org/wiki/Series_of_tubes" target="_blank">(thanks, Ted Stevens)</a></p>
+          -->
+        </section>
+
+        <section id="networks">
+          <h2>The Web is a<br>network of networks.</h2>
+          <p class="f">Computers on a network act as <i>clients</i>, <i>servers</i>, or both:</p>
+          <ul>
+            <li class="f">Software on your computer acts a <i>client</i><br>when you browse the web.</li>
+            <li class="f">Web <i>servers</i> are applications that listen for requests<br>and send web pages back.</li>
+          </ul>
+        </section>
+
+        <section id="dns">
+          <h2>DNS</h2>
+          <h3 class="f"><u>D</u>omain <u>N</u>ame <u>S</u>ystem</h3>
+          <p class="f">DNS is how computers find one another<br>within and across networks.</p>
+          <p class="f">...kind of like an address book.</p>
+        </section>
+
+        <section id="http">
+          <h2>HTTP</h2>
+          <h3 class="f"><u>H</u>yper<u>T</u>ext <u>T</u>ransfer <u>P</u>rotocol</h3>
+          <p class="f">HTTP is the language spoken by web clients and servers to<br>send and receive web pages, images, and other assets.</p>
+        </section>
+
+        <section id="urls">
+          <h2>URL</h2>
+          <h3><u>U</u>niform <u>R</u>esource <u>L</u>ocator</h3>
+          <p>Every page (or &ldquo;resource&rdquo;) on the Web has its own URL.<br>
+          URLs can reference resources in several ways:</p>
+          <table class="small">
+            <thead>
+              <tr>
+                <th>form</th>
+                <th>description</th>
+                <th>examples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>http://domain</code><br><code>http://domain/path</code></td>
+                <td>fully-qualified URL</td>
+                <td><code>http://grayarea.org</code><br><code>http://grayarea.org/events/</code></td>
+              </tr>
+              <!--
+              <tr>
+                <td><code>//domain/path</code><br><code>//domain</code></td>
+                <td><nobr>protocol-relative</nobr></td>
+              </tr>
+              -->
+              <tr>
+                <td><code>/path/to/file</code></td>
+                <td>absolute path</td>
+                <td><code>/about.html</code></td>
+              </tr>
+              <tr>
+                <td><code>path/to/file</code><br><code>../path/to/file</code></td>
+                <td>relative path</td>
+                <td><code>widgets/page1.html</code><br>
+                    <code>../widgets/page1.html</code></td>
+              </tr>
+              <tr>
+                <td><code>URL#id</code></td>
+                <td>fragment identifier</td>
+                <td><code>#section1</code></td>
+              </tr>
+              <tr>
+                <td><code>URL?query</code></td>
+                <td>query string</td>
+                <td><code>https://google.com/search?q=foo</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="web-standards">
+          <h2>Web Standards</h2>
+          <p>Web standards are detailed specifications defined by<br>
+          a group called the W3C (<u>W</u>orld<u>w</u>ide <u>W</u>eb <u>C</u>onsortium).</p>
+          <p>Standards change and evolve over time, often<br>
+          in response to the needs of the web design community.</p>
+          <!--
+          <p>Standards <i>support</i> is the responsibility of<br>
+          browser makers, but <i>adoption</i> is up to us.</p>
+          -->
+        </section>
+
+        <section>
+          <section id="browser-basics">
+            <h2>Web Browser</h2>
+            <p>A Web browser is software that speaks <a href="#/http">HTTP</a><br>
+            and understands <a href="#/html">HTML</a>, <a href="#/css">CSS</a> and <a href="#/js">JavaScript</a>.</p>
+            <ul>
+              <li><b>Google Chrome</b> is a very popular browser with great standards support.</li>
+              <li><b>Apple Safari</b> comes with Mac OS X and runs on iOS devices.</li>
+              <li><b>Firefox</b> is a popular open-source browser with good standards support.</li>
+              <li><b>Microsoft Internet Explorer</b> comes with Windows, and until recently was not considered a standards-friendly browser.</li>
+          </section>
+        </section>
+
+        <section>
+          <section id="html">
+            <h1>HTML</h1>
+            <h3 class="f"><u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage</h3>
+            <p class="f">HTML is the text language of Web documents,<br>which are made up
+            of structured <i>elements</i>, or tags.</p>
+          </section>
+
+          <section id="html-syntax">
+            <h2>HTML Syntax</h2>
+            <p class="f">Elements generally take the form:</p>
+            <pre class="f"><code>&lt;name attr="value"&gt;content&lt;/name&gt;</code></pre>
+            <ol class="f">
+              <li><code>&lt;name</code> opens the element</li>
+              <li>any number of <i>attributes</i>: <code>attr="value"</code></li>
+              <li><code>&gt;</code> closes the opening tag</li>
+              <li>text <i>content</i> and/or child elements</li>
+              <li><code>&lt;/name&gt;</code> closes the element</li>
+            </ol>
+          </section>
+
+          <section id="html-empty">
+            <h2>Empty Elements</h2>
+            <p>Some elements are called &ldquo;empty&rdquo; because they have
+            no content. These elements are written without a close tag:</p>
+            <pre><code>
+&lt;img src="lion.jpg" alt="This is a photo of a lion."&gt;
+            </code></pre>
+          </section>
+          
+          <section id="html-nesting">
+            <h2>Nesting Elements</h2>
+            <p class="f"><i>Nesting</i> is a term that we use to describe putting<br>
+            elements inside one another to define structure:</p>
+            <pre><code class="xml">
+&lt;parent&gt;
+  &lt;child foo="bar"&gt;&lt;/child&gt;
+&lt;/parent&gt;
+</code></pre>
+            <p class="f">For instance, an HTML document with just a title looks like:</p>
+            <pre><code class="xml">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+            <p>Nested elements are said to have a parent-child relationship.<br>
+            Here, <code>&lt;head&gt;</code> is a <i>child</i> of <code>&lt;html&gt;</code> and the <i>parent</i> of the <code>&lt;title&gt;</code> element.</p>
+          </section>
+
+          <section id="html-doctype">
+            <h2>Document Type Definition</h2>
+            <p>The Document Type Definition, or <i>doctype</i>,<br>
+            is the first line of your HTML document:</p>
+            <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            <p>This tells the web browser what type
+            of HTML to expect.<br>
+            In this case we&rsquo;re telling it to expect <b>HTML5</b>,<br>
+            the latest and greatest HTML standard.</p>
+          </section>
+
+          <section id="html-html">
+            <h2><code>&lt;html&gt;</code></h2>
+            <p>After the doctype goes the <code>&lt;html&gt;</code> element:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;/html&gt;
+            </code></pre>
+            <p>You may add a <code>lang</code> attribute
+            to indicate the (human) language in
+            which the document&rsquo;s text was
+            written:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;p&gt;¡Que gato gordo!&lt;/p&gt;
+&lt;/html&gt;
+            </code></pre>
+          </section>
+
+          <section id="html-head">
+            <h2><code>&lt;head&gt;</code></h2>
+            <p>The <code>&lt;head&gt;</code>, which includes the document&rsquo;s title and<br>
+            other <i>metadata</i>, is generally invisible to the user:
+            <pre><code>
+&lt;head&gt;
+  &lt;title&gt;My Site Name&lt;/title&gt;
+  &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+</code></pre>
+            <p>The <code>&lt;meta charset="utf-8"&gt;</code> element tells the<br>
+            browser to interpret the document as unicode text.</p>
+          </section>
+
+          <section id="html-body">
+            <h2><code>&lt;body&gt;</code></h2>
+            <p>And then there&rsquo;s <code>&lt;body&gt;</code>, which contains all of<br>
+            the page&rsquo;s content: text and media, navigation,<br>
+            links, and anything visible to the viewer*:
+            <pre><code>
+&lt;body&gt;
+  &lt;h1&gt;My Page Heading&lt;/h1&gt;
+  &lt;p&gt;This is paragraph of text.&lt;/p&gt;
+  &lt;img src="lion.jpg" alt="This is photo of a lion."&gt;
+&lt;/body&gt;
+</code></pre>
+            <p>* <i> (or legible to the screen reader)</i></p>
+          </section>
+
+          <section id="html-anatomy">
+            <h2>Document Anatomy</h2>
+            <p>The <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are children of the <code>&lt;html&gt;</code> element:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Site Name&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My Page Heading&lt;/h1&gt;
+    &lt;p&gt;This is paragraph of text.&lt;/p&gt;
+    &lt;img src="lion.jpg" alt="This is photo of a lion."&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+          </section>
+
+          <section id="html-structural-elements">
+            <h2>Structural Elements</h2>
+            <p>HTML5 defines <i>structural</i> elements<br>to delineate different parts of a document:</p>
+            <table>
+              <thead>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;nav&gt;</code></td>
+                  <td>site or page navigation</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code></td>
+                  <td>document header and footer</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;section&gt;</code></td>
+                  <td>document section</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;main&gt;</code></td>
+                  <td>&ldquo;main&rdquo; document content</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;article&gt;</code></td>
+                  <td>a news article or blog post</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h1-h6&gt;</code></td>
+                  <td>document or section heading</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code></td>
+                  <td>ordered and unordered lists</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="html-text-elements">
+            <h2>Text Elements</h2>
+            <table>
+              <thead>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;p&gt;</code></td>
+                  <td>a paragraph of text</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;div&gt;</code></td>
+                  <td>generic block-level container</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;span&gt;</code></td>
+                  <td>generic span of inline text</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code>,<br>
+                  <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code></td>
+                <td><b>bold</b> / <strong>strong</strong><br>
+                  <i>italic</i> / <em>emphasized</em> inline text</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;blockquote&gt;</code>, <code>&lt;q&gt;</code></td>
+                  <td>block-level and inline quotations</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,<br><code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></td>
+                  <td>data tables</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code></td>
+                  <td><sub>sub</sub>script and <sup>super</sup>script</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="html-media">
+            <h2>Media Elements</h2>
+            <p>HTML5 provides the following elements to embed<br>images, video, audio and other non-text content:</p>
+            <table>
+              <thead>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;img&gt;</code></td>
+                  <td>static images and photos</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;svg&gt;</code></td>
+                  <td><u>S</u>calable <u>V</u>ector <u>G</u>raphics</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;audio&gt;</code></td>
+                  <td>audio</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;video&gt;</code></td>
+                  <td>video</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;canvas&gt;</code></td>
+                  <td>dynamic 2D and 3D bitmaps</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;object&gt;</code>, <code>&lt;embed&gt;</code></td>
+                  <td>third-party plugins (Flash, etc.)</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="html-links">
+            <h2><code>&lt;a&gt;</code></h2>
+            <p>Links are the connective tissue of the Web. Use the
+            <code>&lt;a&gt;</code> (anchor) element to create links to other
+            resources:</p>
+            <pre><code class="xml">
+&lt;a href="URL"&gt;link text&lt;/a&gt;
+            </code></pre>
+            <p>Anchor elements typically have an <code>href</code> attribute,<br>
+            the value of which is a <a href="#/urls">URL</a>.</p>
+            <pre><code class="xml">
+&lt;a href="http://grayarea.org"&gt;Gray Area&lt;/a&gt;
+            </code></pre>
+            <p><b>Try to use descriptive link text!<br>
+            Avoid using phrases like<br>&ldquo;click here&rdquo; or just &ldquo;here&rdquo;.</b></p>
+          </section>
+
+          <section id="html-class">
+            <h2>The <code>class</code> Attribute</h2>
+            <p>The <code>class</code> attribute can
+            be added to any element,<br>and it serves
+            as a way to <i>classify</i> elements, usually<br>
+            for the purpose of either adding semantics<br>
+            and/or styling with CSS.</p>
+            <pre><code class="xml wrap">
+&lt;ol class="cars"&gt;
+  &lt;li&gt;Honda&lt;/li&gt;
+  &lt;li class="fancy"&gt;Ferrari&lt;/li&gt;
+  &lt;li class="fancy expensive"&gt;Maserati&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="people"&gt;
+  &lt;li class="androgynous"&gt;Andy&lt;/li&gt;
+  &lt;li class="male"&gt;Bobby&lt;/li&gt;
+  &lt;li class="female"&gt;Connie&lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+          </section>
+
+          <section id="html-id">
+            <h2>The <code>id</code> Attribute</h2>
+            <p>The <code>id</code> attribute is used to give elements a<br>
+            <b>unique</b> identifier, for the purpose of either linking<br>
+            within the document and/or styling with CSS.</p>
+            <pre><code class="xml wrap">
+&lt;ol class="cars"&gt;
+  &lt;li id="honda"&gt;Honda&lt;/li&gt;
+  ...
+&lt;/ol&gt;
+&lt;ol class="people"&gt;
+  &lt;li id="andy"&gt;Andy&lt;/li&gt;
+  ...
+&lt;/ol&gt;
+            </code></pre>
+            <blockquote>
+              <cite><a href="http://www.w3.org/TR/html5/dom.html#the-id-attribute">The spec says:</a></cite>
+              The value must be unique [...] and must contain at least one character. The value must not contain any space characters.
+            </blockquote>
+          </section>
+
+          <section id="html-fragments">
+            <h2>Fragment Identifiers</h2>
+            <p>You can create links within your document by<br>
+            adding an <code>id</code> attribute to any element, then using<br>
+            the <i>fragment identifier</i> URL form:</p>
+            <pre><code class="xml">
+&lt;p&gt;Read more about &lt;a href="#lion"&gt;the lion&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id="lion"&gt;The Lion&lt;/h2&gt;
+            </code></pre>
+          </section>
+
+          <section id="html-semantics">
+            <h2>Semantic Markup</h2>
+            <p>Using meaningful elements, classes
+            and ids<br>will make it easier to
+            maintain your documents.</p>
+            <ul>
+              <li><b>DO</b> use elements with meaningful names, such as <code>&lt;section&gt;</code> for sections,
+              and <code>&lt;ol&gt;</code> for ordered lists.</li>
+              <li><b>DO</b> use descriptive
+              <code>class</code> and <code>id</code>
+              attributes for elements that have no
+              semantic HTML equivalent.</li>
+            </ul>
+            <ul>
+              <li><b>AVOID</b> using <code>class</code> attributes that describe appearance,
+              such as <code>class="red"</code>.</li>
+            </ul>
+          </section>
+
+          <section id="html-block">
+            <h2>Block-level Elements</h2>
+            <p>e.g. <code>&lt;section&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;h1&gt;</code>, etc.</p>
+            <ul>
+              <li>have blank lines before and after them</li>
+              <li>take up the width of their parent or &ldquo;container&rdquo;</li>
+              <li>can contain text and other block-level <i>or</i> inline elements</li>
+              <li>are generally better suited for defining structure and layout</li>
+            </ul>
+          </section>
+
+          <section id="html-inline">
+            <h2>Inline Elements</h2>
+            <p>e.g. <code>&lt;b&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>, etc.</p>
+            <ul>
+              <li>assume the width of their <i>content</i></li>
+              <li>can contain text and other inline elements</li>
+              <li>are generally better suited for character-level formatting</li>
+            </ul>
+          </section>
+
+          <section id="html-forgiving">
+            <h2>HTML Is Forgiving</h2>
+            <p><i>In theory</i>, many of the elements in an<br>
+            HTML document are <a href="http://www.w3.org/TR/html5/syntax.html#optional-tags">optional</a>:</p>
+            <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;p&gt;This is a valid HTML document.
+&lt;p&gt;Paragraph close tags are implied.
+&lt;ul&gt;
+  &lt;li&gt;So are list item close tags.
+&lt;/ul&gt;
+            </code></pre>
+            <p><b>But don&lsquo;t leave them off just because you can!</b><br>
+            The more <i>explicit</i> you are, the easier to edit and<br>
+            more future-proof your document becomes.</p>
+          </section>
+
+        </section>
+
+        <section id="css">
+          <h1>CSS</h1>
+          <h2 class="f"><u>C</u>ascading <u>S</u>tyle <u>S</u>heets</h2>
+          <h3 class="f">They give HTML style.</h3>
+          <p>(We&rsquo;ll cover this on Thursday.)</p>
+        </section>
+
+        <section id="js">
+          <h1>JavaScript</h1>
+          <h3 class="f">The Web&rsquo;s programming language</h3>
+          <p class="f">Provides interactivity, animation,<br>and other <i>dynamic</i> behaviors.</p>
+          <p>(We&rsquo;ll cover this in the JavaScript course.)</p>
+        </section>
+
+        <section>
+          <section id="github">
+            <h1>GitHub</h1>
+            <p>GitHub is a web site and hosted<br>
+            <i>version control system</i> called <b>git</b>.</p>
+            <p>Sign up now at:</p>
+            <p><a href="https://github.com" target="_blank"><code>https://github.com</code></a></p>
+          </section>
+
+          <section id="git">
+            <h2>What Is Git?</h2>
+            <p><b>Git</b> is the open-source version control system
+            on which GitHub runs. It was created to help programmers
+            maintain the source code of the Linux operating system.</p>
+            <p>Many people run <b>git</b> from the UNIX command line, but
+            we&rsquo;ll be using the GitHub native app for
+            <a href="http://mac.github.com">Mac</a> or 
+            <a href="http://windows.github.com">Windows</a>:</p>
+            <ul>
+              <li>Mac users: <a href="http://mac.github.com"><code>http://mac.github.com</code></a></li>
+              <li>Windows users: <a href="http://windows.github.com"><code>http://windows.github.com</code></a></li>
+              <li>Linux users: use the command line!</li>
+          </section>
+
+          <section id="git-workflow">
+            <h2>Git Workflow</h2>
+            <p><b>Git</b> provides a workflow that&rsquo;s suited for
+            <i>distributed</i>, asynchronous development by multiple
+            people.</p>
+            <p>It deals in changes to one or more files called <i>commits</i>.</p>
+            <ol>
+              <li><b>Pull</b> commits from a repository.</li>
+              <li>Make changes.</li>
+              <li><b>Commit</b> your changes locally.</li>
+              <li><b>Push</b> your commits to another repository.</li>
+              <li>Repeat &infin;</li>
+            </ol>
+            <p><i>Git can be tricky sometimes, but just remember:<br>
+              <b>as long as you commit, nothing is lost!</b></i></p>
+          </section>
+        </section>
+
+        <section>
+          <section id="text-editors">
+            <h1>Text Editors</h1>
+            <p>You&rsquo;re going to need a good
+            text editor to edit HTML, CSS, and
+            JavaScript. In this class we&rsquo;re
+            going to use:</p>
+            <ol>
+              <li><a href="http://atom.io">Atom</a>, which runs on your computer; and</li>
+              <li><a href="http://prose.io">Prose</a>, which runs in your web browser</li>
+            </ol>
+          </section>
+
+          <section id="atom">
+            <h2>Atom</h2>
+            <p>Atom is a text editor by the creators of GitHub.<br>
+            It&rsquo;s free and open source. Download it now at:</p>
+            <p><a href="http://atom.io"><code>http://atom.io</code></a></p>
+            <p><i>Note: Atom can be used to edit<br>
+            any text file on your computer,<br>
+            independent of GitHub.</i></p>
+          </section>
+
+          <section id="prose">
+            <h2>Prose</h2>
+            <p>Prose is a web-based text editor that can<br>
+            be used to edit any text file on GitHub.</p>
+            <p><a href="http://prose.io"><code>http://prose.io</code></a></p>
+            <p><i>Note: You may edit text files on GitHub,<br>but Prose offers a nicer experience.</i></p>
+          </section>
+
+        </section>
+
+        <section id="make-site">
+          <h2>Let&rsquo;s make a website!</h2>
+          <ol>
+            <li>Go to <a href="https://github.com"><code>https://github.com</code></a></li>
+            <li>Create your repository: <i>username</i><code>.github.io</code>
+              <ul>
+                <li>Keep it <b>public</b> if you have a free account</li>
+                <li><b>check</b> &ldquo;Initialize this repository with a README&rdquo;</li>
+              </ul>
+            </li>
+            <li>Create <code>index.html</code> and commit your changes</li>
+            <li>(wait 10 minutes)</li>
+            <li>Go to <code>http://</code><i>username</i><code>.github.io</code></li>
+        </section>
+
+        <section id="html-example">
+          <h2>Example HTML</h2>
+          <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;section id="section1"&gt;
+      &lt;h2&gt;Sub Heading&lt;/h2&gt;
+      &lt;p&gt;A paragraph of text.&lt;/p&gt;
+      &lt;h2&gt;Links&lt;/h2&gt;
+      &lt;ul id="links"&gt;
+        &lt;li&gt;&lt;a href="http://grayarea.org"&gt;Gray Area&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </section>
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>
