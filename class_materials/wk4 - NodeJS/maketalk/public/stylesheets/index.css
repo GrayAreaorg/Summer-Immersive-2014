@@ -1,0 +1,118 @@
+body {
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to bottom right, #FFFFFF 0%, #00A3EF 100%);
+  font-size: 1em;
+
+}
+
+.element {
+  float: left;
+}
+
+.element-1 {
+  position: relative;
+  z-index: 0;
+  width: 3.8166666666%;
+  height: 56px;
+  margin: 92px 0 0 26.5%;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(230, 13, 13);
+}
+
+.element-10 {
+  width: 1.3333333333%;
+  height: 13px;
+  margin: -20px 0 0 34.70651%;
+  background-color: rgb(20, 249, 0);
+}
+
+.element-2 {
+  position: relative;
+  clear: both;
+  z-index: 1;
+  width: 2.25%;
+  height: 31px;
+  margin: -43px 0 0 27.34896%;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(20, 249, 0);
+}
+
+.element-3 {
+  position: relative;
+  z-index: 2;
+  width: 6%;
+  height: 56px;
+  margin: -56px 0 0 30.3307291666%;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
+}
+
+.element-4 {
+  position: relative;
+  z-index: 3;
+  width: 2.25%;
+  height: 31px;
+  margin: -43px 0 0 32.45703%;
+  border: 6px solid rgb(0, 0, 0);
+  background-color: rgb(20, 249, 0);
+}
+
+.element-5 {
+  width: 3.3999999999%;
+  height: 18px;
+  margin: 14px 0 0 29.59896%;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(10, 145, 15);
+}
+
+.element-6 {
+  position: relative;
+  clear: both;
+  z-index: 4;
+  width: 11.7833333333%;
+  height: 25px;
+  margin: 22px 0 0 25.41745%;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
+}
+
+.element-7 {
+  position: relative;
+  clear: both;
+  z-index: 5;
+  width: 1.3333333333%;
+  height: 13px;
+  margin: -20px 0 0 26.4994799999%;
+  background-color: rgb(20, 249, 0);
+}
+
+.element-8 {
+  width: 1.3333333333%;
+  height: 13px;
+  margin: -20px 0 0 29.59974%;
+  background-color: rgb(20, 249, 0);
+}
+
+.element-9 {
+  width: 1.3333333333%;
+  height: 13px;
+  margin: -20px 0 0 32.45651%;
+  background-color: rgb(20, 249, 0);
+}
