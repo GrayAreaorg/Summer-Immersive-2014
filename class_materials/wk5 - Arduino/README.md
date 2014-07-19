@@ -45,7 +45,8 @@ Examples Reviewed
 * [Controlling an LED with a potentiometer](http://arduino.cc/en/Tutorial/AnalogInput)
 * [Smoothing out the values from jumpy or erratic sensors](http://arduino.cc/en/Tutorial/Smoothing)
 * [Using Pulse Width Modulation (PWM) to fade an LED](http://arduino.cc/en/Tutorial/Fading)
-* [Using map() to scale a sensor's values]()
+* [Using map() to scale a sensor's value range](http://arduino.cc/en/Tutorial/AnalogInOutSerial)
+* [Creating a light Theremin with a photoresistor and a piezo speaker](https://github.com/arduino/Arduino/blob/master/build/shared/examples/10.StarterKit/p06_LightTheremin/p06_LightTheremin.ino) - [video tutorial](https://www.youtube.com/watch?v=57S3dylfw3I)
 
 
 ## Thursday, July 17th (6pm - 9pm)
@@ -73,8 +74,7 @@ OSC
 
 ## Saturday, July 19th (12pm - 6pm)
 
-Project Challenge:
-Create an Arduino Project that uses a sensor to perform an action.
+Project Challenge: Create an Arduino Project that uses a sensor to perform an action.
 
 Additional Resources
 * [Bildr.org](http://bildr.org/)
