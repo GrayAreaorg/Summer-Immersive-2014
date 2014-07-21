@@ -76,6 +76,19 @@ OSC
 
 Project Challenge: Create an Arduino Project that uses a sensor to perform an action.
 
+* [Data logging with Arduino & GoogleDocs](https://mganucheau.github.io/Connect-to-the-Natural-World/)
+* [Talking to an Arduino with an Apple IR Remote](http://www.instructables.com/id/Control-Arduino-with-IR-Apple-Remote/)
+
+Arduino with Firmata to Node.JS 
+* [Noduino](https://semu.github.io/noduino/)
+* [Breakout.js](http://breakoutjs.com/)
+* [Johnny5](http://blog.safaribooksonline.com/2013/07/16/javascript-powered-arduino-with-johnny-five/)
+* [Arduino & Websockets - A Love Story](http://www.openchapters.com/index.html)
+* [Arduino Controlled Etcha-a-sketch with Node.JS](http://danieldvork.in/arduino-controlled-html5-etch-a-sketch-using-node-js-and-websockets/)
+
+Tools
+* [MakeyMakey](http://www.makeymakey.com/)
+
 Additional Resources
 * [Bildr.org](http://bildr.org/)
 * [This Happened](http://www.thishappened.org/talks)
@@ -84,3 +97,5 @@ Additional Resources
 * [OpenCircuits: Wiki for electronics projects and techniques](http://www.opencircuits.com/Main_Page)
 * [Tom Igoe’s list of electronics suppliers](http://www.tigoe.net/pcomp/resources/archives/electronics/elec_supplies/index.shtml)
 * [Freeduino: a great index of Arduino tutorials](http://www.freeduino.org/)
+
+
