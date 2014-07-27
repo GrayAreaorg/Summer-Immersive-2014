@@ -1,9 +1,0 @@
-{
-  "name": "start_here",
-  "version": "1.0.0",
-  "main": "server.js",
-  "dependencies": {
-    "express": "*"
-  },
-  "author": "Neal Riley"
-}
