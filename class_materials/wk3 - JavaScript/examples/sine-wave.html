@@ -20,6 +20,18 @@ var canvas = document.querySelector("canvas"),
     waveHeight = canvas.height / 2 - 1,
     TWO_PI = Math.PI * 2;
 
+canvas.addEventListener("mousemove", function(e) {
+  var x = e.offsetX,
+      y = e.offsetY;
+  // waves = 1 + x * 10;
+  waveHeight = scale(y, 0, canvas.height, 20, canvas.height / 2 - 1);
+  waves = scale(x, 0, canvas.width, .5, 10);
+});
+
+function scale(n, x1, x2, y1, y2) {
+  return y1 + (y2 - y1) * (n - x1) / (x2 - x1);
+}
+
 function draw() {
   // clear the canvas
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -28,7 +40,6 @@ function draw() {
   for (var x = 0; x <= canvas.width; x += step) {
     var y = canvas.height / 2;
     y += getWaveHeight(x);
-    y = Math.max(0, Math.min(y, canvas.height));
     if (x === 0) {
       context.moveTo(x, y);
     } else {
