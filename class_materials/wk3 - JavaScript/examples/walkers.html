@@ -1,0 +1,102 @@
+<p><a id="link" target="_blank" href="#">get the image</a></p>
+
+<canvas width="600" height="600"></canvas>
+
+<script>
+var canvas = document.querySelector("canvas"),
+    context = canvas.getContext("2d"),
+    walkers = [];
+
+document.getElementById("link").addEventListener("click", function() {
+  this.href = canvas.toDataURL();
+});
+
+var Walker = function(start, vector, wildness, color) {
+    this.pos = start;
+    this.vector = vector;
+    this.wildness = wildness;
+    this.color = color;
+};
+
+Walker.prototype.draw = function(ctx) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.strokeStyle = this.color;
+    ctx.moveTo(this.prev.x, this.prev.y);
+    ctx.lineTo(this.pos.x, this.pos.y);
+    ctx.stroke();
+    ctx.closePath();
+    ctx.restore();
+};
+
+Walker.prototype.move = function(bounds) {
+    this.prev = {
+        x: this.pos.x,
+        y: this.pos.y
+    };
+    this.pos.x += this.vector.x;
+    this.pos.y += this.vector.y;
+    if (bounds) {
+        if (this.pos.x > bounds.right) {
+            this.pos.x = bounds.right;
+            this.vector.x *= -1;
+        } else if (this.pos.x < bounds.left) {
+            this.pos.x = bounds.left;
+            this.vector.x *= -1;
+        }
+        if (this.pos.y > bounds.bottom) {
+            this.pos.y = bounds.bottom;
+            this.vector.y *= -1;
+        } else if (this.pos.y < bounds.top) {
+            this.pos.y = bounds.top;
+            this.vector.y *= -1;
+        }
+    }
+};
+
+Walker.prototype.wiggle = function() {
+    this.vector.x += -this.wildness + Math.random() * this.wildness * 2;
+    this.vector.y += -this.wildness + Math.random() * this.wildness * 2;
+};
+
+var count = 1000;
+for (var i = 0; i < count; i++) {
+    var walker = new Walker(
+        {
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height
+        },
+        {
+            x: -2 + Math.random() * 4,
+            y: -2 + Math.random() * 4
+        },
+        Math.random() * .5,
+        "hsl(" + [Math.round(i / (count - 1) * 60), "100%", "50%"] + ")");
+    walkers.push(walker);
+}
+
+var interval = setInterval(draw, 100);
+
+canvas.addEventListener("click", function() {
+    clearInterval(interval);
+});
+
+function draw() {
+    context.globalAlpha = .5;
+    var bounds = {
+        left: 0,
+        right: canvas.width,
+        top: 0,
+        bottom: canvas.height
+    };
+    context.fillStyle = "rgba(255,255,255,.1)";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    walkers.forEach(function(walker) {
+        walker.wiggle();
+        walker.move(bounds);
+        walker.draw(context);
+    });
+}
+
+
+</script>
