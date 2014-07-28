@@ -30,9 +30,14 @@ canvas.addEventListener("dblclick", clear);
 
 function draw() {
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.save();
   lines.forEach(drawLine);
-  context.restore();
+}
+
+function roundPoint(p) {
+  return {
+    x: round(p.x),
+    y: round(p.y)
+  }
 }
 
 function drawLine(line, i) {
@@ -41,12 +46,14 @@ function drawLine(line, i) {
 
   context.fillStyle = "hsl(" + [i, "85%", "50%"] + ")";
 
+  var start = roundPoint(line.start),
+      end = roundPoint(line.end);
   // move to (x, y)
-  context.translate(line.start.x, line.start.y);
+  context.translate(start.x, start.y);
   // rotate by the line's angle
-  context.rotate(angle(line.start, line.end));
+  context.rotate(angle(start, end));
   // draw a rectangle
-  var w = distance(line.start, line.end),
+  var w = distance(start, end),
       h = 1 + w / 200 * 20;
   context.rect(0, -h / 2, w, h);
 
