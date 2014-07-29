@@ -54,6 +54,7 @@ by [Shawn Allen](https://github.com/shawnbot)
 * [*Beautiful Visualization*](http://shop.oreilly.com/product/0636920000617.do) by Julie Steele & Noah Iliinsky contains a wealth of gorgeous examples
 * [*The Functional Art*](http://www.amazon.com/gp/product/0321834739) by [Alberto Cairo](http://www.thefunctionalart.com/) is a practical guide for aspiring visualizers
 * [*Making Maps*](http://www.amazon.com/gp/product/1593852002) by John Krygier and Denis Wood is a great resource for modern cartographers
+* [*Semiology of Graphics*](http://www.amazon.com/Semiology-Graphics-Diagrams-Networks-Maps/dp/1589482611) by [Jacques Bertin](http://en.wikipedia.org/wiki/Jacques_Bertin)
 * [Edward Tufte's books](http://www.edwardtufte.com/tufte/books_vdqi), specifically [*The Visual Display of Quantitative Information*](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
 * [EJ Marey's *Movement*](https://archive.org/stream/movement00mare#page/n11/mode/2up) (free to read on archive.org)
 * [Willard Cope Brinton's *Graphic Presentation*](https://archive.org/stream/graphicpresentat00brinrich#page/2/mode/2up) (free to read on archive.org)
