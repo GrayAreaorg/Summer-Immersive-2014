@@ -47,15 +47,17 @@ by [Shawn Allen](https://github.com/shawnbot)
 
 ### Suggested Reading
 * [A Tour through the Visualization Zoo](http://queue.acm.org/detail.cfm?id=1805128) by [Jeff Heer](http://homes.cs.washington.edu/~jheer/), [Michael Bostock](http://bost.ocks.org/mike/) and [Vadim Ogievetsky](http://vadim.ogievetsky.com/)
+* [How to Make Data Look Sexy](http://www.cnn.com/2011/OPINION/04/19/sexy.data/index.html) by Fernanda Viegas and Mark Wattenberg
 * [A Classification of Chart Types](http://www.excelcharts.com/blog/classification-chart-types/) (see also: [Choosing a Good Chart](http://extremepresentation.typepad.com/blog/2006/09/choosing_a_good.html))
 * [11 Ways to Visualize Changes Over Time](http://flowingdata.com/2010/01/07/11-ways-to-visualize-changes-over-time-a-guide/) by Nathan Yau
 * [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) in *The Times*
 * [Getting Past the Pie Chart](http://seedmagazine.com/content/article/getting_past_the_pie_chart/) in *Seed Magazine*
 * [Milestones in the History of [...] Data Visualization](http://datavis.ca/milestones/) by Michael Friendly
 * [Gallery of Data Visualization](http://www.datavis.ca/gallery/index.php), ibid.
+* [A Periodic Table of Visualization Methods](http://www.visual-literacy.org/periodic_table/periodic_table.html)
 
 #### Books
-* [*Visualizing Data*](http://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557) by Ben Fry ([download the examples](http://benfry.com/writing/archives/3))
+* [*Visualizing Data*](http://shop.oreilly.com/product/9780596514556.do) by Ben Fry ([download the examples](http://benfry.com/writing/archives/3))
 * [*Beautiful Visualization*](http://shop.oreilly.com/product/0636920000617.do) by Julie Steele & Noah Iliinsky contains a wealth of gorgeous examples
 * [*The Functional Art*](http://www.amazon.com/gp/product/0321834739) by [Alberto Cairo](http://www.thefunctionalart.com/) is a practical guide for aspiring visualizers
 * [*Making Maps*](http://www.amazon.com/gp/product/1593852002) by John Krygier and Denis Wood is a great resource for modern cartographers
