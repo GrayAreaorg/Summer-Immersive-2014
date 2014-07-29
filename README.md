@@ -114,7 +114,7 @@ instruction distributed over three sessions, **Tuesdays & Thursdays (6pm – 9pm
 | 6 | 7/22,24,26 | openFrameworks | Ben McChesney |
 | 7 | 7/29,31,8/2 | Data Visualization | Shawn Allen |
 | 8 | 8/5,7,9 | Interactive Installations | Matt Ganucheau |
-| 9 | 8/12,14,16 | Web Skills | Ben McChesney |
+| 9 | 8/12,14,16 | Computer Vision | Ben McChesney |
 | 10 | 8/19,21,23 | Projection Mapping | Gabriel Dunne |
 <br>
 <br>
