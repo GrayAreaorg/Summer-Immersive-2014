@@ -26,6 +26,10 @@ See [references](references.md) for lots and lots of links.
     * Quantitative (numeric)
     * Qualitative (categorical)
     * Structured vs. unstructured
+  * Data Structures
+    * Tables
+    * Hierarchies
+    * Linked node graphs
   * Data formats
     * Tabular formats: Excel, CSV, TSV
     * Structured formats: JSON, XML, HTML
