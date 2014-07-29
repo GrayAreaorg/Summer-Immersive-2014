@@ -43,15 +43,17 @@ See [references](references.md) for lots and lots of links.
       * Bar charts
       * Line charts
       * Circle plots
+      * Small multiples
     * Relationship
-      * Scatter charts
+      * Scatter plots
+      * Scatter plot matrices
       * Force-directed graphs
     * Composition
       * Stacked bar and area
       * Streamgraphs
       * Pie charts (and when not to use them)
     * Histograms
-  * "Infographics" vs. "Data Visualization"
+  * [Infographics](http://flowingdata.com/2010/05/06/the-boom-of-big-infographics/) vs. "Data Visualization"
   * The process, according to Ben Fry:
     1. **Acquire**
       * Where to find data, and what to look for
