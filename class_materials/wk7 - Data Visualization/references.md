@@ -7,17 +7,23 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
   * [Mike Bostock's bl.ocks.org](http://bl.ocks.org/mbostock)
 * Other visualization libraries:
-  * [Vega](http://trifacta.github.io/vega/) is a JSON grammar for D3
-  * [d3.Chart](http://misoproject.com/d3-chart/) is a framework for building reusable charts with D3
+  * [chroma.js](https://github.com/gka/chroma.js) is a JavaScript library for color conversions and scales
   * [dc.js](http://dc-js.github.io/dc.js/) has native support for large data sets powered by [crossfilter](http://square.github.com/crossfilter/)
-  * [Rickshaw](http://code.shutterstock.com/rickshaw/) focuses on time series graphs
+  * [d3.Chart](http://misoproject.com/d3-chart/) is a framework for building reusable charts with D3
+  * [Dimple](http://dimplejs.org/) is an "object-oriented API for business analytics"
   * [Epoch](http://fastly.github.io/epoch/) is a real-time charting library with D3 and Canvas output
   * [Polychart](https://www.polychart.com/) is a relational database frontend for interactive visualization
-  * [Dimple](http://dimplejs.org/) is an "object-oriented API for business analytics"
+  * [Rickshaw](http://code.shutterstock.com/rickshaw/) focuses on time series graphs
+  * [Vega](http://trifacta.github.io/vega/) is a JSON grammar for D3
   * [Vincent](http://vincent.readthedocs.org/en/latest/) is a Python library that creates images from [Vega](http://trifacta.github.io/vega/) specifications
 * Web apps:
+  * [ColorBrewer](http://colorbrewer2.org/) is a suite of color schemes for different types of data. See also:
+    * [Scale reference](http://bl.ocks.org/mbostock/5577023)
+    * [CSS & JS versions](https://github.com/mbostock/d3/tree/master/lib/colorbrewer) (bundled with D3)
   * [Tributary](http://tributary.io/) is a live-coding environment for D3
   * [Daytum](http://daytum.com/) is [Nicholas Felton's](http://feltron.com/) platform for collecting and visualizing personal data
+  * [your.flowingdata](http://your.flowingdata.com/) is [Nathan Yau's](http://flowingdata.com/) Daytum-like platform
+  * [Datawrapper](https://datawrapper.de/) is a visualization tool by [Gregor Aisch](http://driven-by-data.net/)
   * [Many Eyes](http://www.ibm.com/manyeyes/) hosts simple visualizations with shared open data
   * [Raw](http://raw.densitydesign.org/) calls itself "the missing link between spreadsheets and vector graphics"
 * Desktop apps:
