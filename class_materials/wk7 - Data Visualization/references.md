@@ -24,6 +24,8 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [Mirador](http://fathom.info/mirador/) is a tool for visual exploration by [Fathom](http://fathom.info/)
   * [Lyra](https://github.com/uwdata/lyra) is a "Visualization Design Environment" by Arvind Satyanarayan at UW
 * Data tools:
+  * [Google Docs](http://docs.google.com) spreadsheets are great for managing small data sets
+  * [OpenRefine](http://openrefine.org/) (formerly Google Refine) is a FOSS "tool for working with messy data"
   * [Wrangler](http://vis.stanford.edu/wrangler/) is a web-based tool for cleaning up tabular data
   * [Tabula](http://tabula.nerdpower.org/) is "a tool for liberating data tables locked inside PDF files"
 
