@@ -52,6 +52,7 @@ by [Shawn Allen](https://github.com/shawnbot)
 * [11 Ways to Visualize Changes Over Time](http://flowingdata.com/2010/01/07/11-ways-to-visualize-changes-over-time-a-guide/) by Nathan Yau
 * [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) in *The Times*
 * [Getting Past the Pie Chart](http://seedmagazine.com/content/article/getting_past_the_pie_chart/) in *Seed Magazine*
+* [OkTrends](http://blog.okcupid.com/), the blog of OkCupid's research team
 * [Milestones in the History of [...] Data Visualization](http://datavis.ca/milestones/) by Michael Friendly
 * [Gallery of Data Visualization](http://www.datavis.ca/gallery/index.php), ibid.
 * [A Periodic Table of Visualization Methods](http://www.visual-literacy.org/periodic_table/periodic_table.html)
