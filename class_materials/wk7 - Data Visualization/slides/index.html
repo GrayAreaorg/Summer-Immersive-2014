@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Data Visualization</title>
+    <title>Data Visualization: Day 1</title>
 
     <script src="lib/reveal/js/reveal.js"></script>
     <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
@@ -19,6 +19,265 @@
 
         <section id="welcome">
           <h1>Data Visualization!</h1>
+        </section>
+
+        <section id="what-is-vis">
+          <h2>What is Visualization?</h2>
+          <p>Visualization is the <i>visual representation of data</i>,<br>
+          the purpose of which is to communicate<br>
+          information clearly and effectively.</p>
+          <p class="fragment">Visualization, like science, describes both the<br>
+          outcome and <i>the process by which it&rsquo;s reached</i>.</p>
+        </section>
+
+        <section id="what-is-data">
+          <h2>Okay, so what is data?</h2>
+          <blockquote class="fragment">
+            Information that has been abstracted in some schematic form, including attributes or variables for the units of information.
+            <br>&mdash; <cite href="http://www.math.yorku.ca/SCS/Gallery/milestone/milestone.pdf">Michael Friendly</cite>
+          </blockquote>
+          <blockquote class="fragment">
+            Data as an abstract concept can be viewed as the lowest level of abstraction, from which information and then knowledge are derived.
+            <br>&mdash; <cite href="http://en.wikipedia.org/wiki/Data">Wikipedia</cite>
+          </blockquote>
+          <p class="fragment">The word <i>data</i> is a mass noun, and can<br>
+          refer to the singular or plural of <i>datum</i>.</p>
+        </section>
+
+        <section id="data-types">
+          <h2>Types of Data</h2>
+          <ul>
+            <li><b>Quantitative</b> data is numeric and describes measureable
+            quantities: size, age, number of occurrences, etc.</li>
+            <li class="fragment"><b>Qualitative</b> or <b>categorical</b> data
+            describes unmeasureable qualities: gender, color, name, make/model, etc.</li>
+            <li class="fragment"><b>Structured</b> data adheres to a
+            consistent <i>schema</i>, which describes the fields (columns),
+            data types (numbers, strings, etc.) and relationships within it.</p>
+            <li class="fragment"><b>Unstructured</b> data lacks a schema,
+            such as raw text.</p>
+            <li class="fragment"><b>Hierarchical</b> data has a variably <i>nested</i>
+            structure, as in a family tree or HTML document.</p>
+          </ul>
+        </section>
+
+        <section id="data-transform">
+          <h2>Data Transformations</h2>
+          <ul>
+            <li class="fragment"><b>Sorting</b> modifies the order of sequential data
+            by comparing each datum in sequence using a <i>comparator</i>.</li>
+            <li class="fragment"><b>Filtering</b> is a process of removing data that
+            doesn&rsquo;t meet certain criteria.</li>
+            <li class="fragment"><b>Mapping</b> is a process of converting
+            one datum or value into another (<i>geographic</i> mapping is a
+            specific type of conversion).</p>
+            <li class="fragment"><b>Normalization</b> maps data from their
+            original values to more &ldquo;normal&rdquo; or predictable ranges.</li>
+            <li class="fragment"><b>Aggregation</b> produces data at a higher level of
+            abstraction, such as <i>summing</i> or <i>grouping</i>.</li>
+          </ul>
+        </section>
+
+        <section id="tabular-data">
+          <h2>Tabular Data</h2>
+          <p>Most data is expressed in a <i>tabular</i> format<br>
+          with one or more columns and rows.</p>
+
+          <table>
+            <!-- <caption>Cars for Sale</caption> -->
+            <thead>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Condition</th>
+                <th>Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Audi</td><td>A6</td><td>2004</td><td>good</td><td>128,446</td></tr>
+              <tr><td>BMW</td><td>M1</td><td>1978</td><td>fair</td><td>321,460</td></tr>
+              <tr><td>Ford</td><td>Fiesta</td><td>1993</td><td>like new</td><td>1,839</td></tr>
+            </tbody>
+          </table>
+
+          <p class="fragment">Most data structures can be expressed as tables,<br>
+          <i>even if the data does not make sense to display as a table</i>.</p>
+        </section>
+
+        <section id="hierarchy">
+          <h2>Hierarchical Data</h2>
+          <p>Hierarchical data, sometimes referred to as<br>
+          a <i>tree structure</i>, encodes one-to-one (parent-child)<br>
+          relationships between a collection of <i>nodes</i>.</p>
+
+          <div class="row">
+            <div class="col fragment">
+              <ul class="tree">
+                <li><i>root</i><ul>
+                  <li>a</li>
+                  <li>b<ul>
+                    <li>1</li>
+                  </ul></li>
+                  <li>c<ul>
+                    <li>2</li>
+                  </ul></li>
+                </ul></li>
+              </ul>
+            </div>
+            <div class="col fragment">
+              <a class="unstyled" href="https://github.com/anvaka/ngraph/tree/master/examples/fabric.js/Node%20and%20Browser"><img class="transparent" style="margin: -50px 0" src="https://camo.githubusercontent.com/53e2ab32ab72afd5787a038bfe7da7f5b9e20f43/68747470733a2f2f7261772e6769746875622e636f6d2f616e76616b612f6e67726170682f6d61737465722f6578616d706c65732f6661627269632e6a732f4e6f6465253230616e6425323042726f777365722f6173736574732f62616c616e63656442696e547265652e706e67" height="400"></a>
+            </div>
+            <div class="col fragment">
+              <a class="unstyled" href="http://mbostock.github.io/d3/talk/20111018/tree.html">
+                <img src="images/d3-tree-graph.png" height="300">
+              </a>
+            </div>
+          </div>
+
+          <p class="fragment">JSON and XML are common file formats for hierarchies.</p>
+        </section>
+
+        <section id="node-graphs">
+          <h2>Node Graphs</h2>
+          <p>Another hierarchical data structure is the<br>
+          (linked) <i>node graph</i>, which encodes many-to-many<br>
+          relationships between one or more nodes.</p>
+
+          <div class="row">
+            <div class="col fragment">
+              <a href="http://courses.cs.vt.edu/csonline/DataStructures/Lessons/Graphs/index.html" class="unstyled block">
+                <img src="http://courses.cs.vt.edu/csonline/DataStructures/Lessons/Graphs/graph.gif" height="285">
+              </a>
+            </div>
+            <div class="col fragment">
+              <a href="http://www.d3noob.org/2013/03/d3js-force-directed-graph-example-basic.html" class="unstyled block">
+                <img src="http://1.bp.blogspot.com/-viRaNOuUqt0/UUGOGwCia_I/AAAAAAAAAKg/kFoZwCBdUhA/s1600/force14.png" height="342">
+              </a>
+            </div>
+          </div>
+          <p class="fragment">Multiple tables are often used to express node graphs:<br>
+          one for the nodes (points), and another for the links (edges).</p>
+        </section>
+
+        <section id="ben-fry-process">
+          <h2>The Process</h2>
+          <p>In his book, <a href="http://www.amazon.com/gp/product/B0028N4WJC">Visualizing Data</a>,
+          Ben Fry<br>defines the process as a series of discrete tasks<br>
+          that sometimes loop back on each other:</p>
+
+          <img src="http://blog.visual.ly/wp-content/uploads/2012/06/process.png">
+
+          <p class="fragment">We&rsquo;re going to work through these steps over<br>
+          the course of this session and the next and<br>
+          build an interactive visualization in the process.</p>
+        </section>
+
+        <section id="step1-acquire">
+          <h2>Acquire</h2>
+          <blockquote>Obtain the data, whether from a file<br>on a disk or a source over a network.</blockquote>
+          <p class="fragment">The first step typically involves downloading data<br>
+          (usually in a tabular format, such as Excel or CSV)<br>
+          from a reputable web site such as <a href="http://data.gov">data.gov</a>.</p>
+          <p class="fragment"><b>Just <i>finding</i> the data is sometimes the hardest part.</b></p>
+        </section>
+
+        <section id="step2-parse">
+          <h2>Parse</h2>
+          <blockquote>Provide some structure for the data&rsquo;s<br>meaning, and order it into categories.</blockquote>
+          <p>For me, this encapsulates all of the following tasks:</p>
+          <ol>
+            <li>Convert the data into a useable format,<br>
+            such as <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>
+            or <a href="http://en.wikipedia.org/wiki/JSON">JSON</a>.</li>
+            <li>Whip up some HTML and JavaScript that<br>
+            loads the data and logs it to the console.</li>
+            <li>Use the console to determine which, if any,<br>
+            values need to be converted or normalized.</li>
+          </ol>
+        </section>
+
+        <section id="step3-filter">
+          <h2>Filter</h2>
+          <blockquote>Remove all but the data of interest.</blockquote>
+          <p>In addition, this step may involve:</p>
+          <ul>
+            <li>Removing data with missing or invalid values.</li>
+            <li>Removing outliers: data with unusually<br>
+            high or low values.</li>
+          </ul>
+        </section>
+
+        <section id="step4-mine">
+          <h2>Mine</h2>
+          <blockquote>Apply methods from statistics or data mining<br>
+            as a way to discern patterns or place the data<br>
+            in mathematical context.</blockquote>
+          <p>In most cases, we&rsquo;re looking for<br>
+          one or more of the following:</p>
+          <ul>
+            <li>the <i>extrema</i> (minimum and maximum)</li>
+            <li>the <i>mean</i> (average) or <i>median</i> of quantitative values</li>
+            <li>the <i>distribution</i> of quantitative or qualitative values</li>
+          </ul>
+        </section>
+
+        <section id="step5-represent">
+          <h2>Represent</h2>
+          <blockquote>Choose a basic visual model, such as<br>
+            a bar graph, list, or tree.</blockquote>
+          <p>This step involves the actual creation<br>
+            of the visualization. We&rsquo;ll look at just<br>
+            <i>how</i> to do that shortly.</p>
+        </section>
+
+        <section id="step6-refine">
+          <h2>Refine</h2>
+          <blockquote>Improve the basic representation to make it clearer and more visually engaging.</blockquote>
+          <p>Make it better.</p>
+          <p>Remember to <b>save your work</b> (using git)<br>
+          so that you can go back to older versions.</p>
+        </section>
+
+        <section id="step7-interact">
+          <h2>Interact</h2>
+          <blockquote>Add methods for manipulating the data or controlling which features are visible.</blockquote>
+          <p>(This is where your new-found mastery<br>
+          of HTML and JavaScript comes in.)</p>
+        </section>
+
+        </section>
+
+        <section id="setting-up">
+          <h2>Step 0: Setting Up</h2>
+          <ol>
+            <li>Create your project directory structure:
+              <ul class="tree">
+                <li><i>project/</i><ul>
+                  <li><code>css/</code></li>
+                  <li><code>data/</code></li>
+                  <li><code>js/</code></li>
+                </ul></li>
+              </ul>
+            </li>
+            <li>Download <a href="http://d3js.org/d3.v3.min.js">d3.js</a> to <code>js/</code></li>
+            <li>Create your <code>index.html</code>, including:
+              <pre><code class="html">
+&lt;script src="js/d3.v3.min.js"&gt;&lt;/script&gt;
+              </code></pre>
+            </li>
+            <li>Run your local Python web server from the terminal:
+              <pre><code class="shell">
+$ cd path/to/project
+$ python -m SimpleHTTPServer
+              </code></pre>
+            </li>
+            <li>Open <code><a href="http://localhost:8000">localhost:8000</a></code> in your browser</li>
+          </ol>
+        </section>
+
+        <section id="acquiring-data">
+          <h2>Step 1: Acquire</h2>
         </section>
 
       </div>
