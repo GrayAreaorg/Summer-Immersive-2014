@@ -46,8 +46,13 @@ by [Shawn Allen](https://github.com/shawnbot)
 * [newsvis: The Directory of News Visualizations](http://newsvis.org) is just getting started, but looks good so far
 
 ### Suggested Reading
-* [Milestones in the History of [...] Data Visualization](http://datavis.ca/milestones/)
-* [Getting Past the Pie Chart](http://seedmagazine.com/content/article/getting_past_the_pie_chart/)
+* [A Tour through the Visualization Zoo](http://queue.acm.org/detail.cfm?id=1805128) by [Jeff Heer](http://homes.cs.washington.edu/~jheer/), [Michael Bostock](http://bost.ocks.org/mike/) and [Vadim Ogievetsky](http://vadim.ogievetsky.com/)
+* [A Classification of Chart Types](http://www.excelcharts.com/blog/classification-chart-types/) (see also: [Choosing a Good Chart](http://extremepresentation.typepad.com/blog/2006/09/choosing_a_good.html))
+* [11 Ways to Visualize Changes Over Time](http://flowingdata.com/2010/01/07/11-ways-to-visualize-changes-over-time-a-guide/) by Nathan Yau
+* [We Have Met the Enemy and He Is PowerPoint](http://www.nytimes.com/2010/04/27/world/27powerpoint.html) in *The Times*
+* [Getting Past the Pie Chart](http://seedmagazine.com/content/article/getting_past_the_pie_chart/) in *Seed Magazine*
+* [Milestones in the History of [...] Data Visualization](http://datavis.ca/milestones/) by Michael Friendly
+* [Gallery of Data Visualization](http://www.datavis.ca/gallery/index.php), ibid.
 
 #### Books
 * [*Visualizing Data*](http://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557) by Ben Fry ([download the examples](http://benfry.com/writing/archives/3))
@@ -73,6 +78,7 @@ These are some highlights from the first two centuries of data visualization's h
 1. [Étienne-Jules Marey's](http://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey) [motion studies](http://www.brainpickings.org/index.php/2011/05/13/etienne-jules-marey/), c. 1870-80s
 1. [Willard Cope Brinton's](http://www.humantific.com/lost-stories-information-design-history/) [*Graphic Methods for Presenting Facts*](https://archive.org/stream/methodsfo00bringraphicrich#page/n5/mode/2up) c. 1914, and [*Graphic Presentation*](http://datavisualization.ch/showcases/graphic-presentation-by-willard-cope-brinton/), c. 1939
 1. [Jaques Bertin's](http://en.wikipedia.org/wiki/Jacques_Bertin) [*Semiology of Graphics*](), c. 1967
+1. [John Tukey](http://en.wikipedia.org/wiki/John_Tukey) promotes [exploratory data analysis](http://en.wikipedia.org/wiki/Exploratory_Data_Analysis) and invents the box plot
 
 ### Modern Visualization
 These are some of my favorite examples of modern visualization, in roughly chronological order.
@@ -106,7 +112,8 @@ I've grouped some examples under their creator(s) to identify important figures 
 * [Iraq's Bloody Toll](http://www.scmp.com/infographics/article/1284683/iraqs-bloody-toll) by Simon Scarr for *South China Morning Post*, c. 2011
 * [Ben Fry](http://benfry.com) and [Fathom](http://fathom.info)
   * [Fortune 500](http://fathom.info/fortune500), c. 2011
-  * [The Preservation of Favoured Traces](http://fathom.info/traces)
+  * [The Preservation of Favoured Traces](http://fathom.info/traces), c. 20??
+* [CNN: Home and Away](http://www.cnn.com/SPECIALS/war.casualties/) by Stamen, c. 2010
 * [When Does Crime Happen?](http://www.trulia.com/vis/when-crime/) by Sha Hwang (Trulia)
 * [GOOD](http://good.is) Magazine's [Transparency Series](http://www.good.is/transparency) infographics:
   * [US Oil Production & Consumption](http://awesome.good.is/transparency/web/1005/oil-consumption/flat.html)
