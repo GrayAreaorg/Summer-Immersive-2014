@@ -6,12 +6,14 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [The Big List of D3.js Examples](http://christopheviau.com/d3list/gallery.html)
   * [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
   * [Mike Bostock's bl.ocks.org](http://bl.ocks.org/mbostock)
-* Other visualization libraries:
+* Other visualization and related libraries:
   * [chroma.js](https://github.com/gka/chroma.js) is a JavaScript library for color conversions and scales
+    * And there are [interactive](http://tristen.ca/hcl-picker/) [versions](http://vis4.net/labs/colorvis/embed.html?m=hcl&gradients=6), if that's more your speed
   * [dc.js](http://dc-js.github.io/dc.js/) has native support for large data sets powered by [crossfilter](http://square.github.com/crossfilter/)
   * [d3.Chart](http://misoproject.com/d3-chart/) is a framework for building reusable charts with D3
   * [Dimple](http://dimplejs.org/) is an "object-oriented API for business analytics"
   * [Epoch](http://fastly.github.io/epoch/) is a real-time charting library with D3 and Canvas output
+  * [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) is a tool for creating custom color scales, with some [great examples](http://tools.medialab.sciences-po.fr/iwanthue/examples.php)
   * [Polychart](https://www.polychart.com/) is a relational database frontend for interactive visualization
   * [Rickshaw](http://code.shutterstock.com/rickshaw/) focuses on time series graphs
   * [Vega](http://trifacta.github.io/vega/) is a JSON grammar for D3
