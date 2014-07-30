@@ -110,7 +110,17 @@
   padding: 10px;
 }
 
-.reveal section img {
+.reveal img {
+  vertical-align: baseline;
+}
+
+.reveal section img.inline {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal section > img {
   border-width: 1px;
   margin-bottom: 1em;
 }
