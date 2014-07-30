@@ -5,7 +5,9 @@ Emphasizing data with scales:
 * [Prison Policy](http://www.prisonpolicy.org/global/): `images/incarceration-rates-nato.png`
 * [Miracles in nature and Science](http://www.toriljohannessen.no/Words_and_Years_page_1.html): `images/Words_and_years_Miracles.jpg`
 
-
+Simple visualization with tables:
+* [Stressed Out](http://www.npr.org/blogs/health/2014/07/07/327322187/stressed-out-americans-tell-us-about-stress-in-their-lives)
+* [Chesapeake Bay Grasses](http://www.chesapeakebay.net/visualization/baygrasses/segments.html?id=TANMH1)
 
 ### What Is Data?
 > "information which has been abstracted in some schematic form, including attributes or variables for the units of information" - [Michael Friendly](http://www.datavis.ca/personal/)

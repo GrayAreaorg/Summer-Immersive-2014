@@ -30,12 +30,14 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [Raw](http://raw.densitydesign.org/) calls itself "the missing link between spreadsheets and vector graphics"
 * Desktop apps:
   * [Mirador](http://fathom.info/mirador/) is a tool for visual exploration by [Fathom](http://fathom.info/)
-  * [Lyra](https://github.com/uwdata/lyra) is a "Visualization Design Environment" by Arvind Satyanarayan at UW
+  * [Lyra](http://idl.cs.washington.edu/projects/lyra/) is a "Visualization Design Environment" by Arvind Satyanarayan at UW
 * Data tools:
   * [Google Docs](http://docs.google.com) spreadsheets are great for managing small data sets
   * [OpenRefine](http://openrefine.org/) (formerly Google Refine) is a FOSS "tool for working with messy data"
   * [Wrangler](http://vis.stanford.edu/wrangler/) is a web-based tool for cleaning up tabular data
+  * [Mr. Data Converter](http://shancarter.github.io/mr-data-converter/) converts from CSV and TSV to other tabular formats
   * [Tabula](http://tabula.nerdpower.org/) is "a tool for liberating data tables locked inside PDF files"
+  * [ScraperWiki](https://scraperwiki.com/) extracts data from web pages, Excel and PDF
 
 
 ### Visualization blogs and references
@@ -96,6 +98,7 @@ I've grouped some examples under their creator(s) to identify important figures 
 * [OECD Data](http://data.oecd.org/)
 * [The Personal Analytics of My Life](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) by Stephen Wolfram, c. 2012
 * The New York Times Graphics team:
+  * [How Different Groups Spend Their Day](http://www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html) By Shan Carter, et al, c. 2009
   * [The Jobless Rate for People Like You](http://www.nytimes.com/interactive/2009/11/06/business/economy/unemployment-lines.html) by Shan Carter, c. 2009
   * [Why Is Her Paycheck Smaller?](http://www.nytimes.com/interactive/2009/03/01/business/20090301_WageGap.html) by Hannah Fairfield & Graham Roberts, c. 2009
   * [Driving Shifts Into Reverse](http://www.nytimes.com/imagepages/2010/05/02/business/02metrics.html) by Hannah Fairfield, c. 2010
@@ -106,8 +109,10 @@ I've grouped some examples under their creator(s) to identify important figures 
   * [512 Paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html) by Mike Bostock & Shan Carter, c. 2012
   * [Driving Safety, in Fits and Starts](http://www.nytimes.com/interactive/2012/09/17/science/driving-safety-in-fits-and-starts.html) by Hannah Fairfield, c. 2012
   * [How the Tax Burden Has Changed](http://www.nytimes.com/interactive/2012/11/30/us/tax-burden.html) by Mike Bostock, et al, c. 2012
+  * [Over the Decades, How States Have Shifted](http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html) by Shan Carter & Mike Bostock, c. 2012
   * [Drought Extends, Crops Wither](http://www.nytimes.com/interactive/2012/08/24/us/drought-crops.html) by Mike Bostock, Shan Carter & Hannah Fairfield, c. 2012
   * [Across U.S. Companies, Tax Rates Vary Greatly](http://www.nytimes.com/interactive/2013/05/25/sunday-review/corporate-taxes.html) by Mike Bostock, et al, c. 2013
+  * [Dissecting a Trailer](http://www.nytimes.com/interactive/2013/02/19/movies/awardsseason/oscar-trailers.html) by Shan Carter, Amanda Cox and Mike Bostock, c. 2013
   * [Where Income Is Higher, Life Spans Are Longer](http://www.nytimes.com/interactive/2014/03/15/business/higher-income-longer-lives.html) by Alicia Parlapiano, c. 2014
   * [How Birth Year Influences Political Views](http://www.nytimes.com/interactive/2014/07/08/upshot/how-the-year-you-were-born-influences-your-politics.html) by Amanda Cox, c. 2014
   * [Home Prices in 20 Cities](http://www.nytimes.com/interactive/2014/01/23/business/case-shiller-slider.html) by Shan Carter & Kevin Quealy, c. 2014
