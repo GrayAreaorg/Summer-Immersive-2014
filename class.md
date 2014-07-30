@@ -7,6 +7,7 @@
 > ![](img/ld.jpg)
 ###Laura	Daly
 Laura works as a GIS Specialist & Cartographer at GreenInfo Network in the Bay Area and is passionate about mapping for social and economic justice. She enjoys working on projects that provide a mapped presence for underrepresented groups and has worked on projects based in CA and the US, in Ecuador, and in Kenya.   
+
 <br>
 
 > ![](img/vb.jpg)

@@ -71,7 +71,7 @@ use data visualization and open source to make the world a better place.
 <br>
 
 >![](img/nr.png)
-###Neal Riley
+###Neal Riley - [@nealriley](https://twitter.com/nealriley)
 Neal Riley is an ETL/Data Warehouse developer at Atlassian, with a background in
 Electronic Music that started in College, where he studied contemporary
 Electronic Music during Karlheinz Stockhausen’s residency at the Univeristy of

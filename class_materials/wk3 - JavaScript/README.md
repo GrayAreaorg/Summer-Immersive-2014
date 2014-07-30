@@ -77,12 +77,20 @@ Here are [the slides](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/
   
 
 ## Saturday, July 5th (12pm - 6pm)
-**Draft outline:**
+On Saturday we covered the basics of loading external files, the JSON standard, and hacked on some [animated sketches](examples/) and SVG.
 
 * Asynchronous programming:
-  - Callback patterns in jQuery and D3 (+Node)
-  - Loading external files and the [JSON](http://en.wikipedia.org/wiki/JSON) format
-  - Deferring functions with `setTimeout()`
-* Repetition and animation:
-  - `setInterval()` vs. `requestAnimationFrame()`
-* WebGL and Three.js?
+  - Loading external files:
+    * with [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+    * with [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
+    * with [d3.xhr() and related functions](https://github.com/mbostock/d3/wiki/Requests)
+* The [JSON format](http://en.wikipedia.org/wiki/JSON)
+  - Parsing with [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+  - Serializing with [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+* [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+  - Testing locally with `python -m SimpleHTTPServer` (see: [the Python module](http://effbot.org/librarybook/simplehttpserver.htm))
+* Repetition with [setInterval()](https://developer.mozilla.org/en/docs/Web/API/window.setInterval)
+  - See also: [requestAnimationFrame()](https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame)
+* ~~WebGL and Three.js?~~
+* See the [examples directory](examples/) for the sketches.
+  
