@@ -420,7 +420,7 @@ var values = data
 
 var percentile = d3.scale.linear()
   .domain(d3.extent(values))
-  .range(d3.range(0, 100));
+  .range([0, 100]);
 
 var bottom99 = data.filter(function(d) {
   return percentile(d[column]) &lt;= 99;
