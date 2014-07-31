@@ -83,14 +83,14 @@ These are some highlights from the first two centuries of data visualization's h
 1. [Étienne-Jules Marey's](http://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey) [motion studies](http://www.brainpickings.org/index.php/2011/05/13/etienne-jules-marey/), c. 1870-80s
 1. [Willard Cope Brinton's](http://www.humantific.com/lost-stories-information-design-history/) [*Graphic Methods for Presenting Facts*](https://archive.org/stream/methodsfo00bringraphicrich#page/n5/mode/2up) c. 1914, and [*Graphic Presentation*](http://datavisualization.ch/showcases/graphic-presentation-by-willard-cope-brinton/), c. 1939
 1. [Jaques Bertin's](http://en.wikipedia.org/wiki/Jacques_Bertin) [*Semiology of Graphics*](), c. 1967
-1. [John Tukey](http://en.wikipedia.org/wiki/John_Tukey) promotes [exploratory data analysis](http://en.wikipedia.org/wiki/Exploratory_Data_Analysis) and invents the box plot
+1. [John Tukey](http://en.wikipedia.org/wiki/John_Tukey) promotes [exploratory data analysis](http://en.wikipedia.org/wiki/Exploratory_Data_Analysis) and invents the box plot, c. 1977
 
 ### Modern Visualization
 These are some of my favorite examples of modern visualization, in roughly chronological order.
 I've grouped some examples under their creator(s) to identify important figures in the modern practice.
 
-* [Marcos Weskamp's](http://marumushi.com) [Newsmap](http://marumushi.com/projects/newsmap) popularized [treemaps](http://en.wikipedia.org/wiki/Treemapping)
-* [Baby Name Voyager](http://www.babynamewizard.com/voyager), by Martin Wattenberg and Fernanda Viegas, shows two centuries of baby name popularity in a stacked area chart
+* [Marcos Weskamp's](http://marumushi.com) [Newsmap](http://marumushi.com/projects/newsmap) popularized [treemaps](http://en.wikipedia.org/wiki/Treemapping), c. 2004
+* [Baby Name Voyager](http://www.babynamewizard.com/voyager), by Martin Wattenberg and Fernanda Viegas, shows two centuries of baby name popularity in a stacked area chart, c. 2005?
 * [Hans Rosling's](http://en.wikipedia.org/wiki/Hans_Rosling) [Gapminder](http://www.gapminder.org/world/) and landmark [2006 TED presentation](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen)
 * [Nicholas Felton's](http://feltron.com/) [Daytum](http://daytum.com/) is a simple collection and visualization platform for personal data
 * Google's [Public Data Explorer](http://www.google.com/publicdata/directory) is based on Hans Rosling's work with Gapminder
