@@ -126,7 +126,6 @@ I've grouped some examples under their creator(s) to identify important figures 
   * [US Oil Production & Consumption](http://awesome.good.is/transparency/web/1005/oil-consumption/flat.html)
   * [Foot Powered](http://awesome.good.is/transparency/web/1006/rise-of-walking-and-biking/flat.html)
   * [Animals in the House](http://awesome.good.is/transparency/012/trans012animals.html)
-* [EU Unemployment Tracker](http://blogs.ft.com/ftdata/2014/07/07/eu-unemployment-tracker/) by John Burn-Murdoch for *Financial Times*, c. 2014
 * [Mike Bostock](http://bost.ocks.org/mike/) (*New York Times*, creator of D3)
   * [Drought Maps](http://bost.ocks.org/mike/drought/)
   * [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/) (recreation of Hans Rosling's Gapminder)
