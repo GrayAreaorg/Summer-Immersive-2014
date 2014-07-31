@@ -3,18 +3,18 @@
   <head>
     <title>{{ page.name }} | {{ site.name }}</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <a id="logo" href="/"><img src="/img/ccio.png" alt="Creative Code"></a>
+        <a id="logo" href="/"><img src="{{ site.url }}/img/ccio.png" alt="Creative Code"></a>
         <h1>Summer Immersive 2014</h1>
         <nav>
-          <a href="/classes/">Classes</a>
-          <a href="/instructors/">Instructors</a>
-          <a href="/students/">Students</a>
-          <a href="/#schedule">Schedule</a>
+          <a href="{{ site.url }}/classes/">Classes</a>
+          <a href="{{ site.url }}/instructors/">Instructors</a>
+          <a href="{{ site.url }}/students/">Students</a>
+          <a href="{{ site.url }}/schedule/">Schedule</a>
         </nav>
       </div>
     </header>
