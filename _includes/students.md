@@ -1,16 +1,16 @@
 ### Laura Daly
-<img src="{{ site.baseurl }}/img/ld.jpg">
+<img src="/img/ld.jpg">
 
 Laura works as a GIS Specialist & Cartographer at GreenInfo Network in the Bay Area and is passionate about mapping for social and economic justice. She enjoys working on projects that provide a mapped presence for underrepresented groups and has worked on projects based in CA and the US, in Ecuador, and in Kenya.   
 
 ### [Vikram Babu](http://recordfamous.com/) - [@recordfamous](https://twitter.com/recordfamous)
-<img src="{{ site.baseurl }}/img/vb.jpg">
+<img src="/img/vb.jpg">
 
 Product designer, philosophy @codifyit, cassettes @tapefamous, former
 teacher & Canadia expat.
 
 ### [Abla Hamilton](http://about.me/abla) - [@abla47](https://twitter.com/abla47)
-<img src="{{ site.baseurl }}/img/ah.jpg">
+<img src="/img/ah.jpg">
 
 Abla Hamilton is originally from Atlanta, GA and currently resides in Santa Cruz, CA. Currently she is a Senior User Researcher & Designer for a small company called [Redbubble](http://www.redbubble.com). which is an online platform to support artists.
 
@@ -22,26 +22,26 @@ She hopes that her involvement in the Creative Coding Immersive will help her to
 <br>
 
 ### [Colt Steele](http://iamcolt.com/) - [@CoolColtSteele](https://twitter.com/CoolColtSteele)
-<img src="{{ site.baseurl }}/img/cs.jpg">
+<img src="/img/cs.jpg">
 
 Colt is a web developer and musician and dog lover and lego builder.
 
 ### Kaori Furusawa - [@KaoriKayote](https://twitter.com/@KaoriKayote)
-<img src="{{ site.baseurl }}/img/kf.jpg">
+<img src="/img/kf.jpg">
 
 Originally from Tokyo, Kaori has been residing in California for the past 10 years. Her main profession is manufacturing 3D printers, and design work at Type A Machines (based in San Francisco, CA),  while pursuing an  Industrial Design degree at California College of the Arts. Kaori has a background in digital fabrication, hand-making shoes, participation at various start-ups, and has a personal interest in integrating creative coding with 3D printing.
 
 <br>
 
 ### [Diana Galvis](http://dianagalvis.com/index.html) - [@DeRousseur](https://twitter.com/DeRousseur)
-<img src="{{ site.baseurl }}/img/dg.jpg">
+<img src="/img/dg.jpg">
 
 My name is Diana Galvis. I'm a colombian UX / Visual and Interaction designer with a user-centered and design thinking approach. I just received my MFA Design+Tech from the San Francisco Art Institute. I'm now here on OPT visa. Just in case you could help, I'm looking for a job :) I doesn't hurt to ask.
 
 What I think about the most when I work is how my portfolio communicates my intentions to this world. I'm passionate about exploring the possibilities offered by physical computing and telecommunications to influence cultural behavior and create empathic connections between each other and the world around us. I believe one way to foster empathy is providing people with the tools to discover, interpret and interact with different perspectives of truth conveyed in meaningful, engaging experiences and intuitive interfaces that teach awareness of the consequences of our actions.  
 
 ### [Mark Hellar](http://mhellar.github.io/Creative-Code-Portfolio) - [@mhellar](https://twitter.com/mhellar)
-<img src="{{ site.baseurl }}/img/mh.jpg">
+<img src="/img/mh.jpg">
 
 Mark Hellar is a leading technology consultant for cultural institutions throughout the San Francisco Bay Area and beyond and owner of Hellar Studios LLC. Mark specializes in creative yet practical digital media and web-based solutions for multimedia artists and the institutions that support their work, with an emphasis on developing systems and best practices for archiving, documentation and exhibition.
 
@@ -50,17 +50,17 @@ Before opening Hellar Studios LLC in 2009, Mark worked as a systems architect at
 Mark is an advisory committee member for the Digital Repository for Museum Collections at MoMA and has presented on the conservation of software-based artworks at Harvard University, the Smithsonian Institute, DOCAM research alliance and the American Institute of Conservation.
 
 ### [Jason Rasmussen](http://jasonrasmussen.net/) - [@jasonrasputan](https://twitter.com/@jasonrasputan)
-<img src="{{ site.baseurl }}/img/jr.jpg">
+<img src="/img/jr.jpg">
 
 I am currently working with everything from interactive media and creative coding to conceptual sculpture and performance. Displacement of context is the setting for the storyline in my works. In front of the backdrop and on a floor of memory, objects become characters that play out something created all on their own. They sing songs in which the words all rhyme but fall out of rhythm. I am interested in telling stories through objects and design. I find my theater of inspiration in department stores. All the clorox bottles act out a drama with the sponges as do the fruits and the pasteurized juice concentrate in the nearby refrigerated section. Part of my life has always been influenced by commercialization and design. I find that to design is human, but to error is nature. In this context I tell stories about nature and design.
 
 ### [Charles-Antoine Perrault](http://www.charlesantoineperrault.com/) - [@ca_perrault](https://twitter.com/ca_perrault)
-<img src="{{ site.baseurl }}/img/cap.jpg">
+<img src="/img/cap.jpg">
 
 Educated as an urban designer and planner, I worked at Situ Studio in New York over the last two years on “Forensic Architecture”, a project exploring the role of architectural visualization and spatial analysis in contemporary international legal procedures. This project investigated a series of case studies to produce a wide range of visuals including diagrams, maps, animations, and interactive reports that were used by the UN and other NGOs to shed a new light on intricate human rights issues. I recently relocated to the Bay Area and I am pursuing work at the intersection of social entrepreneurship, technology, and design. I am especially interested in continuing developing more sophisticated interactive maps and spatial analysis tools and in learning new data visualization techniques.
 
 ### [Kaitlin Yap](http://kaitlinyap.com/) - [@kaitlinyap](https://twitter.com/kaitlinyap)
-<img src="{{ site.baseurl }}/img/ky.png">
+<img src="/img/ky.png">
 
 Hi, I’m Kaitlin -- but everyone calls me Yap. I moved from from NYC to SF this year; the mild winter and excellent burritos have helped the transition. 
 
@@ -69,19 +69,19 @@ I’m currently an Executive Producer on a Human Interface design team. During t
 I love art, design, photography, news, ice cream, and traveling abroad any chance I get. You can find me at [kaitlinyap.com](http://kaitlinyap.com/) / [@kaitlinyap](https://twitter.com/kaitlinyap) on just about everything.
 
 ### [Taurin Barrera](http://www.taurinbarrera.com/) - [@myspacebooktube](https://twitter.com/myspacebooktube)
-<img src="{{ site.baseurl }}/img/tb.png">
+<img src="/img/tb.png">
 
 Taurin Barrera is an electronic musician and new media artist whose work explores the interactive connections between technology and perception. Taurin incorporates computer vision, data visualization, and electroacoustic composition techniques to program audiovisual instruments and installations. He leverages creative technologies to compose sounds and music you can see, and images you can hear. Taurin recently received an MFA in Electronic Music & Recording Media from Mills College, where he studied with Fred Frith, Pauline Oliveros, and Laetitia Sonami. While at Mills, Taurin developed interactive software and environments to foster creative and playful exploration of digital media.
 
 ### [Kristin Henry](http://kristinhenry.dunked.com/) - [@KristinHenry](https://twitter.com/KristinHenry)
-<img src="{{ site.baseurl }}/img/kh.jpg">
+<img src="/img/kh.jpg">
 
 Kristin Henry is a  generative artist and computer scientist, specializing in Science and Data Visualization. Early works include an animation of the molecular biology of HIV, and a neuromuscular junction simulation. Moving from animations of biological systems, to computationally generated visualizations, recent works have included exploring the frequencies of amino acids in various proteins  and developing color patterns from them.
 
 Living in San Francisco during the AIDS epidemic had a profound impact on her, and led her to pursue studies in Biology and Physical Anthropology.  While working with an AIDS educator in New Mexico, she discovered the power of visual storytelling.
 
 #### [Paolo Salvagione](http://salvagione.com/) - [@salvagione](https://twitter.com/salvagione)
-<img src="{{ site.baseurl }}/img/pas.jpg">
+<img src="/img/pas.jpg">
 
 Paolo Salvagione is an artist who works at the intersection of engineering, participation, and levity.
 
@@ -94,7 +94,7 @@ In his art, Salvagione has sent his studio visitors out one second-story window 
 He is an autodidact by trade and yet, as the son of a printmaker and the grandson of a sculptor and of an architect, very much an artist schooled in tradition. All his works balance humor and craftsmanship, the novel and the banal, the tactile and the conceptual.
 
 ### [Scott Killdal](http://www.kildall.com) - [@kildall](https://twitter.com/kildall)
-<img src="{{ site.baseurl }}/img/sk.jpg">
+<img src="/img/sk.jpg">
 
 Scott Kildall is cross-disciplinary artist who combines networked performance and algorithms to make art works that invite public participation.
 
