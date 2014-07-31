@@ -1,5 +1,5 @@
 ---
-name: Students
+title: Students
 layout: default
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Classes
+title: Classes
 layout: default
 ---
 

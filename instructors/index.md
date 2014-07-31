@@ -1,5 +1,5 @@
 ---
-name: Instructors
+title: Instructors
 layout: default
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Schedule
+title: Schedule
 layout: default
 ---
 
