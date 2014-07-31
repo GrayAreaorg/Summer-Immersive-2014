@@ -1,5 +1,5 @@
 ### <a name="shawn"></a> [Shawn Allen](http://secularproducts.com) - [@shawnbot](http://twitter.com/shawnbot)
-![](/img/sa.jpg)
+<img src="{{ site.baseurl }}/img/sa.jpg">
 
 Shawn Allen is an advisor at [Stamen](http://stamen.com). In his former
 role as Interaction Director, he facilitated communication between Stamen’s
