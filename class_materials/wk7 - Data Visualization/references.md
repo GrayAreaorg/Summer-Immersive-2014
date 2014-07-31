@@ -16,6 +16,7 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [I Want Hue](http://tools.medialab.sciences-po.fr/iwanthue/) is a tool for creating custom color scales, with some [great examples](http://tools.medialab.sciences-po.fr/iwanthue/examples.php)
   * [Polychart](https://www.polychart.com/) is a relational database frontend for interactive visualization
   * [Rickshaw](http://code.shutterstock.com/rickshaw/) focuses on time series graphs
+  * [Seaborn](http://web.stanford.edu/~mwaskom/software/seaborn/) is a statistical data visualization suite for Python
   * [Vega](http://trifacta.github.io/vega/) is a JSON grammar for D3
   * [Vincent](http://vincent.readthedocs.org/en/latest/) is a Python library that creates images from [Vega](http://trifacta.github.io/vega/) specifications
 * Web apps:
