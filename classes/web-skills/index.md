@@ -40,8 +40,8 @@ Tonight we took a shotgun approach and covered a lot of stuff:
   - syncing code with the native app for [Mac](http://mac.github.com) and [Windows](http://windows.github.com)
 * The [Atom](http://atom.io) text editor
 
-Check out [the slides](http://shawnbot.github.io/web-skills/slides/day1.html)
-on your own time, and [get in touch](http://github.com/shawnbot) if you have any questions!
+Check out [the slides](slides/day1.html) on your own time, and [get in
+touch](http://github.com/shawnbot) if you have any questions!
 
 ### Suggested Reading
 * [Shay Howe: Building Your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
@@ -74,9 +74,9 @@ Here are some of the topics covered:
   - [Tributary](http://tributary.io)
   - [JSFiddle](http://jsfiddle.net)
 
-Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), and I'll see you in 2 weeks for the JavaScript course!
-  
-  
+Check out [the slides](slides/day2.html), and I'll see you in 2 weeks for the
+JavaScript course!
+
 ### Further Reading
 * [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS)
 * [Learn Layout](http://learnlayout.com/)
@@ -150,11 +150,3 @@ Check out [the slides](http://shawnbot.github.io/web-skills/slides/day2.html), a
 * [CSS Tricks](http://css-tricks.com/)
 * [Speckboy](http://speckyboy.com/)
 * [A List Apart](http://alistapart.com/)
-
-
-
-
-
-
-
-

@@ -28,7 +28,9 @@ language fundamentals and use them in creative applications.
   - [jsconsole.com](http://jsconsole.com)
 
 ## Tuesday, July 1st (6pm - 9pm)
-On our first day we covered the basics of JavaScript syntax. The slides are in the [slides directory](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/master/class_materials/wk3%20-%20JavaScript/slides/day1.html), which you can view locally by cloning this repository. Here's the outline:
+On our first day we covered the basics of JavaScript syntax. The slides are in
+the [slides directory](slides/day1.html), which you can view locally by
+cloning this repository. Here's the outline:
 
 * [JavaScript](http://docs.webplatform.org/wiki/javascript) basics:
   - Variables, [the var statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)) and [data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
@@ -78,11 +80,12 @@ Then we dove into two very different graphics APIs:
   - a simliar [drawing app in D3](http://jsfiddle.net/shawnbot/KF7P7/)
   - a more [psychedelic version](http://jsfiddle.net/shawnbot/KF7P7/8/)
 
-Here are [the slides](https://github.com/GrayAreaorg/Summer-Immersive-2014/blob/master/class_materials/wk3%20-%20JavaScript/slides/day2.html), but you'll probably have more luck running them locally.
-  
+Here are [the slides](slides/day2.html).
 
 ## Saturday, July 5th (12pm - 6pm)
-On Saturday we covered the basics of loading external files, the JSON standard, and hacked on some [animated sketches](examples/) and SVG.
+On Saturday we covered the basics of loading external files, the JSON
+standard, and hacked on some [animated sketches](examples/) and SVG. Check out
+[the slides](slides/day3.html).
 
 * Asynchronous programming:
   - Loading external files:
