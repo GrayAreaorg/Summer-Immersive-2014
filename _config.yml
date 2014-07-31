@@ -1,5 +1,5 @@
 name: "Gray Area Creative Code Summer Immersive (2014)"
-url: "http://grayareaorg.github.io/Summer-Immersive-2014/"
+baseurl: "http://grayareaorg.github.io/Summer-Immersive-2014/"
 description: ""
 markdown: redcarpet
 redcarpet:
