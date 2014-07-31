@@ -196,7 +196,12 @@ ul.tree ul li:last-child:before {
   align-items: center;
 }
 
+.row.top {
+  align-items: flex-start;
+}
+
 .row .col {
+  padding: 0 10px;
 }
 
 .reveal section .row img {
