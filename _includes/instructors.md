@@ -1,5 +1,5 @@
 ### <a name="shawn"></a> [Shawn Allen](http://secularproducts.com) - [@shawnbot](http://twitter.com/shawnbot)
-<img src="/img/sa.jpg">
+<img src="{{ site.baseurl }}/img/sa.jpg">
 
 Shawn Allen is an advisor at [Stamen](http://stamen.com). In his former
 role as Interaction Director, he facilitated communication between Stamen’s
@@ -18,7 +18,7 @@ and the broader web design community.
 
 
 ### <a name="matt"></a> [Matt Ganucheau](http://www.ganucheau.com) - [@mganucheau](http://twitter.com/mganucheau)
-<img src="/img/mg.jpg">
+<img src="{{ site.baseurl }}/img/mg.jpg">
 
 Matt Ganucheau, Director of Education at Gray Area, is a San Francisco based
 artist, composer, designer, and educator. With a passion for exploring the
@@ -31,7 +31,7 @@ technology.
 Over the course of his multi-disciplinary professional career, Matt has worked for software companies such as California Academy of Sciences, Apple, Native Instruments, and SEGA while teaching at educational facilities such as E’xpression College for the Arts and the California Academy of Science. He has exhibited work internationally and has been featured in publications such as WIRED, CNET, Adbusters, and The Huffington Post. Matt graduated from the Berklee College of Music with a Bachelor in Fine Arts in Music Synthesis and received his Master’s degree from New York University’s Interactive Technology Program.
 
 ### <a name="gabriel"></a> [Gabriel Dunne](http://www.gabrieldunne.com) - [@quilime](https://twitter.com/quilime) 
-<img src="/img/gd.png">
+<img src="{{ site.baseurl }}/img/gd.png">
 
 Gabriel Dunne’s work spans fine art to design and technology in the mediums of
 installation, architecture, industrial design, and audio/visual programming. His
@@ -45,7 +45,7 @@ BAVC’s NextGen department.
 
 
 ### <a name="ben"></a> [Ben McChesney](http://benmcchesney.com/) -[@benDesigning](https://twitter.com/benDesigning)
-<img src="/img/bc.png">
+<img src="{{ site.baseurl }}/img/bc.png">
 
 Ben McChesney has an eccentric passion for making shiny and fun installations.
 With the Microsoft Kinect sensor his focus shifted from a flash web developer
@@ -59,7 +59,7 @@ hopes to use data visualization and open source to make the world a better
 place.
 
 ### <a name="neal"></a> Neal Riley - [@nealriley](https://twitter.com/nealriley)
-<img src="/img/nr.png">
+<img src="{{ site.baseurl }}/img/nr.png">
 
 Neal Riley is an ETL/Data Warehouse developer at Atlassian, with a background
 in Electronic Music that started in College, where he studied contemporary
@@ -69,7 +69,7 @@ theMetakids, Neal has worked with EDM artists such as Beautiful Bells
 (Moodgadget) and recently Hudson Mohawke, Paul Van Dyke and Just Blaze.
 
 ### <a name="kristina"></a> [Kristina Garfinkle](https://kbrainwave.github.io/) - [@kbrainwave](https://twitter.com/kbrainwave)
-<img src="/img/kg.jpg">
+<img src="{{ site.baseurl }}/img/kg.jpg">
 
 #### TA Scholarship Recipient
 Kristina is a software engineer for Versal, an education startup. She has a
@@ -80,7 +80,7 @@ computational sides to explore neuroscientific concepts such as time, pair
 bonding, and sexual differentiation.
 
 ### <a name="kiri"></a> Kiri Strack-Grose - [@KiriStackGrose](https://twitter.com/KiriStrackGrose)
-<img src="/img/ksg.jpg">
+<img src="{{ site.baseurl }}/img/ksg.jpg">
 
 #### Intern at Gray Area
 Kiri is a student at Bennington College, studying Theatrical Design and
