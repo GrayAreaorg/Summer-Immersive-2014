@@ -92,9 +92,8 @@ I've grouped some examples under their creator(s) to identify important figures 
 * [Marcos Weskamp's](http://marumushi.com) [Newsmap](http://marumushi.com/projects/newsmap) popularized [treemaps](http://en.wikipedia.org/wiki/Treemapping)
 * [Baby Name Voyager](http://www.babynamewizard.com/voyager), by Martin Wattenberg and Fernanda Viegas, shows two centuries of baby name popularity in a stacked area chart
 * [Hans Rosling's](http://en.wikipedia.org/wiki/Hans_Rosling) [Gapminder](http://www.gapminder.org/world/) and landmark [2006 TED presentation](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen)
-* [Nicholas Felton's](http://feltron.com/)
-  * [Daytum](http://daytum.com/) is a simple collection and visualization platform for personal data
-* Google's [Public Data Explorer](http://www.google.com/publicdata/directory) is based on Hans Rosling's work
+* [Nicholas Felton's](http://feltron.com/) [Daytum](http://daytum.com/) is a simple collection and visualization platform for personal data
+* Google's [Public Data Explorer](http://www.google.com/publicdata/directory) is based on Hans Rosling's work with Gapminder
 * [OECD Data](http://data.oecd.org/)
 * [The Personal Analytics of My Life](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) by Stephen Wolfram, c. 2012
 * The New York Times Graphics team:
