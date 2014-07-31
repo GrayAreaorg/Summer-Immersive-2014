@@ -66,7 +66,7 @@ Hi, I’m Kaitlin -- but everyone calls me Yap. I moved from from NYC to SF this
 
 I’m currently an Executive Producer on a Human Interface design team. During the past decade, I’ve worked across the technology and marketing/media industries with brands such as Google, Vogue and Nike. 
 
-I love art, design, photography, news, ice cream, and traveling abroad any chance I get. You can find me at [kaitlinyap.com]((http://kaitlinyap.com/) / [@kaitlinyap](https://twitter.com/kaitlinyap) on just about everything.
+I love art, design, photography, news, ice cream, and traveling abroad any chance I get. You can find me at [kaitlinyap.com](http://kaitlinyap.com/) / [@kaitlinyap](https://twitter.com/kaitlinyap) on just about everything.
 
 ### [Taurin Barrera](http://www.taurinbarrera.com/) - [@myspacebooktube](https://twitter.com/myspacebooktube)
 <img src="{{ site.baseurl }}/img/tb.png">
