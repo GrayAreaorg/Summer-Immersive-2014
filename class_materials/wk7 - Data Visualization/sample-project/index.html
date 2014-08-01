@@ -2,40 +2,93 @@
 <html>
   <head>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 id="sum"></h1>
+    <div id="agencies"></div>
   </body>
   <script>
+
+// declare our global variables
 var data;
 var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
 
+// load the `dataURL` as CSV, pass each row through convertRow(),
+// then process the resulting data with our callback function
 d3.csv(dataURL, convertRow, function(error, d) {
+  // "export" the data to our global variable, `data`
   data = d;
-  console.log("Loaded", data.length, "rows");
-  var invalid = data.filter(function(d) {
-    return isNaN(d.budget);
-  });
-  console.log("invalid:", invalid);
+
+  // get just the budget numbers as an Array
   var budgetNumbers = data.map(function(d) {
     return d.budget;
   });
   console.log("budget numbers:", budgetNumbers);
+  // calculate the min and max budget numbers
   var min = d3.min(budgetNumbers);
   var max = d3.max(budgetNumbers);
-  var mean = d3.mean(budgetNumbers);
-  var sum = d3.sum(budgetNumbers);
-  console.log("min:", min, "max:", max, "mean:", mean, "sum:", sum);
+
+  // the string format: format(1000) -> "1,000"
   var format = d3.format(",");
   d3.select("#sum")
     .text("$" + format(sum));
+
+  // sort the data array (in place) by budget value, descending
+  data.sort(function(a, b) {
+    return d3.descending(a.budget, b.budget);
+  });
+
+  // select all of the elements with the "agency" class,
+  // then bind data to them
+  // (at this point, `items` will contain only placeholders!)
+  var items = d3.select("#agencies")
+    .selectAll(".agency")
+    .data(data);
+
+  // this is where we actually add all of the "missing"
+  // elements to the DOM: items.enter() returns a list of
+  // "placeholders", then we fill them in with .append("div")
+  var enter = items.enter().append("div")
+    .attr("class", "agency")
+    .attr("id", function(d) { return d.dept; });
+
+  // next, we append a <h2> to each of our entering items
+  enter.append("h2")
+    .text(function(d) { return d.dept_title; });
+
+  // next, we add a <div class="bar"> to each of them
+  var bar = enter.append("div")
+    .attr("class", "bar")
+    // the text of each bar is the formatted budget number
+    .text(function(d) { return "$" + format(d.budget); });
+
+  // our x-scale has an input domain between
+  // 0 and the max budget value, and an output range between
+  // 1 and 100 (we'll designate these as percentages later)
+  var scale = d3.scale.linear()
+    .domain([0, max])
+    .range([1, 100]);
+
+  // finally, we assign a "width" style to each bar
+  // according to its scaled budget value, suffixed with
+  // a "%" so that the browser treats it as a percentage
+  bar.style("width", function(d) {
+    return scale(d.budget) + "%";
+  });
 });
 
+// this is the function that coerces the budget property
+// of each row using the parseDollars() function
 function convertRow(row) {
   row.budget = parseDollars(row.budget);
   return row;
 }
 
+
+// our budget strings come in the format "$xxxxxxx.00",
+// so we need to chop off the "$" first with .substr(1)
+// then coerce the result into a number with +
 function parseDollars(str) {
   return +str.substr(1);
 }
