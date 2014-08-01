@@ -33,11 +33,12 @@ var svg = d3.select("svg"),
     lines = [],
     maxLines = 360,
     grid = 1,
+    interpolate = "step",
     draw = drawLines;
 
 var strokeScale = d3.scale.linear()
   .domain([0, 200])
-  .range([20, 5])
+  .range([1, 50])
   .clamp(true);
 
 var strokeWidth = function(line) {
@@ -47,18 +48,6 @@ var strokeWidth = function(line) {
 var strokeColor = function(line, i) {
   return d3.hsl(i / maxLines * 360, 1, .5);
 };
-
-function drawPath() {
-  var points = [];
-  lines.forEach(function(line) {
-    points.push(line.start, line.end);
-  });
-  path.datum(points)
-    .attr("d", d3.svg.line()
-      .interpolate(interpolate)
-      .x(function(d) { return round(d.x); })
-      .y(function(d) { return round(d.y); }));
-}
 
 function drawLines() {
   var line = svg.selectAll("line")
@@ -72,7 +61,7 @@ function drawLines() {
     y2: function(d) { return round(d.end.y); }
   })
   .attr("stroke", strokeColor)
-  .attr("stroke-width", 20);
+  .attr("stroke-width", strokeWidth);
 }
 
 svg.on("mousedown", function(e) {

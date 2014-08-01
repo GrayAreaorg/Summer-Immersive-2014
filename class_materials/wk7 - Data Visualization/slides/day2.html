@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Visualization</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/docco.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h2>Data Visualization</h2>
+          <h3>Day 2</h2>
+        </section>
+
+        <section id="ben-fry-process">
+          <h2>The Process</h2>
+          <p>We left off yesterday more than halfway<br>
+          through Ben Fry&rsquo;s data visualization process:</p>
+
+          <img src="images/ben-fry-process.png">
+
+          <p class="fragment">Today, we do the fun stuff.</p>
+        </section>
+
+        <section id="represent">
+          <section id="step5-represent">
+            <h2>Represent</h2>
+            <blockquote>Choose a basic visual model, such as<br>
+              a bar graph, list, or tree.</blockquote>
+            <p class="fragment">Let&rsquo;s first consider our options.</p>
+          </section>
+
+          <section id="visual-variables">
+            <h2>Visual Variables</h2>
+            <p><a href="">Jacques Bertin</a> was a French cartographer and visual<br>
+            designer who first laid out most of the ways in which<br>
+            data could be conveyed visually, which he called<br>
+            <i>visual variables</i>:</p>
+            <div class="row">
+              <div class="col">
+                <a class="unstyled" href="http://www.impactvisuel.net/2010/05/19/deces-de-jacques-bertin-pere-fondateur-de-la-visualisation-de-linformation.html">
+                  <img src="images/bertin.jpg" width="240">
+                </a>
+              </div>
+              <div class="col">
+                <ul>
+                  <li class="fragment"><b>Position</b>: the spatial location</li>
+                  <li class="fragment"><b>Size</b>: width, height, line length, etc.</li>
+                  <li class="fragment"><b>Weight</b>: stroke thickness, text boldness</li>
+                  <li class="fragment"><b>Shape</b>: using different symbols</li>
+                  <li class="fragment"><b>Orientation</b>: direction or rotation</li>
+                  <li class="fragment"><b>Color</b>: hue, saturation, value, etc.</li>
+                  <li class="fragment"><b>Texture</b>: solid, striped, checkered, etc.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="scales">
+            <h2>Scales</h2>
+            <p><i>Scales</i> are the mathematical tools that we use<br>
+            to determine the values of visual variables.</p>
+
+            <img class="fragment" src="images/map_scale_bar.jpg" class="transparent">
+
+            <p class="fragment">Generally speaking, scales are either<br>
+            quantitative or qualitative (like data).</p>
+          </section>
+
+          <section id="axes">
+            <h2>Axes</h2>
+            <p>Axes (plural of <i>axis</i>) are the<br>
+            graphical accompaniments to scales.</p>
+
+            <a class="fragment unstyled" href="http://www.telerik.com/help/silverlight/radchart-features-axes-overview.html">
+              <img class="transparent" src="http://www.telerik.com/help/silverlight/media/RadChart_Features_Axes_Overview_01.png" height="320">
+            </a>
+
+            <p class="fragment">Axes may have titles, rules, ticks and labels.</p>
+
+          </section>
+
+          <section id="marks">
+            <h2>Marks</h2>
+            <p><i>Marks</i> are the name given by modern visualization<br>
+            experts to visual elements that represent data.</p>
+
+            <a class="fragment unstyled" href="http://ieeexplore.ieee.org/ieee_pilot/articles/06/ttg2009061121/article.html">
+              <img width="839" height="292" class="transparent" style="border: 10px solid white !important" src="http://ieeexplore.ieee.org/ieee_pilot/articles/06/ttg2009061121/assets/img/article_1/fig_1/large.gif">
+            </a>
+
+            <p class="fragment">E.g. bars, lines, circles, areas, etc.</p>
+          </section>
+
+          <section id="chart-categories">
+            <h2>Chart Categories</h2>
+            <p>There are dozens of generally accepted chart types in<br>
+            common use, but when selecting one it&rsquo;s useful to<br>
+            consider these classifications, courtesy of <a href="http://www.excelcharts.com/blog/classification-chart-types/">Jorge Camoes</a>:</p>
+            <a class="fragment unstyled" href="http://www.excelcharts.com/blog/classification-chart-types/">
+              <img class="transparent" style="border: 10px solid white !important" src="http://www.excelcharts.com/blog/wp-content/uploads/2013/11/classification-chart-types.png" height="360">
+            </a>
+          </section>
+
+          <section id="examples">
+            <h2>Some Good Examples</h2>
+            <ul>
+              <li><a href="http://www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html?_r=0">How Different Groups Spend Their Day</a></li></li>
+              <li><a href="http://www.scmp.com/infographics/article/1284683/iraqs-bloody-toll">Iraq&rsquo;s Bloody Toll</a></li>
+              <li><a href="http://www.nytimes.com/imagepages/2010/05/02/business/02metrics.html">Driving Shifts Into Reverse</a></li>
+              <li><a href="http://fathom.info/fortune500">The Fortune 500</a></li>
+              <li><a href="http://www.nytimes.com/packages/html/newsgraphics/2011/0119-budget/index.html">Obama’s 2012 Budget Proposal</a></li>
+              <li><a href="http://awesome.good.is/transparency/012/trans012animals.html">Animals in the House</a></li>
+              <li><a href="http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html">Over the Decades, How States Have Shifted</a></li>
+              <li><a href="http://www.trulia.com/vis/when-crime/">When Does Crime Happen?</a></li>
+              <li><a href="http://www.nytimes.com/interactive/2013/05/25/sunday-review/corporate-taxes.html">Across US Companies, Tax Rates Vary Greatly</a></li>
+              <li><a href="http://graphics.latimes.com/mlb-salaries-2014/?sds#giants-2014:dodgers-2014">Compare MLB Team Payrolls</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section id="d3-intro">
+            <p><i>and now...</i></p>
+            <h2>A brief intro to D3</h2>
+          </section>
+
+          <section id="d3-patterns">
+            <h2>D3 Conventions</h2>
+            <ul>
+              <li class="fragment">D3 deals mostly in <i>configurable
+              functions</i>, which are functions with custom methods that
+              change how the function behaves when called.</li>
+              <li class="fragment">Many of D3&rsquo;s functions will accept either a literal
+              value (a number or string) or a function of the form<br>
+              <code>function(d, i)</code> in which <code>d</code> is the
+              <i>datum</i> bound to an element, and <code>i</code> is the index
+              of an element in a selection.</li>
+            </ul>
+          </section>
+
+          <section id="d3-scales">
+            <h2>Scales in D3</h2>
+            <p>The most commonly used scale in D3 is the <i>linear</i><br>
+            scale, which uses linear interpolation to map a value<br>
+            from an input <i>domain</i> onto an output <i>range</i>:</p>
+            <pre class="fragment"><code class="js">
+var scale = d3.scale.linear()
+  .domain([0, 100]) // given a value between 0 and 100
+  .range([20, 80]); // return a value between 20 and 80
+scale(0);   // 20
+scale(100); // 80
+scale(50);  // 50
+            </code></pre>
+            <p class="fragment">There are also square root scales (for circle radii),<br>
+            power (factorial), and logarithmic scales.</p>
+          </section>
+
+          <section id="d3-color-scales">
+            <h2>Quantitative Color Scales</h2>
+            <p>D3 can interpolate other types of values, including color:</p>
+            <pre class="fragment"><code class="js">
+var scale = d3.scale.linear()
+  .domain([0, 100]) // given a value between 0 and 100
+  .range(["red", "blue"]); // "between" red and blue (in RGB)
+scale(0);   // <span style="background: #f00">&nbsp;&nbsp;</span> "#ff0000"
+scale(50);  // <span style="background: #800080">&nbsp;&nbsp;</span> "#800080"
+scale(100); // <span style="background: #00f">&nbsp;&nbsp;</span> "#0000ff"
+            </code></pre>
+
+            <pre class="fragment"><code class="js">
+scale.range([d3.hsl(60, 1, .5), d3.hsl(-30, 1, .5)]);
+scale(0);   // <span style="background: #ffff00">&nbsp;&nbsp;</span> "#ffff00"
+scale(50);  // <span style="background: #80c080">&nbsp;&nbsp;</span> "#80c080"
+scale(100); // <span style="background: #0080ff">&nbsp;&nbsp;</span> "#0080ff"
+            </code></pre>
+          </section>
+
+          <section id="d3-qualitative">
+            <h2>Qualitative Scales in D3</h2>
+
+            <p class="fragment"><b>Category</b> scales rotate through a list of
+            predefined colors:</p>
+            <pre class="fragment"><code class="js">
+var scale = d3.scale.category10();
+scale(0); // <span style="background: #1f77b4">&nbsp;&nbsp;</span> "#1f77b4"
+scale(1); // <span style="background: #ff7f0e">&nbsp;&nbsp;</span> "#ff7f0e"
+scale(2); // <span style="background: #2ca02c">&nbsp;&nbsp;</span> "#2ca02c"
+scale(0); // <span style="background: #1f77b4">&nbsp;&nbsp;</span> "#1f77b4" (we've seen 0 before)
+            </code></pre>
+
+            <p class="fragment">Or you can use <b>ordinal</b> scales
+            for custom categorical scales:</p>
+            <pre class="fragment"><code class="js">
+var scale = d3.scale.ordinal()
+  .range(["red", "green", "blue"]);
+scale(1);   // <span style="background: red">&nbsp;&nbsp;</span> "red"
+scale(2);   // <span style="background: blue">&nbsp;&nbsp;</span> "blue"
+scale("a"); // <span style="background: green">&nbsp;&nbsp;</span> "green"
+scale("b"); // <span style="background: red">&nbsp;&nbsp;</span> "red" (unique, but we've run out of colors)
+            </code></pre>
+          </section>
+
+          <section id="d3-ordinal">
+            <h2>Ordinal Scales</h2>
+            <p>D3&rsquo;s ordinal scales can also be used for bar or dot
+            plots:</p>
+            <pre class="fragment"><code class="js">
+var scale = d3.scale.ordinal()
+  .domain(d3.range(0, 10))  // e.g., 10 bars
+  .rangeBands([0, 100]);    // 0 - 100
+scale(0);           // 0 (x of first bar)
+scale.rangeBand();  // 10 (width of each bar)
+scale(1);           // 10 (x of second bar)
+scale(10);          // undefined (no interpolation!)
+            </code></pre>
+
+            <pre class="fragment"><code class="js">
+// allocate 5% of the space for padding between + outside bands
+scale.rangeBands([0, 100], .05);
+
+// use point spacing instead, with padding between + outside
+scale.rangePoints([0, 100], 1);
+            </code></pre>
+          </section>
+
+          <section id="data-binding">
+            <h2>Data Binding</h2>
+            <p>To bind data in D3, call <code>.data()</code> on a multi-selection:</p>
+            <pre><code class="js">
+var items = selection.selectAll(".item")
+  .data(data); // data is an Array
+            </code></pre>
+            <p>Append new elements to the DOM with the <i>enter</i> selection,
+            and remove old ones with the <i>exit</i> selection:</p>
+            <pre><code class="js">
+items.enter().append("div")
+  .attr("class", "item");
+items.exit().remove();
+            </code></pre>
+            <p>The <i>update</i> selection is the original one (<code>items</code>),<br>
+            plus any appended elements in the <i>enter</i> selection,<br>
+            and minus any elements removed in the <i>exit</i> selection.</p>
+          </section>
+
+          <section id="general-update-pattern">
+            <h2>General Update Pattern</h2>
+            <pre><code class="js">
+var ul = d3.select("ul");
+function update(data) {
+  var li = ul.selectAll("li")
+    .data(data);
+  li.enter().append("li");
+  li.exit().remove();
+  // <var>li</var> is the "update" selection
+  li.text(function(d) { return d; });
+}
+
+update(["a", "b", "c"]);        // creates 3 new elements
+update(["foo", "bar"]);         // removes the last one
+update(["foo", "bar", "baz"]);  // adds one at the end
+            </code></pre>
+          </section>
+
+        </section>
+
+        <section id="visualize">
+          <h2>Let&rsquo;s Visualize!</h2>
+        </section>
+
+        <section id="refine">
+          <section id="step6-refine">
+            <h2>Refine</h2>
+            <blockquote>Improve the basic representation to make it clearer and more visually engaging.</blockquote>
+            <p class="fragment">Make it better.</p>
+            <p class="fragment">Remember to <b>save your work</b> (using git)<br>
+            so that you can go back to older versions.</p>
+            <p class="fragment"><b>Don&rsquo;t be afraid to start from scratch.</b></p>
+          </section>
+
+          <section id="legibility">
+            <h2>Improving Legibility</h2>
+            <p>Here are some tips for improving the<br>
+            legibility of your visualizations:</p>
+            <ul>
+              <li class="fragment">Label your axes</li>
+              <li class="fragment">Use a tried and tested color scheme,<br>
+              such as from <a href="http://colorbrewer2.org/">ColorBrewer</a></li>
+              <li class="fragment">Label your marks sparingly<br>
+              (or in response to interaction)</li>
+              <li class="fragment"><b>Make it as big as you can.</b></li>
+            </ul>
+          </section>
+
+          <section id="day2-end">
+            <h3>That&rsquo;s all for tonight!</h3>
+          </section>
+
+        </section>
+
+        <section id="interact">
+          <section id="step7-interact">
+            <h2>Interact</h2>
+            <blockquote>Add methods for manipulating the data or controlling which features are visible.</blockquote>
+            <p class="fragment">This is where your new-found mastery<br>
+            of HTML and JavaScript comes in.</p>
+          </section>
+
+          <section id="basic-interactivity">
+            <h2>Basic Interactivity</h2>
+            <p>TODO</p>
+            <ul>
+              <li>The humble <code>title</code></li>
+              <li><b>Hover, click, touch</b>: responding to interactions</li>
+            </ul>
+          </section>
+
+          <section id="complex-interactivity">
+            <h2>Complex Interactivity</h2>
+            <p>TODO</p>
+            <ul>
+              <li><b>Parameterization</b>: choosing dimensions in your data</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section id="publishing">
+          <h2>Publishing Your Work</h2>
+          <p>TODO: checklist</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>

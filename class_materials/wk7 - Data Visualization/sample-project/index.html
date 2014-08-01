@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <h1 id="sum"></h1>
+  </body>
+  <script>
+var data;
+var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
+
+d3.csv(dataURL, convertRow, function(error, d) {
+  data = d;
+  console.log("Loaded", data.length, "rows");
+  var invalid = data.filter(function(d) {
+    return isNaN(d.budget);
+  });
+  console.log("invalid:", invalid);
+  var budgetNumbers = data.map(function(d) {
+    return d.budget;
+  });
+  console.log("budget numbers:", budgetNumbers);
+  var min = d3.min(budgetNumbers);
+  var max = d3.max(budgetNumbers);
+  var mean = d3.mean(budgetNumbers);
+  var sum = d3.sum(budgetNumbers);
+  console.log("min:", min, "max:", max, "mean:", mean, "sum:", sum);
+  var format = d3.format(",");
+  d3.select("#sum")
+    .text("$" + format(sum));
+});
+
+function convertRow(row) {
+  row.budget = parseDollars(row.budget);
+  return row;
+}
+
+function parseDollars(str) {
+  return +str.substr(1);
+}
+
+  </script>
+</html>
