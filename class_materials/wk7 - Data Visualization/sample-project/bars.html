@@ -2,10 +2,11 @@
 <html>
   <head>
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bars.css">
   </head>
   <body>
-    <h1 id="sum"></h1>
+    <h1>San Francisco Budget by Department, FY 2011-2012</h1>
+    <h2>Sum: <span id="sum"></span></h2>
     <div id="agencies"></div>
   </body>
   <script>
@@ -28,6 +29,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // calculate the min and max budget numbers
   var min = d3.min(budgetNumbers);
   var max = d3.max(budgetNumbers);
+  var sum = d3.sum(budgetNumbers);
 
   // the string format: format(1000) -> "1,000"
   var format = d3.format(",");
@@ -53,22 +55,25 @@ d3.csv(dataURL, convertRow, function(error, d) {
     .attr("class", "agency")
     .attr("id", function(d) { return d.dept; });
 
-  // next, we append a <h2> to each of our entering items
-  enter.append("h2")
+  // next, we append a <h3> to each of our entering items
+  enter.append("h3")
     .text(function(d) { return d.dept_title; });
 
   // next, we add a <div class="bar"> to each of them
   var bar = enter.append("div")
-    .attr("class", "bar")
-    // the text of each bar is the formatted budget number
+  .attr("class", "bar");
+
+  // append a <span> to each bar, the text of which is the formatted budget
+  bar.append("span")
+    .attr("class", "value")
     .text(function(d) { return "$" + format(d.budget); });
 
   // our x-scale has an input domain between
   // 0 and the max budget value, and an output range between
   // 1 and 100 (we'll designate these as percentages later)
   var scale = d3.scale.linear()
-    .domain([0, max])
-    .range([1, 100]);
+    .domain([0, 1, max])
+    .range([0, 1, 100]);
 
   // finally, we assign a "width" style to each bar
   // according to its scaled budget value, suffixed with
