@@ -1,9 +1,5 @@
 @import url(common.css);
 
-h2, h3 {
-  margin: 0;
-}
-
 .bar {
   overflow: visible;
   background-color: #9cf;
