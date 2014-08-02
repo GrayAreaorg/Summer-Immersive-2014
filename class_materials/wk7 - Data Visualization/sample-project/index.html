@@ -2,9 +2,11 @@
 <html>
   <head>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 id="sum"></h1>
+    <div id="agencies"><div>
   </body>
   <script>
 var data;
@@ -12,11 +14,7 @@ var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
 
 d3.csv(dataURL, convertRow, function(error, d) {
   data = d;
-  console.log("Loaded", data.length, "rows");
-  var invalid = data.filter(function(d) {
-    return isNaN(d.budget);
-  });
-  console.log("invalid:", invalid);
+  
   var budgetNumbers = data.map(function(d) {
     return d.budget;
   });
@@ -29,7 +27,34 @@ d3.csv(dataURL, convertRow, function(error, d) {
   var format = d3.format(",");
   d3.select("#sum")
     .text("$" + format(sum));
-});
+
+      data.sort(function(a,b){
+        return d3.descending(a.budget,b.budget);
+      });
+
+      var items = d3.select("#agencies")
+        .selectAll(".agency")
+        .data(data);
+
+     var enter = items.enter.append("div")
+        .attr("class", "agency")
+        .attr("id", function(d){return d.dept;});
+
+      enter.append("h2")
+      .text(function(d) {return d.dept_title;});
+
+      var bar = enter.append("bar")
+        .attr("class", "bar")
+        .text(function(d) {return "$" + format(d.budget);});
+
+      var scale = d3.scale.linear()
+      .domain([0,max])
+      .range([1,100]);
+
+      bar.style("width", function(d) {
+        return scale(d.budget) + "%";
+      });
+    });
 
 function convertRow(row) {
   row.budget = parseDollars(row.budget);

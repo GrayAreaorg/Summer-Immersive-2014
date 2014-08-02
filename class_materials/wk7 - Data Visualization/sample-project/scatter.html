@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="sum"></h1>
+    <div id="agencies"><div>
+  </body>
+  <script>
+var data;
+var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
+
+d3.csv(dataURL, convertRow, function(error, d) {
+  data = d;
+  
+  var budgetNumbers = data.map(function(d) {
+    return d.budget;
+  });
+
+  console.log("budget numbers:", budgetNumbers);
+  var min = d3.min(budgetNumbers);
+  var max = d3.max(budgetNumbers);
+ 
+  var format = d3.format(",");
+
+  var width = 500;
+  var height = 400;
+  
+  var svg = d3.select("#agencies")
+      .attr("width", width)
+      .attr("height", height)
+      g = svg.append("g");
+
+  var circles = g.selectAll(".agency")
+    .data(data);
+    
+  var enter = circles.enter().append("circle")
+    .attr("class", "agency")
+    .attr("id", function(d) {return d.dept; })
+    .attr("r", 10);
+    
+  var xscale = d3.scale.linear()
+    .domain([min, max])
+    .range([0,width]);
+
+  circles.attr("cx", function(d) {
+    return xscale(d.budget);
+  });
+
+  var nameLengths = data.map(function(d){
+    return d.dept_title.length;
+  });
+
+  var yscale = d3.scale.linear()
+  .domain([d3.extent(nameLengths)])
+  .range([height, 0]);
+
+  circles.attr("cy", function(d)) {
+    return yscale(d.dept_title.length);
+  });
+
+});
+
+function convertRow(row) {
+  row.budget = parseDollars(row.budget);
+  return row;
+}
+
+function parseDollars(str) {
+  return +str.substr(1);
+}
+
+  </script>
+</html>
