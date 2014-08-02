@@ -1,0 +1,12 @@
+@import url(common.css);
+
+circle {
+  fill: #000;
+  fill-opacity: .5;
+}
+
+path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+}

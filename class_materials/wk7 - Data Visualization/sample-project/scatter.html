@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,11 +16,35 @@ var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
 d3.csv(dataURL, convertRow, function(error, d) {
   data = d;
   
+=======
+    <link rel="stylesheet" href="css/scatter.css">
+  </head>
+  <body>
+    <h1>San Francisco Budget by Department, FY 2011-2012</h1>
+    <h2>Budget (x) vs. Length of Name (y)</h2>
+    <!-- #agencies is an SVG element -->
+    <svg id="agencies"></svg>
+  </body>
+  <script>
+
+// declare our global variables
+var data;
+var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
+
+// load the `dataURL` as CSV, pass each row through convertRow(),
+// then process the resulting data with our callback function
+d3.csv(dataURL, convertRow, function(error, d) {
+  // "export" the data to our global variable, `data`
+  data = d;
+
+  // get just the budget numbers as an Array
+>>>>>>> FETCH_HEAD
   var budgetNumbers = data.map(function(d) {
     return d.budget;
   });
 
   console.log("budget numbers:", budgetNumbers);
+<<<<<<< HEAD
   var min = d3.min(budgetNumbers);
   var max = d3.max(budgetNumbers);
  
@@ -45,10 +70,60 @@ d3.csv(dataURL, convertRow, function(error, d) {
     .domain([min, max])
     .range([0,width]);
 
+=======
+  // calculate the min and max budget numbers
+  var min = d3.min(budgetNumbers);
+  var max = d3.max(budgetNumbers);
+
+  // the string format: format(1000) -> "1,000"
+  var format = d3.format(",");
+
+  // the width and height of our chart (in pixels),
+  // our padding (distance from each edge of the chart),
+  // and handy top, left, bottom and right variables
+  var width = 500,
+      height = 400,
+      padding = 40,
+      top = padding,
+      left = padding,
+      bottom = height - padding,
+      right = width - padding;
+
+  // get the <svg> element and set its width and height attributes
+  var svg = d3.select("#agencies")
+        .attr("width", width)
+        .attr("height", height),
+      // append a <g> element for our circles to live in
+      g = svg.append("g");
+
+  // do the data binding with our data to a selection of
+  // elements with class "agency" (none of which exist yet)
+  var circles = g.selectAll(".agency")
+    .data(data);
+
+  // get the entering selection and append a <circle> element
+  // to each one, set its class to "agency", its "id" attribute
+  // to the department code of each row in the spreadsheet,
+  // and its radius ("r") to 10 pixels
+  var enter = circles.enter().append("circle")
+    .attr("class", "agency")
+    .attr("id", function(d) { return d.dept; })
+    .attr("r", 10);
+
+  // our x-scale has an input domain between the min and max
+  // budget numbers, and an output range between the left and right
+  // edges of the chart
+  var xscale = d3.scale.linear()
+    .domain([min, max])
+    .range([left, right]);
+
+  // set the circles' center x coordinate using the x-scale
+>>>>>>> FETCH_HEAD
   circles.attr("cx", function(d) {
     return xscale(d.budget);
   });
 
+<<<<<<< HEAD
   var nameLengths = data.map(function(d){
     return d.dept_title.length;
   });
@@ -61,6 +136,55 @@ d3.csv(dataURL, convertRow, function(error, d) {
     return yscale(d.dept_title.length);
   });
 
+=======
+  // get the lengths of all the department names
+  var nameLengths = data.map(function(d) {
+    return d.dept_title.length;
+  });
+
+  // our y-scale has an input domain of the *extent* of name lengths
+  // (which is the equivalent of: [d3.min(nameLengths, d3.max(nameLengths)])
+  // and an output range from the bottom to top of the chart
+  // (because low values should be at the bottom, and high at the top)
+  var yscale = d3.scale.linear()
+    .domain(d3.extent(nameLengths))
+    .range([bottom, top]);
+
+  // set the circles' center y coordinate using the y-scale
+  // of each row's department title length
+  circles.attr("cy", function(d) {
+    return yscale(d.dept_title.length);
+  });
+
+  // our axis margin is the distance by which to move it "away"
+  // from the data, to give it some breathing room
+  var axisMargin = 10;
+
+  // create a home for the
+  var xAxis = d3.svg.axis()
+    .scale(xscale)
+    .orient("bottom")
+    .ticks(5)
+    // format the x-axis ticks as fractions of a billion:
+    // (n / 1 billion).toFixed(1) converts the number to a string with
+    // 1 decimal of "fixed precision"
+    .tickFormat(function(n) {
+      return "$" + (n / 1000000000).toFixed(1) + "b";
+    });
+  svg.append("g")
+    .attr("class", "axis x")
+    .attr("transform", "translate(0," + (bottom + axisMargin) + ")")
+    .call(xAxis);
+
+  var yAxis = d3.svg.axis()
+    .scale(yscale)
+    .orient("left")
+    .ticks(5);
+  svg.append("g")
+    .attr("transform", "translate(" + (left - axisMargin) + ",0)")
+    .call(yAxis);
+
+>>>>>>> FETCH_HEAD
 });
 
 function convertRow(row) {
