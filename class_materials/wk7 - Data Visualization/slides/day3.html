@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Visualization</title>
+
+    <script src="lib/reveal/js/reveal.js"></script>
+    <link rel="stylesheet" href="lib/reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="lib/reveal/css/theme/serif.css">
+
+    <script src="lib/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="lib/highlight/styles/docco.css">
+
+    <link rel="stylesheet" href="css/slides.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="welcome">
+          <h2>Data Visualization</h2>
+          <h3>Day 3</h2>
+        </section>
+
+        <section id="ben-fry-process">
+          <h2>The Process</h2>
+          <p>We&rsquo;re almost through Ben Fry&rsquo;s data visualization process!</p>
+
+          <img src="images/ben-fry-process.png">
+        </section>
+
+        <section id="interact">
+          <section id="step7-interact">
+            <h2>Interact</h2>
+            <blockquote>Add methods for manipulating the data or controlling which features are visible.</blockquote>
+            <p class="fragment">This is where your new-found mastery<br>
+            of HTML and JavaScript comes in.</p>
+          </section>
+
+          <section id="basic-interactivity">
+            <h2>Basic Interactivity</h2>
+            <p>Browsers give us some simple tools for<br>
+            interactivity without the need for scripting:</p>
+            <ul>
+              <li class="fragment">The HTML <code>title</code> attribute and SVG <code>&lt;title&gt;</code><br>
+              element create tooltips for us</li>
+              <li class="fragment">We can use CSS <code>:hover</code> styles to show and hide<br>
+              elements interactively</li>
+            </ul>
+          </section>
+
+          <section id="interaction-events">
+            <h2>Interaction Events</h2>
+            <p>We can also use event handlers to respond to interaction<br>
+            in JavaScript. D3 has support for event handlers built in:</p>
+            <pre><code class="js">
+d3.selectAll(".agency")
+  .on("mouseover", function(d) {
+    console.log("mouseover:", d);
+  })
+  .on("click", function(d) {
+    console.log("click:", d);
+  });
+            </code></pre>
+            <p class="fragment">In D3 event handlers, the callback function gets the<br>
+            <i>bound data</i> as its first argument, not the event object.<br>
+            (The event object is accessible via <code>d3.event</code>.)</p>
+          </section>
+
+          <section id="interaction-ideas">
+            <h2>Some Interactions</h2>
+            <ul>
+              <li class="fragment">Better tooltips or info panels: on <code>mouseover</code><br>
+              or <code>click</code>, update the contents of another element</li>
+              <li class="fragment">Create form elements and update your display<br>
+              when they dispatch <code>change</code> events</li>
+              <li class="fragment">Add ways to <b>highlight</b> specific categories of data, or<br>
+              dynamically <b>sort</b> the data in different ways</li>
+            </ul>
+          </section>
+
+          <section id="transitions">
+            <h2>Transitions</h2>
+            <p>Transitions are a great way to help the viewer perceive<br>
+            changes in your visualization. They&rsquo;re <a href="http://bl.ocks.org/mbostock/1256572">built into D3</a>:</p>
+            <pre><code class="js">
+// create a function to set attributes on a <var>selection</var>
+function updatePosition(selection) {
+  selection
+    .attr("cx", function(d) { ... })
+    .attr("cy", function(d) { ... });
+}
+
+// updates immediately
+var circles = svg.selectAll("circle")
+  .call(updatePosition);
+
+// transitions each attribute from its current to new values
+circles.transition()
+  .duration(1000) // 1 second, or 1,000 milliseconds
+  .call(updatePosition);
+            </code></pre>
+          </section>
+
+          <section id="complex-interactivity">
+            <h2>More Interactivity</h2>
+            <p>D3 also gives us some other cool tools right out of the box:</p>
+            <ul>
+              <li class="fragment"><a href="http://bl.ocks.org/mbostock/4063663">Brush selections</a>: 1- or 2-dimensional sweeps across data</li>
+              <li class="fragment"><a href="http://bl.ocks.org/mbostock/8fadc5ac9c2a9e7c5ba2">Pan &amp; zoom</a>: usually in maps, but useful in
+              <a href="http://bl.ocks.org/mbostock/1667367">other</a>
+              <a href="http://bl.ocks.org/mbostock/4015254">instances</a></li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section id="maps">
+          <section id="mapping">
+            <h2>Geographic Mapping</h2>
+            <p>Geographic mapping shares a lot concepts<br>
+            with other abstract visualizations.</p>
+            <ul>
+              <li class="fragment">A <b>projection</b> is a mapping of geographic coordinates<br>
+              onto screen space, and <a href="http://bl.ocks.org/mbostock/3711652">there are many</a></li>
+              <li class="fragment">Geometric <b>features</b> come in different forms,<br>
+              such as points, lines and polygons</li>
+              <li class="fragment"><b>Raster images</b> are used to describe <i>continuous</i><br>
+              data with <a href="http://bl.ocks.org/mbostock/6264239">high precision</a> (and browser performance)</li>
+              <li class="fragment"><b>Colors</b> are often used to convey numeric values,<br>
+              as in a <a href="http://christopheviau.com/d3list/gallery.html#visualizationType=choropleth">choropleth</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="publishing">
+          <h2>Publishing Your Work</h2>
+          <p>A pre-flight checklist:</p>
+          <ul>
+            <li class="fragment">Test it on mobile browsers:<ul>
+              <li class="fragment">Does your page scale? <i>If so, we have some work to do</i>.</li>
+              <li class="fragment">Some event handlers will work fine on mobile, but <code>mouseover</code>, etc. will not</li>
+            </ul></li>
+            <li class="fragment">Consider citing the source of your data:<ol>
+              <li class="fragment">Where you got it</li>
+              <li class="fragment">When you accessed it</li>
+            </ol></li>
+            <li class="fragment">Hosting options:<ul>
+              <li class="fragment"><a href="http://pages.github.com">GitHub Pages</a> or
+                <a href="http://gist.github.com">Gist</a> + <a href="http://bl.ocks.org">bl.ocks.org</a></li>
+              <li class="fragment">Traditional hosting provider</li>
+              <li class="fragment">No hosting; just keep it on JSFiddle, CodePen, etc.</li>
+            </ul></li>
+          </ul>
+        </section>
+
+        <section id="scalable-vectors">
+          <h2>Scalable Vector Graphics</h2>
+          <p>Remember that the S in SVG stands for &ldquo;scalable&rdquo;.</p>
+          <pre><code class="js">
+var width = 800,
+    height = 600,
+    svg = d3.select("svg")
+      .style("width", "100%")
+      .attr("viewBox", [0, 0, width, height].join(" ")),
+    aspect = width / height;
+// this is a lazy way to add an event listener
+window.onresize = function() {
+  var actualWidth = svg.property("offsetWidth"),
+      actualHeight = actualWidth / aspect;
+  svg.style("height", Math.ceil(height) + "px");
+};
+// call the function once to get things rolling
+window.onresize();
+          </code></pre>
+        </section>
+
+        <section id="hooray">
+          <h2>No more slides!</h2>
+          <p>Let&rsquo;s make some stuff.</p>
+        </section>
+
+      </div>
+    </div>
+    <script src="js/slides.js"></script>
+  </body>
+</html>
