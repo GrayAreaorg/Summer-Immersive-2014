@@ -22,8 +22,11 @@ d3.csv(dataURL, convertRow, function(error, d) {
   <body>
     <h1>San Francisco Budget by Department, FY 2011-2012</h1>
     <h2>Budget (x) vs. Length of Name (y)</h2>
+    <p><label><input type="checkbox" id="big"> make it big</label></p>
     <!-- #agencies is an SVG element -->
-    <svg id="agencies"></svg>
+    <div id="container">
+      <svg id="agencies"></svg>
+    </div>
   </body>
   <script>
 
@@ -82,7 +85,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // our padding (distance from each edge of the chart),
   // and handy top, left, bottom and right variables
   var width = 500,
-      height = 400,
+      height = 300,
       padding = 40,
       top = padding,
       left = padding,
@@ -96,19 +99,65 @@ d3.csv(dataURL, convertRow, function(error, d) {
       // append a <g> element for our circles to live in
       g = svg.append("g");
 
+  var aspect = width / height;
+  svg.attr("width", null)
+    .attr("viewBox", [0, 0, width, height].join(" "))
+    .style("width", "100%");
+  window.onresize = function() {
+    var actualWidth = svg.node().offsetWidth, // property("offsetWidth")
+        height = actualWidth / aspect;
+    svg.attr("height", height);
+  };
+  window.onresize();
+
+
   // do the data binding with our data to a selection of
   // elements with class "agency" (none of which exist yet)
-  var circles = g.selectAll(".agency")
+  var agencies = g.selectAll(".agency")
     .data(data);
 
   // get the entering selection and append a <circle> element
   // to each one, set its class to "agency", its "id" attribute
   // to the department code of each row in the spreadsheet,
   // and its radius ("r") to 10 pixels
-  var enter = circles.enter().append("circle")
-    .attr("class", "agency")
+  var enter = agencies.enter()
+    .append("a")
+      .attr("class", "agency")
+      .attr("target", "_new")
+      /*
+      .attr("xlink:href", function(d) {
+        return "https://www.google.com/search?q=San+Francisco+" + d.dept_title;
+      })
+      */;
+  enter.append("circle")
     .attr("id", function(d) { return d.dept; })
-    .attr("r", 10);
+    .attr("r", 5);
+
+  var circles = agencies.select("circle");
+
+  d3.select("#big")
+    .on("change", function() {
+      if (this.checked) {
+        var size = 20;
+      } else {
+        var size = 5;
+      }
+      circles
+        .transition()
+          .duration(500)
+          .delay(function(d, i) {
+            return i * 20;
+          })
+          .attr("r", size);
+    })
+
+  circles.on("click.foo", function(d) {
+    console.log("foo:", d);
+  });
+
+  circles.on("click.bar", function(d) {
+    console.log("bar:", d);
+  });
 
   // our x-scale has an input domain between the min and max
   // budget numbers, and an output range between the left and right
