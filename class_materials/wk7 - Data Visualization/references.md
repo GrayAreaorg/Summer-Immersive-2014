@@ -6,6 +6,7 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [The Big List of D3.js Examples](http://christopheviau.com/d3list/gallery.html)
   * [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
   * [Mike Bostock's bl.ocks.org](http://bl.ocks.org/mbostock)
+  * Scott Murray's [D3 tutorials](http://alignedleft.com/tutorials/d3)
   * A great, interactive [D3 intro](http://vadim.ogievetsky.com/IntroD3/) by [Vadim Ogievetsky](http://vadim.ogievetsky.com)
 
 * Other visualization and related libraries:
