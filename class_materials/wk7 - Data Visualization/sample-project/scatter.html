@@ -99,11 +99,19 @@ d3.csv(dataURL, convertRow, function(error, d) {
       // append a <g> element for our circles to live in
       g = svg.append("g");
 
+  /*
+   * resize the SVG element whenever the window resizes,
+   * using the viewBox attribute:
+   * https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
+   */
   var aspect = width / height;
   svg.attr("width", null)
     .attr("viewBox", [0, 0, width, height].join(" "))
     .style("width", "100%");
   window.onresize = function() {
+    // note: if you're targeting Firefox, you'll have to jump through
+    // some hoops because Gecko doesn't support offset* properties on SVG
+    // elements
     var actualWidth = svg.node().offsetWidth, // property("offsetWidth")
         height = actualWidth / aspect;
     svg.attr("height", height);
@@ -120,20 +128,10 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // to each one, set its class to "agency", its "id" attribute
   // to the department code of each row in the spreadsheet,
   // and its radius ("r") to 10 pixels
-  var enter = agencies.enter()
-    .append("a")
-      .attr("class", "agency")
-      .attr("target", "_new")
-      /*
-      .attr("xlink:href", function(d) {
-        return "https://www.google.com/search?q=San+Francisco+" + d.dept_title;
-      })
-      */;
-  enter.append("circle")
-    .attr("id", function(d) { return d.dept; })
-    .attr("r", 5);
-
-  var circles = agencies.select("circle");
+  var circles = agencies.enter()
+    .append("circle")
+      .attr("id", function(d) { return d.dept; })
+      .attr("r", 5);
 
   d3.select("#big")
     .on("change", function() {
