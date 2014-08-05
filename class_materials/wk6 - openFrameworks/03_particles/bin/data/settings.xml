@@ -1,0 +1,10 @@
+<03_Particles_Panel>
+	<force_radius>45</force_radius>
+	<friction>1</friction>
+	<particle_size>3.47</particle_size>
+	<max_per_spawn>56</max_per_spawn>
+	<max_particles>500</max_particles>
+	<particle_life>90</particle_life>
+	<max_force>2</max_force>
+	<spawn_radius>25</spawn_radius>
+</03_Particles_Panel>
