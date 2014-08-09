@@ -18,9 +18,14 @@ Research your costs carefully and be as specific as possible
 ## Technical Overview
 Description of the artworks’ size, materials, construction methods, lighting, sound, electronics, etc. If applying for support for a program, describe the programs activities, goals and outcomes.
 
-####Flow Diagram & Materials Lists
+####Flow Charts & Material Lists
 * Hardware
+Example:
+[](img/hardware_example.jpg)
+
 * Software
+Example:
+[](img/software_example.jpg)
 
 ## Workplan
 | Start Date | End Date | Phase | Task | Category | Estimated Hrs | Resources Needed | Notes |
