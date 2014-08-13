@@ -2,13 +2,31 @@
 <html>
   <head>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="sum"></h1>
+    <div id="agencies"><div>
+  </body>
+  <script>
+var data;
+var dataURL = "data/Adopted_Budget_rolled_up_by_dept.csv";
+
+d3.csv(dataURL, convertRow, function(error, d) {
+  data = d;
+  
+=======
     <link rel="stylesheet" href="css/scatter.css">
   </head>
   <body>
     <h1>San Francisco Budget by Department, FY 2011-2012</h1>
     <h2>Budget (x) vs. Length of Name (y)</h2>
+    <p><label><input type="checkbox" id="big"> make it big</label></p>
     <!-- #agencies is an SVG element -->
-    <svg id="agencies"></svg>
+    <div id="container">
+      <svg id="agencies"></svg>
+    </div>
   </body>
   <script>
 
@@ -23,11 +41,39 @@ d3.csv(dataURL, convertRow, function(error, d) {
   data = d;
 
   // get just the budget numbers as an Array
+>>>>>>> FETCH_HEAD
   var budgetNumbers = data.map(function(d) {
     return d.budget;
   });
 
   console.log("budget numbers:", budgetNumbers);
+<<<<<<< HEAD
+  var min = d3.min(budgetNumbers);
+  var max = d3.max(budgetNumbers);
+ 
+  var format = d3.format(",");
+
+  var width = 500;
+  var height = 400;
+  
+  var svg = d3.select("#agencies")
+      .attr("width", width)
+      .attr("height", height)
+      g = svg.append("g");
+
+  var circles = g.selectAll(".agency")
+    .data(data);
+    
+  var enter = circles.enter().append("circle")
+    .attr("class", "agency")
+    .attr("id", function(d) {return d.dept; })
+    .attr("r", 10);
+    
+  var xscale = d3.scale.linear()
+    .domain([min, max])
+    .range([0,width]);
+
+=======
   // calculate the min and max budget numbers
   var min = d3.min(budgetNumbers);
   var max = d3.max(budgetNumbers);
@@ -39,7 +85,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // our padding (distance from each edge of the chart),
   // and handy top, left, bottom and right variables
   var width = 500,
-      height = 400,
+      height = 300,
       padding = 40,
       top = padding,
       left = padding,
@@ -53,19 +99,70 @@ d3.csv(dataURL, convertRow, function(error, d) {
       // append a <g> element for our circles to live in
       g = svg.append("g");
 
+  /*
+   * resize the SVG element whenever the window resizes,
+   * using the viewBox attribute:
+   * https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
+   */
+  var aspect = width / height;
+  svg.attr("width", null)
+    .attr("viewBox", [0, 0, width, height].join(" "))
+    .style("width", "100%");
+  window.onresize = function() {
+    // note: if you're targeting Firefox, you'll have to jump through
+    // some hoops because Gecko doesn't support offset* properties on SVG
+    // elements
+    var actualWidth = svg.node().offsetWidth, // property("offsetWidth")
+        height = actualWidth / aspect;
+    svg.attr("height", height);
+  };
+  window.onresize();
+
+
   // do the data binding with our data to a selection of
   // elements with class "agency" (none of which exist yet)
-  var circles = g.selectAll(".agency")
+  var agencies = g.selectAll(".agency")
     .data(data);
 
   // get the entering selection and append a <circle> element
   // to each one, set its class to "agency", its "id" attribute
   // to the department code of each row in the spreadsheet,
   // and its radius ("r") to 10 pixels
+<<<<<<< HEAD
   var enter = circles.enter().append("circle")
     .attr("class", "")
     .attr("id", function(d) { return d.dept; })
     .attr("r", 10);
+=======
+  var circles = agencies.enter()
+    .append("circle")
+      .attr("id", function(d) { return d.dept; })
+      .attr("r", 5);
+
+  d3.select("#big")
+    .on("change", function() {
+      if (this.checked) {
+        var size = 20;
+      } else {
+        var size = 5;
+      }
+      circles
+        .transition()
+          .duration(500)
+          .delay(function(d, i) {
+            return i * 20;
+          })
+          .attr("r", size);
+    })
+
+  circles.on("click.foo", function(d) {
+    console.log("foo:", d);
+  });
+
+  circles.on("click.bar", function(d) {
+    console.log("bar:", d);
+  });
+>>>>>>> FETCH_HEAD
 
   // our x-scale has an input domain between the min and max
   // budget numbers, and an output range between the left and right
@@ -75,10 +172,25 @@ d3.csv(dataURL, convertRow, function(error, d) {
     .range([left, right]);
 
   // set the circles' center x coordinate using the x-scale
+>>>>>>> FETCH_HEAD
   circles.attr("cx", function(d) {
     return xscale(d.budget);
   });
 
+<<<<<<< HEAD
+  var nameLengths = data.map(function(d){
+    return d.dept_title.length;
+  });
+
+  var yscale = d3.scale.linear()
+  .domain([d3.extent(nameLengths)])
+  .range([height, 0]);
+
+  circles.attr("cy", function(d)) {
+    return yscale(d.dept_title.length);
+  });
+
+=======
   // get the lengths of all the department names
   var nameLengths = data.map(function(d) {
     return d.dept_title.length;
@@ -126,6 +238,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
     .attr("transform", "translate(" + (left - axisMargin) + ",0)")
     .call(yAxis);
 
+>>>>>>> FETCH_HEAD
 });
 
 function convertRow(row) {

@@ -6,8 +6,9 @@ by [Shawn Allen](https://github.com/shawnbot)
   * [The Big List of D3.js Examples](http://christopheviau.com/d3list/gallery.html)
   * [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
   * [Mike Bostock's bl.ocks.org](http://bl.ocks.org/mbostock)
+  * Scott Murray's [D3 tutorials](http://alignedleft.com/tutorials/d3)
   * A great, interactive [D3 intro](http://vadim.ogievetsky.com/IntroD3/) by [Vadim Ogievetsky](http://vadim.ogievetsky.com)
-
+* Git troubles? Read [the book](http://git-scm.com/book)
 * Other visualization and related libraries:
   * [chroma.js](https://github.com/gka/chroma.js) is a JavaScript library for color conversions and scales
     * And there are [interactive](http://tristen.ca/hcl-picker/) [versions](http://vis4.net/labs/colorvis/embed.html?m=hcl&gradients=6), if that's more your speed
