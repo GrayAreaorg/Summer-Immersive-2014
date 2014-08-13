@@ -63,7 +63,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // to the department code of each row in the spreadsheet,
   // and its radius ("r") to 10 pixels
   var enter = circles.enter().append("circle")
-    .attr("class", "agency")
+    .attr("class", "")
     .attr("id", function(d) { return d.dept; })
     .attr("r", 10);
 
