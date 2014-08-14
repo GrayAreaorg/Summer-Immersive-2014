@@ -128,6 +128,12 @@ d3.csv(dataURL, convertRow, function(error, d) {
   // to each one, set its class to "agency", its "id" attribute
   // to the department code of each row in the spreadsheet,
   // and its radius ("r") to 10 pixels
+<<<<<<< HEAD
+  var enter = circles.enter().append("circle")
+    .attr("class", "")
+    .attr("id", function(d) { return d.dept; })
+    .attr("r", 10);
+=======
   var circles = agencies.enter()
     .append("circle")
       .attr("id", function(d) { return d.dept; })
@@ -156,6 +162,7 @@ d3.csv(dataURL, convertRow, function(error, d) {
   circles.on("click.bar", function(d) {
     console.log("bar:", d);
   });
+>>>>>>> FETCH_HEAD
 
   // our x-scale has an input domain between the min and max
   // budget numbers, and an output range between the left and right
