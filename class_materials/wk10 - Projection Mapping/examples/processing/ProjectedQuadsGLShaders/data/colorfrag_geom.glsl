@@ -10,6 +10,7 @@ varying vec4 vertColor;
 
 uniform float time;
 uniform vec2 resolution;
+uniform vec2 mouse;
 
 void main( void ) {
   

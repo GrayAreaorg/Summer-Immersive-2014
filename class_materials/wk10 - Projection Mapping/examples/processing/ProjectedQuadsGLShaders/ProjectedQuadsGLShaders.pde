@@ -32,19 +32,30 @@ String configFile = "data/quadsconfig.txt";
 // projected quads
 ProjectedQuads quads;
 
-// shaders
-PShader texShader, 
-        bwShader,
-        embossShader,
-        edgesShader,
-        colorShader;
-
 // graphics buffers 
 PGraphics graphics1, 
           camGfx, 
           camShaderGfx, 
           imgShader,
-          colorShaderGfx;
+          colorShaderGfx,
+          colorShader2Gfx;
+
+// shaders
+PShader texShader, 
+        bwShader,
+        embossShader,
+        edgesShader,
+        colorShader,
+        colorShader2;
+
+void loadShaders() {
+  edgesShader = loadShader("edgesfrag.glsl");
+  texShader = loadShader("texfrag.glsl");
+  bwShader = loadShader("bwfrag.glsl");
+  embossShader = loadShader("embossfrag.glsl");
+  colorShader = loadShader("colorfrag_trippy.glsl");
+  colorShader2 = loadShader("colorfrag_geom.glsl");
+}
 
 void setup() {
   
@@ -54,11 +65,7 @@ void setup() {
   setupCamCapture();
   
   // load shaders
-  edgesShader = loadShader("edgesfrag.glsl");
-  texShader = loadShader("texfrag.glsl");
-  bwShader = loadShader("bwfrag.glsl");
-  embossShader = loadShader("embossfrag.glsl");
-  colorShader = loadShader("colorfrag1.glsl");
+  loadShaders();
   
   // create new set of quads
   quads = new ProjectedQuads(5);
@@ -72,7 +79,8 @@ void setup() {
   quads.getQuad(1).setTexture(graphics1); 
    
   // quad 2
-  quads.getQuad(2).setTexture(loadImage("suchmapping.jpeg"));
+  colorShader2Gfx = createGraphics(720, 480, OPENGL);
+  quads.getQuad(2).setTexture(colorShader2Gfx);
   
   // quad 3
   camGfx = createGraphics(640, 480, OPENGL);
@@ -90,15 +98,21 @@ void draw() {
   // update the camera
   readCamera();
   
-  // update shaders
+  // shaders uniforms
   colorShader.set("time", (float)(millis() / 1000.0));
   colorShader.set("resolution", float(colorShaderGfx.width), float(colorShaderGfx.height));
+  colorShader.set("mouse", float(mouseX), float(mouseY));
+  
+  colorShader2.set("time", (float)(millis() / 1000.0));
+  colorShader2.set("resolution", float(colorShader2Gfx.width), float(colorShader2Gfx.height));
+  colorShader2.set("mouse", float(mouseX), float(mouseY));  
   
   // draw graphic routines
   marcinStripes(graphics1);
   imageTexShader(camGfx, cam, bwShader);
   imageTexShader(camShaderGfx, cam, edgesShader);
   colorShader(colorShaderGfx, colorShader);
+  colorShader(colorShader2Gfx, colorShader2);
   
 
   background(0);
@@ -211,6 +225,9 @@ void keyPressed() {
     // toggle debug/design/setup mode
     quads.setDebugMode(!quads.getDebugMode());
   }  
+  if (key == 'r') {
+    loadShaders();
+  }
 }
 
 void mousePressed() {
