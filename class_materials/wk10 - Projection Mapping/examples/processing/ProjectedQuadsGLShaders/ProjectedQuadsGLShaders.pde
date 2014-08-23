@@ -148,7 +148,7 @@ void readCamera() {
 void imageTex(PGraphics buffer, PImage image) {
   buffer.beginDraw();
   buffer.background(0);
-  buffer.image(image, 0, 0);
+  buffer.set(0, 0, image);
   buffer.endDraw(); 
 }
 
