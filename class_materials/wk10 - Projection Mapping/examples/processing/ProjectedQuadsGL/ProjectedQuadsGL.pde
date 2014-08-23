@@ -36,7 +36,10 @@ ProjectedQuads quads;
 // a set of graphics routines
 ProjectionGraphics graphics;
 
-// create graphics buffers to draw onto.
+// shaders
+PShader bwShader;
+
+// graphics buffers 
 PGraphics stripes, video;
 
 void setup() {
@@ -60,9 +63,7 @@ void setup() {
   // set another image to quad 2
   quads.getQuad(2).setTexture(loadImage("suchmapping.jpeg"));
   
-  // 
-  
-  // mirror function
+  // mirror quad 4
   quads.getQuad(4).setMirrored(true);
   
   // set up camera for capture
@@ -96,7 +97,6 @@ void draw() {
   }
   quads.getQuad(3).setTexture(cam);
   quads.getQuad(4).setTexture(cam);
-  
 
   quads.draw();
 }
