@@ -1,8 +1,6 @@
 import processing.video.*;
-
 import javax.media.opengl.GL2;
 GL2 gl;
-
 /*
   ProjectedQuads - a simple class for projection mapping
   Copyright (c) 2010 Marcin Ignac http://marcinignac.com  
@@ -58,10 +56,9 @@ void loadShaders() {
 }
 
 void setup() {
-  
   size(displayWidth, displayHeight, OPENGL);
-  gl = ((PJOGL)beginPGL()).gl.getGL2();
   
+  // setup camera for video capture
   setupCamCapture();
   
   // load shaders
@@ -95,7 +92,7 @@ void setup() {
 
 void draw() {  
 
-  // update the camera
+  // update camera
   readCamera();
   
   // shaders uniforms
@@ -126,7 +123,6 @@ void draw() {
 ///////////////////////////////////////////////////////////////
 // graphics routines
 ///////////////////////////////////////////////////////////////
-
 // video capture
 Capture cam;
 
@@ -150,6 +146,7 @@ void setupCamCapture() {
   }
 }
 
+
 // read camera if it's available
 void readCamera() {
    // draw video buffers from camera
@@ -158,7 +155,8 @@ void readCamera() {
   } 
 }
 
-// draw image graphics to a buffer that's passed in
+
+// draw image graphics to a buffer
 void imageTex(PGraphics buffer, PImage image) {
   buffer.beginDraw();
   buffer.background(0);
@@ -166,7 +164,8 @@ void imageTex(PGraphics buffer, PImage image) {
   buffer.endDraw(); 
 }
 
-// draw color shader to a buffer that's passed in
+
+// draw color shader to a buffer
 void colorShader(PGraphics buffer, PShader shader) {
   buffer.beginDraw();
   buffer.background(0);
@@ -175,7 +174,8 @@ void colorShader(PGraphics buffer, PShader shader) {
   buffer.endDraw();
 }
 
-// draw texture graphics and shader to a buffer that's passed in
+
+// draw texture graphics and shader to a buffer
 void imageTexShader(PGraphics buffer, PImage image, PShader shader) {
   buffer.beginDraw();
   buffer.background(0);
@@ -183,6 +183,7 @@ void imageTexShader(PGraphics buffer, PImage image, PShader shader) {
   buffer.image(image, 0, 0);
   buffer.endDraw(); 
 }
+
 
 // stripes by marcin ignac
 void marcinStripes(PGraphics buffer) {
@@ -206,12 +207,9 @@ void marcinStripes(PGraphics buffer) {
 
 
 
-
-
 ///////////////////////////////////////////////////////////////
 // interaction routines
 ///////////////////////////////////////////////////////////////
-
 void keyPressed() {
   // give a keypressed event to quads
   quads.keyPressed();
@@ -226,6 +224,7 @@ void keyPressed() {
     quads.setDebugMode(!quads.getDebugMode());
   }  
   if (key == 'r') {
+    // reload shaders
     loadShaders();
   }
 }
