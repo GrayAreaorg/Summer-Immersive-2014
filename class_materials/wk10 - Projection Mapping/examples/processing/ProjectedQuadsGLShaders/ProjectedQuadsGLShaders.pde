@@ -32,26 +32,19 @@ String configFile = "data/quadsconfig.txt";
 // projected quads
 ProjectedQuads quads;
 
-// a set of graphics routines
-
 // shaders
 PShader texShader, 
         bwShader,
         embossShader,
         edgesShader,
-        colorShader,
-        colorShader2;
+        colorShader;
 
 // graphics buffers 
 PGraphics graphics1, 
           camGfx, 
           camShaderGfx, 
           imgShader,
-          colorShaderGfx,
-          colorShader2Gfx;
-
-// images
-PImage img0;
+          colorShaderGfx;
 
 void setup() {
   
@@ -66,8 +59,6 @@ void setup() {
   bwShader = loadShader("bwfrag.glsl");
   embossShader = loadShader("embossfrag.glsl");
   colorShader = loadShader("colorfrag1.glsl");
-  colorShader2 = loadShader("colorfrag2.glsl");
-  
   
   // create new set of quads
   quads = new ProjectedQuads(5);
@@ -102,7 +93,6 @@ void draw() {
   // update shaders
   colorShader.set("time", (float)(millis() / 1000.0));
   colorShader.set("resolution", float(colorShaderGfx.width), float(colorShaderGfx.height));
- 
   
   // draw graphic routines
   marcinStripes(graphics1);
@@ -154,7 +144,7 @@ void readCamera() {
   } 
 }
 
-// draw image graphics
+// draw image graphics to a buffer that's passed in
 void imageTex(PGraphics buffer, PImage image) {
   buffer.beginDraw();
   buffer.background(0);
@@ -162,7 +152,7 @@ void imageTex(PGraphics buffer, PImage image) {
   buffer.endDraw(); 
 }
 
-// draw color shader
+// draw color shader to a buffer that's passed in
 void colorShader(PGraphics buffer, PShader shader) {
   buffer.beginDraw();
   buffer.background(0);
@@ -171,7 +161,7 @@ void colorShader(PGraphics buffer, PShader shader) {
   buffer.endDraw();
 }
 
-// draw texture graphics with a shader
+// draw texture graphics and shader to a buffer that's passed in
 void imageTexShader(PGraphics buffer, PImage image, PShader shader) {
   buffer.beginDraw();
   buffer.background(0);

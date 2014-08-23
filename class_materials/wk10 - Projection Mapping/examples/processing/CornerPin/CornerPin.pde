@@ -1,6 +1,5 @@
 /**
  * This is a simple example of how to use the Keystone library.
- * 
  * Download and install the Keystone library from this link: 
  * http://keystonep5.sourceforge.net/
  *
