@@ -10,13 +10,18 @@ Google Docs presentations are available :
 
 [Day 2 Presentation]( https://docs.google.com/presentation/d/1Tn9MDyhB6XDnjrST348btBvOxzyHofi2iluLg1_Sb2o/edit?usp=sharing )
 
-[Day 3 Presentation]( )
+[Day 3]
 
-[Nature of Code](http://natureofcode.com/book/ )
+OpenCV in Processing (examples in folder)
 
-[Nature of Code - Box2D ](http://natureofcode.com/book/chapter-5-physics-libraries/)
+FaceOSC
+* [Shiffman’s Face-It fall workshop notes](https://github.com/shiffman/Face-It)
+* [FaceOSC-Template](https://github.com/CreativeInquiry/FaceOSC-Templates)
+* [Kyle McDonald Explains FaceTracker](http://makematics.com/research/facetracker/)
+* [Animata](http://animata.kibu.hu/)
+* [Animata + OSC](http://mansteri.com/2008/12/animata-osc/)
 
-[Official Processing.org Tutorials](http://processing.org/tutorials/)
-
+CV in HTML
+* [Object Detection with HTML5 getUserMedia](http://techslides.com/object-detection-with-html5-getusermedia/)
 
 
