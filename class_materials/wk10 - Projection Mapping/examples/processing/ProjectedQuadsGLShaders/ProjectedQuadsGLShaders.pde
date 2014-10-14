@@ -51,49 +51,38 @@ void loadShaders() {
   texShader = loadShader("texfrag.glsl");
   bwShader = loadShader("bwfrag.glsl");
   embossShader = loadShader("embossfrag.glsl");
-  colorShader = loadShader("colorfrag_trippy.glsl");
-  colorShader2 = loadShader("colorfrag_geom.glsl");
+  colorShader = loadShader("colorfrag_1.glsl");
+  colorShader2 = loadShader("colorfrag_2.glsl");
 }
 
 void setup() {
   size(displayWidth, displayHeight, OPENGL);
   
   // setup camera for video capture
-  setupCamCapture();
+  //setupCamCapture();
   
   // load shaders
   loadShaders();
   
   // create new set of quads
-  quads = new ProjectedQuads(5);
+  quads = new ProjectedQuads(6);
    
-  // quad 0
-  colorShaderGfx = createGraphics(720, 480, OPENGL);
-  quads.getQuad(0).setTexture(colorShaderGfx);
-  
-  // quad 1  
-  graphics1 = createGraphics(256, 256, OPENGL);
-  quads.getQuad(1).setTexture(graphics1); 
-   
-  // quad 2
+  colorShaderGfx  = createGraphics(720, 480, OPENGL);
   colorShader2Gfx = createGraphics(720, 480, OPENGL);
-  quads.getQuad(2).setTexture(colorShader2Gfx);
   
-  // quad 3
-  camGfx = createGraphics(640, 480, OPENGL);
-  quads.getQuad(3).setTexture(camGfx);
-  
-  // quad 4
-  camShaderGfx = createGraphics(640, 480, OPENGL);
-  quads.getQuad(4).setTexture(camShaderGfx);
-  quads.getQuad(4).setMirrored(true);
+  quads.getQuad(0).setTexture(colorShaderGfx); 
+  quads.getQuad(1).setTexture(colorShaderGfx); 
+  quads.getQuad(2).setTexture(colorShaderGfx);
+  quads.getQuad(3).setTexture(colorShader2Gfx);
+  quads.getQuad(4).setTexture(colorShader2Gfx);
+  quads.getQuad(5).setTexture(colorShader2Gfx);
   
 }
 
 void draw() {  
 
   // update camera
-  readCamera();
+  //readCamera();
   
   // shaders uniforms
   colorShader.set("time", (float)(millis() / 1000.0));
@@ -105,9 +94,9 @@ void draw() {
   colorShader2.set("mouse", float(mouseX), float(mouseY));  
   
   // draw graphic routines
-  marcinStripes(graphics1);
-  imageTexShader(camGfx, cam, bwShader);
-  imageTexShader(camShaderGfx, cam, edgesShader);
+  //marcinStripes(graphics1);
+  //imageTexShader(camGfx, cam, bwShader);
+  //imageTexShader(camShaderGfx, cam, edgesShader);
   colorShader(colorShaderGfx, colorShader);
   colorShader(colorShader2Gfx, colorShader2);
   
